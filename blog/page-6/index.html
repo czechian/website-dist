@@ -1,0 +1,2632 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        
+        
+        
+        
+        <script>
+            dataLayer = [];
+            function gtag(){dataLayer.push(arguments);}
+        </script>
+        
+        <script>
+            var _hsq = window._hsq = window._hsq || [];
+        </script>
+        
+        <script>
+            window.startPageLoad = (new Date()).getTime();
+        </script>
+
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+
+        <title>Blog | GoodData</title>
+        <meta name="description" content="GoodData is a composable data and analytics platform that can be run in a public or private cloud, allowing you to build rich analytics for your end users.">
+
+        
+        <link rel="preload" href="/fonts/dc8ebcd096d8d65d80200bbe8e045d86-subset.woff2" as="font" type="font/woff2">
+<link rel="preload" href="/fonts/bca6d3310b5c9dae1dae416e8abc8405-subset.woff2" as="font" type="font/woff2">
+
+<style>
+@font-face{font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset;src:url(/fonts/dc8ebcd096d8d65d80200bbe8e045d86-subset.woff2) format("woff2"),url(/fonts/dc8ebcd096d8d65d80200bbe8e045d86-subset.woff) format("woff");font-weight:400;font-style:normal}@font-face{font-family:bca6d3310b5c9dae1dae416e8abc8405-subset;src:url(/fonts/bca6d3310b5c9dae1dae416e8abc8405-subset.woff2) format("woff2"),url(/fonts/bca6d3310b5c9dae1dae416e8abc8405-subset.woff) format("woff");font-weight:400;font-style:normal}@font-face{font-family:bca6d3310b5c9dae1dae416e8abc8405-subset;src:url(/fonts/bca6d3310b5c9dae1dae416e8abc8405-subset.woff2) format("woff2"),url(/fonts/bca6d3310b5c9dae1dae416e8abc8405-subset.woff) format("woff");font-weight:700;font-style:normal}body,h1{font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif}.btn,h2{font-family:bca6d3310b5c9dae1dae416e8abc8405-subset,bca6d3310b5c9dae1dae416e8abc8405,Helvetica,Arial,sans-serif}
+</style>
+        
+        <link rel="stylesheet" href="/css/main.purged.min.css?ref=1721900287">
+
+        <style>
+            
+            
+                .c-h1,h1{font-size:3rem;margin-bottom:2rem;line-height:1.25}@media all and (min-width:1200px){.c-h1,h1{font-size:4.25rem}}.c-h1-long,h1-long{font-size:2.5rem;margin-bottom:2rem;line-height:1.25}@media all and (min-width:1200px){.c-h1-long,h1-long{font-size:3.625rem}}.c-h2,h2{font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;font-size:2.375rem;line-height:1.25;margin-bottom:1.5rem}@media all and (min-width:1200px){.c-h2,h2{font-size:3.25rem;margin-bottom:2rem}}.c-h3,h3{font-family:bca6d3310b5c9dae1dae416e8abc8405-subset,bca6d3310b5c9dae1dae416e8abc8405,Helvetica,Arial,sans-serif;font-size:1.4375rem;font-weight:700;line-height:1.25;margin-bottom:1rem}@media all and (min-width:1200px){.c-h3,h3{font-size:2rem;margin-bottom:1.5rem}}.c-h4,h4{font-family:bca6d3310b5c9dae1dae416e8abc8405-subset,bca6d3310b5c9dae1dae416e8abc8405,Helvetica,Arial,sans-serif;font-size:1.125rem;line-height:1.25;margin-bottom:1rem}@media all and (min-width:1200px){.c-h4,h4{font-size:1.3125rem;margin-bottom:1.5rem}}.c-h5,h5{font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;font-size:1.125rem;line-height:1.25;margin-bottom:1rem}@media all and (min-width:1200px){.c-h5,h5{font-size:1.25rem;margin-bottom:1.5rem}}.c-h1__invert,.c-h2__invert,.c-h3__invert,.c-h4__invert,.c-h5__invert,.c-h6__invert{color:#fff}.c-h3-h2{font-family:bca6d3310b5c9dae1dae416e8abc8405-subset,bca6d3310b5c9dae1dae416e8abc8405,Helvetica,Arial,sans-serif;font-size:1.4375rem;font-weight:700;line-height:1.25;margin-bottom:1rem}@media all and (min-width:992px){.c-h3-h2{font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;font-size:2.375rem;font-weight:unset;line-height:1.25;margin-bottom:1.5rem}}@media all and (min-width:1200px){.c-h3-h2{font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;font-size:3.25rem;line-height:1.25;margin-bottom:2rem}}.c-suptitle{font-weight:600;font-size:.8125rem;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;color:#ed26b7;text-transform:uppercase;letter-spacing:1px;margin-bottom:.75rem}.c-suptitle--dark{color:#ed26b7}.c-smalltitle{font-size:1rem;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;color:rgba(28,13,63,.6);text-transform:uppercase;margin-bottom:1.875rem}@media all and (min-width:1200px){.c-smalltitle{font-size:1.125rem}}@media all and (min-width:1800px){.c-smalltitle{font-size:1.375rem;margin-bottom:2.5rem}}.c-pretitle{font-size:1.125rem;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;line-height:1.25;margin-bottom:1rem}@media all and (min-width:1200px){.c-pretitle{font-size:1.3125rem;margin-bottom:1.5rem}}.c-pretitle__sm{font-size:.875rem;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;line-height:1.25;margin-bottom:1rem}@media all and (min-width:1200px){.c-pretitle__sm{margin-bottom:1.5rem}}.c-subtitle{font-size:1rem;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;margin-bottom:1.875rem}@media all and (min-width:1200px){.c-subtitle{font-size:1.125rem}}@media all and (min-width:1800px){.c-subtitle{font-size:1.375rem;margin-bottom:2.5rem}}.c-cardtitle{font-size:16px;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;margin-bottom:1.25rem}@media all and (min-width:1200px){.c-cardtitle{font-size:24px}}@media all and (min-width:1800px){.c-cardtitle{font-size:30px;margin-bottom:1.875rem}}.c-footnotes{font-size:.75rem;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;opacity:.5;margin-bottom:1.875rem}@media all and (min-width:1200px){.c-footnotes{font-size:.875rem}}@media all and (min-width:1800px){.c-footnotes{font-size:1rem;margin-bottom:2.5rem}}.c-microfootnotes{font-size:.6875rem;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;opacity:.5;margin-bottom:1.25rem}@media all and (min-width:1200px){.c-microfootnotes{font-size:.8125rem}}@media all and (min-width:1800px){.c-microfootnotes{font-size:.875rem;margin-bottom:1.875rem}}.c-titleimgthumbs{font-size:.875rem;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif}@media all and (min-width:1200px){.c-titleimgthumbs{font-size:1.125rem}}@media all and (min-width:1800px){.c-titleimgthumbs{font-size:1.375rem}}.c-titletagteaser{font-size:.6875rem;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif}@media all and (min-width:1200px){.c-titletagteaser{font-size:.8125rem}}@media all and (min-width:1800px){.c-titletagteaser{font-size:.875rem}}.c-info-time{font-size:1rem;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif}@media all and (min-width:768px){.c-info-time{font-size:1.125rem}}.c-title-quote{font-size:1.125rem;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif}@media all and (min-width:1200px){.c-title-quote{font-size:2rem}}@media all and (min-width:1800px){.c-title-quote{font-size:2rem}}.c-title-quote span{font-size:1rem}@media all and (min-width:1200px){.c-title-quote span{font-size:1.125rem}}.c-title__w-restricted-short{display:block;margin:0 auto;max-width:600px}@media all and (min-width:1800px){.c-title__w-restricted-short{max-width:800px}}.c-title__w-restricted-long{display:block;margin-top:0;margin-left:auto;margin-right:auto;max-width:800px}@media all and (min-width:1800px){.c-title__w-restricted-long{max-width:1000px}}.c-title__w-restricted-x-long{display:block;margin-top:0;margin-left:auto;margin-right:auto;max-width:800px}@media all and (min-width:1200px){.c-title__w-restricted-x-long{max-width:1000px}}@media all and (min-width:1800px){.c-title__w-restricted-x-long{max-width:1200px}}.hs-fieldtype-select{position:relative}.hs-fieldtype-select .input::before{content:'';position:absolute;top:1rem;right:.625rem;width:21px;height:11px;background-image:url(../img/icons/chevron-down-purple.svg);background-repeat:no-repeat;background-position:center;z-index:5;pointer-events:none;line-height:0}.p-bloghub{padding-top:2.5rem}@media all and (min-width:1200px){.p-bloghub{padding-top:3.75rem}}@media all and (min-width:1800px){.p-bloghub{padding-top:80px}}.p-bloghub__header .c-h1{margin-bottom:3.75rem}.p-bloghub__filter{margin-bottom:2.5rem}@media all and (min-width:1200px){.p-bloghub__filter{margin-bottom:3.75rem}}@media all and (min-width:1800px){.p-bloghub__filter{margin-bottom:80px}}.p-bloghub__tags{margin-bottom:.625rem}@media all and (min-width:768px){.p-bloghub__tags{margin-bottom:1.25rem}}.p-bloghub-image{display:block;border:1px solid #dfe4e8}.p-bloghub-feat{margin-bottom:2.5rem}@media all and (min-width:1200px){.p-bloghub-feat{margin-bottom:3.75rem}}@media all and (min-width:1800px){.p-bloghub-feat{margin-bottom:80px}}.p-bloghub-feat__box__img{margin-bottom:1.875rem}@media all and (min-width:1800px){.p-bloghub-feat__box__img{margin-bottom:2.5rem}}.p-bloghub-pop{margin-bottom:2.5rem}@media all and (min-width:1200px){.p-bloghub-pop{margin-bottom:3.75rem}}@media all and (min-width:1800px){.p-bloghub-pop{margin-bottom:80px}}.p-bloghub-pop__box-1,.p-bloghub-pop__box-2,.p-bloghub-pop__box-3{margin-bottom:2.5rem}@media all and (min-width:1200px){.p-bloghub-pop__box-1,.p-bloghub-pop__box-2,.p-bloghub-pop__box-3{margin-bottom:3.75rem}}@media all and (min-width:1800px){.p-bloghub-pop__box-1,.p-bloghub-pop__box-2,.p-bloghub-pop__box-3{margin-bottom:80px}}@media all and (max-width:767px){.p-bloghub-pop__box-1 .box-img,.p-bloghub-pop__box-2 .box-img,.p-bloghub-pop__box-3 .box-img{margin-bottom:1.25rem}}.p-bloghub-community{margin-bottom:2.5rem}@media all and (min-width:1200px){.p-bloghub-community{margin-bottom:3.75rem}}@media all and (min-width:1800px){.p-bloghub-community{margin-bottom:80px}}.p-bloghub-community .c-blog-author-info,.p-bloghub-community a{margin-left:5rem;display:block}
+            
+        </style>
+
+        
+        <link rel="alternate" href="/feed.xml" title="GoodData.com" type="application/atom+xml">
+
+        
+        
+
+
+        
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:site" content="@gooddata">
+        <meta name="twitter:creator" content="@gooddata"/>
+
+        
+        
+
+        
+        <meta property="og:url" content="https://www.gooddata.com/blog/page-6/"/>
+        <meta property="og:site_name" content="GoodData">
+        <meta property="og:title" content="Blog"/>
+        <meta property="og:description" content="GoodData is a composable data and analytics platform that can be run in a public or private cloud, allowing you to build rich analytics for your end users."/>
+        <meta property="og:image" content="https://www.gooddata.com/img/generic/gd-og.webp"/>
+        <meta property="og:image:alt" content="Blog" />
+
+        
+        <meta name="facebook-domain-verification" content="4tc8kma9fxdd2ydwehrxdm2k3za1ii" />
+
+        
+        
+            <meta name="robots" content="index, follow">
+            <link rel="canonical" href="https://www.gooddata.com/blog/page-6/" />
+        
+
+        
+            <meta name="AddSearchBot" content="follow, noindex">
+        
+
+        
+        
+
+        
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+        
+        <script src="/js/vendors/gtm.js" defer></script>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/combine/npm/addsearch-js-client@0.8.12/dist/addsearch-js-client.min.js,npm/addsearch-search-ui@0.8.8/dist/addsearch-search-ui.min.js"></script>
+    </head>
+
+    
+        <body>
+    
+
+        
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5G49LK" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+
+        
+        
+            
+    
+
+<header class="c-siteheader-header no-promo"><div class="c-siteheader-top " id="siteHeaderTop">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-lg-8">
+                        <a class="c-banner-promo__collapse" type="button" id="promo-banner-collapse">
+                            <div class="c-banner-promo__collapse__icon"></div>
+                        </a>
+                        
+                        
+
+
+    
+
+        <div id="promoCarouselControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            
+            <button id="carousel-control-prev" class="carousel-control-prev" type="button" data-bs-target="#promoCarouselControls" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button id="carousel-control-next" class="carousel-control-next" type="button" data-bs-target="#promoCarouselControls" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>
+            </button>
+            
+            <div class="carousel-inner">
+                <div class="flex-spacer"></div>
+                
+                    <a href="https://www.gooddata.com/resources/gartner-magic-quadrant-for-analytics-and-business-intelligence-platforms/" id="promo-slide-gartner(r)-magic-quadranttm-for-analytics-and-bi-platforms" class="carousel-item active">
+                        <div class="carousel-item__content">
+                            <div class="carousel-item__content__first">
+                                <span class="carousel-item__label">Analyst Report</span>
+                            </div>
+                            <div class="carousel-item__content__last">
+                                <span class="carousel-item__title">
+                                    <img src="/img/icons/megaphone.svg" alt="Megaphone icon" width="28" height="25" />
+                                    Gartner® Magic Quadrant™ for Analytics and BI Platforms
+                                </span>
+                                <span class="carousel-item__cta">Read the report</span>
+                            </div>
+                        </div>
+                    </a>
+                
+                    <a href="https://www.gooddata.com/resources/your-guide-to-monetizing-data-with-use-case/" id="promo-slide-unlock-revenue-streams:-your-guide-to-monetizing-data" class="carousel-item">
+                        <div class="carousel-item__content">
+                            <div class="carousel-item__content__first">
+                                <span class="carousel-item__label">Webinar</span>
+                            </div>
+                            <div class="carousel-item__content__last">
+                                <span class="carousel-item__title">
+                                    <img src="/img/icons/megaphone.svg" alt="Megaphone icon" width="28" height="25" />
+                                    Unlock Revenue Streams: Your Guide to Monetizing Data
+                                </span>
+                                <span class="carousel-item__cta">Register now!</span>
+                            </div>
+                        </div>
+                    </a>
+                
+            </div>
+            
+        </div>
+
+    
+    
+
+                    </div>
+                    <div class="col col-lg-4 d-none d-lg-block text-end c-siteheader-top__menu">
+                        <ul class="c-siteheader-top__menu__ul">
+                            
+                                
+                                    <li>
+                                        <a
+                                            href="/docs/cloud/"
+                                            id="main-menu-top-documentation"
+                                            target="_blank"
+                                            
+                                        >Documentation</a>
+                                    </li>
+                                
+                            
+                                
+                                    <li>
+                                        <a
+                                            href="https://support.gooddata.com/hc/en-us"
+                                            id="main-menu-top-support"
+                                            target="_blank"
+                                            
+                                        >Support</a>
+                                    </li>
+                                
+                            
+                                
+                                    <li>
+                                        <a
+                                            href="https://registration.cloud.gooddata.com/login"
+                                            id="main-menu-top-login"
+                                            target="_self"
+                                            
+                                        >Login</a>
+                                    </li>
+                                
+                            
+                                
+                                    <li>
+                                        <a
+                                            href="#"
+                                            id="main-menu-top-search"
+                                            
+                                            
+                                                
+                                                    data-bs-toggle="modal"
+                                                
+                                                    data-bs-target="#searchDialog"
+                                                
+                                            
+                                        ></a>
+                                    </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <div class="c-siteheader" id="gd-header">
+        <nav class="navbar navbar-expand-xl navbar-light">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="/" id="gooddata-home">
+                        <img src="/img/generic/logo-gd-b.svg" alt="GoodData" class="navbar-logo navbar-logo__default" width="182" height="40" />
+                        <img src="/img/generic/logo-gd-w.svg" alt="GoodData" class="navbar-logo navbar-logo__invert" width="182" height="40" />
+                    </a>
+                </div>
+                <div>
+                    
+                        
+                            <button
+                                href="#"
+                                id="main-menu-top-mobile-search"
+                                class="navbar-mobile-button d-lg-none"
+                                
+                                
+                                    
+                                        data-bs-toggle="modal"
+                                    
+                                        data-bs-target="#searchDialog"
+                                    
+                                
+                            ></button>
+                        
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteHeader"
+                            aria-controls="siteHeader" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="siteHeader">
+                    
+                    
+
+                        
+                        
+                            <ul class="navbar-nav justify-content-center" id="navMain">
+                        
+
+                        
+                        <li class="nav-item"
+                            id="navItem-platform">
+
+                            
+                            
+                                <a class="nav-link "
+                                id="main-menu-platform"
+                                href="/platform/">Product</a>
+                            
+                        </li>
+
+                        
+                    
+
+                        
+                        
+
+                        
+                        <li class="nav-item nav-item__has-submenu"
+                            id="navItem-solutions">
+
+                            
+                            
+                                <button
+                                    type="button"
+                                    id="main-menu-solutions"
+                                    class="nav-link "
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#navSubitem-solutions"
+                                    role="button"
+                                    aria-expanded="false"
+                                    aria-controls="navSubitem-solutions"
+                                >
+                                    Solutions
+                                </button>
+
+                                
+                                <div class="c-siteheader__submenu">
+
+                                    <div class="container">
+
+                                        
+
+                                            
+                                                <div class="c-siteheader__l1 l1-first collapse" id="navSubitem-solutions" data-bs-parent=".c-siteheader">
+                                                    <div class="row c-siteheader__l1__row__4">
+                                            
+
+                                            
+                                            
+                                                <div class="col-xs-12 c-siteheader__l1__sub pb-0">
+                                                    
+                                                        <span class="c-siteheader__l1__title-feat">Solutions overview</span>
+<span class="c-siteheader__l1__subtitle">GoodData is changing the dynamics of how organisations interact with data.</span>
+<a class="c-siteheader__l1__link-feat"
+    id="main-menu-solutions-solutions-overview"
+    href="/solutions/" >
+    Learn more
+</a>
+<hr class="show-desk">
+                                                    
+                                                </div>
+                                            
+                                            
+                                                <div class="col-md-3 pe-xl-0 c-siteheader__l1__sub">
+                                                    
+                                                        
+    <span class="c-siteheader__l1__title">Industry</span>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-solutions-software-companies"
+        href="/embedded-analytics-software-companies/" >
+        Software companies
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-solutions-e-commerce"
+        href="/solutions/ecommerce/" >
+        E-commerce / Retail
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-solutions-financial-services"
+        href="/solutions/financial-services/" >
+        Financial services
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-solutions-healthcare"
+        href="/solutions/healthcare/" >
+        Healthcare
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link-all c-link__arrow"
+        id="main-menu-solutions-industry-see-all"
+        href="/solutions/#industry" >
+        See all
+    </a>
+    
+
+                                                    
+                                                </div>
+                                            
+                                            
+                                                <div class="col-md-3 ps-xl-4 pe-xl-0 c-siteheader__l1__sub">
+                                                    
+                                                        
+    <span class="c-siteheader__l1__title">Departments</span>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-solutions-customer-services"
+        href="/solutions/customer-services/" >
+        Customer service
+    </a>
+    
+
+                                                    
+                                                </div>
+                                            
+                                            
+                                                <div class="col-md-3 ps-xl-1 pe-xl-0 c-siteheader__l1__sub">
+                                                    
+                                                        
+    <span class="c-siteheader__l1__title">Product use cases</span>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-solutions-embedded-analytics"
+        href="/embedded-analytics/" >
+        Embedded analytics
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-solutions-data-visualization"
+        href="/platform/data-visualization/" >
+        Data visualization
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-solutions-analytics-lake"
+        href="/solutions/analytics-lake/" >
+        Analytics Lake
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-solutions-data-monetization"
+        href="/solutions/data-monetization/" >
+        Data Monetization
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link-all c-link__arrow"
+        id="main-menu-solutions-product-use-cases-see-all"
+        href="/solutions/#product-use-cases" >
+        See all
+    </a>
+    
+
+                                                    
+                                                </div>
+                                            
+                                            
+                                                <div class="col-md-3 ps-xl-1 pe-xl-0 c-siteheader__l1__sub">
+                                                    
+                                                        
+    <span class="c-siteheader__l1__title">Services</span>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-solutions-services"
+        href="/solutions/professional-services/" >
+        Professional services
+    </a>
+    
+
+                                                    
+                                                </div>
+                                            
+
+                                            
+                                                    </div>
+                                                </div>
+
+                                            
+                                        
+                                    </div>
+
+                                </div>
+                            
+                        </li>
+
+                        
+                    
+
+                        
+                        
+
+                        
+                        <li class="nav-item nav-item__has-submenu"
+                            id="navItem-resources">
+
+                            
+                            
+                                <button
+                                    type="button"
+                                    id="main-menu-resources"
+                                    class="nav-link "
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#navSubitem-resources"
+                                    role="button"
+                                    aria-expanded="false"
+                                    aria-controls="navSubitem-resources"
+                                >
+                                    Resources
+                                </button>
+
+                                
+                                <div class="c-siteheader__submenu">
+
+                                    <div class="container">
+
+                                        
+
+                                            
+                                                <div class="c-siteheader__l1 l1-first collapse" id="navSubitem-resources" data-bs-parent=".c-siteheader">
+                                                    <div class="row c-siteheader__l1__row__3">
+                                            
+
+                                            
+                                            
+                                            
+                                                <div class="col-md-4 c-siteheader__l1__sub">
+                                                    
+                                                        
+    <span class="c-siteheader__l1__title">Learn</span>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-learn"
+        href="/learn/" >
+        Learning hub
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-documentation"
+        href="/docs/cloud/" >
+        Documentation
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-university"
+        href="https://university.gooddata.com/" >
+        University
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-community"
+        href="https://community.gooddata.com/" >
+        Community
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-slack"
+        href="/slack/" >
+        Slack channel
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-support"
+        href="https://support.gooddata.com/hc/en-us" >
+        Support
+    </a>
+    
+
+                                                    
+                                                </div>
+                                            
+                                            
+                                                <div class="col-md-4 c-siteheader__l1__sub">
+                                                    
+                                                        
+    <span class="c-siteheader__l1__title">Resources</span>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-resources"
+        href="/resources/" >
+        All resources
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-case-studies"
+        href="/resources/tags/case-studies/" >
+        Case studies
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-whitepapers"
+        href="/resources/tags/whitepapers/" >
+        Whitepapers
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-e-books"
+        href="/resources/tags/ebooks/" >
+        E-books
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-webinars"
+        href="/resources/tags/webinars/" >
+        Webinars
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-blog"
+        href="/blog/" >
+        Blog
+    </a>
+    
+
+                                                    
+                                                </div>
+                                            
+                                            
+                                                <div class="col-md-4 c-siteheader__l1__sub">
+                                                    
+                                                        
+    <span class="c-siteheader__l1__title">Developers</span>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-python-sdk"
+        href="/docs/python-sdk/latest/" >
+        Python SDK
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-react-sdk"
+        href="/docs/cloud/api-and-sdk/react-sdk/" >
+        React SDK
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-api-references"
+        href="/docs/cloud/api-and-sdk/api/api_reference_all/" >
+        API References
+    </a>
+    
+
+                                                    
+                                                </div>
+                                            
+                                            
+
+                                            
+                                                    </div>
+                                                </div>
+
+                                            
+                                        
+                                    </div>
+
+                                </div>
+                            
+                        </li>
+
+                        
+                    
+
+                        
+                        
+
+                        
+                        <li class="nav-item"
+                            id="navItem-partners">
+
+                            
+                            
+                                <a class="nav-link "
+                                id="main-menu-partners"
+                                href="/partners/">Partners</a>
+                            
+                        </li>
+
+                        
+                    
+
+                        
+                        
+
+                        
+                        <li class="nav-item nav-item__has-submenu"
+                            id="navItem-company">
+
+                            
+                            
+                                <button
+                                    type="button"
+                                    id="main-menu-company"
+                                    class="nav-link "
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#navSubitem-company"
+                                    role="button"
+                                    aria-expanded="false"
+                                    aria-controls="navSubitem-company"
+                                >
+                                    Company
+                                </button>
+
+                                
+                                <div class="c-siteheader__submenu">
+
+                                    <div class="container">
+
+                                        
+
+                                            
+                                                <div class="c-siteheader__l1 l1-first collapse" id="navSubitem-company" data-bs-parent=".c-siteheader">
+                                                    <div class="row c-siteheader__l1__row__1">
+                                            
+
+                                            
+                                            
+                                            
+                                                <div class="col-md-4 c-siteheader__l1__sub">
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-company-about-us"
+        href="/company/" >
+        About us
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-company-customers"
+        href="/customers/" >
+        Customers
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-company-careers"
+        href="/company/careers/" >
+        Careers
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-company-events"
+        href="/resources/tags/events/" >
+        Events
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-company-newsroom"
+        href="/in-the-news/" >
+        Newsroom
+    </a>
+    
+
+                                                    
+                                                </div>
+                                            
+                                            
+                                            
+                                            
+
+                                            
+                                                    </div>
+                                                </div>
+
+                                            
+                                        
+                                    </div>
+
+                                </div>
+                            
+                        </li>
+
+                        
+                    
+
+                        
+                        
+
+                        
+                        <li class="nav-item"
+                            id="navItem-pricing">
+
+                            
+                            
+                                <a class="nav-link "
+                                id="main-menu-pricing"
+                                href="/pricing/">Pricing</a>
+                            
+                        </li>
+
+                        
+                            </ul>
+                        
+                    
+                    
+                        
+                            <div class="c-login d-flex">
+                                <div class="nav-login-cta">
+                                    <a href="/request-a-demo/" id="main-menu-request-a-demo"
+                                    class="btn btn-sm c-btn-primary">Request a demo</a>
+                                </div>
+                            </div>
+                        
+                    
+                </div>
+            </div>
+        </nav>
+        <script>document.addEventListener('DOMContentLoaded', function() {setTimeout(function() {$(".navbar img").removeAttr("loading")}, 1000)});</script>
+    </div>
+
+    
+        <div class="c-search-dialog-modal modal fade" id="searchDialog" tabindex="-1" aria-labelledby="searchDialogLabel" aria-hidden="true">
+    <div class="c-search-dialog modal-dialog">
+        <div class="c-search-dialog-content modal-content">
+            <div class="c-search-dialog-header modal-header flex-column align-items-start">
+                <div class="c-search-dialog-searchbar-wrapper">
+                    <div id="searchfield-container" class="c-search-dialog-searchbar"></div>
+                    <button type="button" class="c-search-dialog-close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="adds-filter-wrapper">
+                    <div id="tabs"></div>
+                </div>
+            </div>
+            <div class="c-search-dialog-body modal-body">
+                <div id="searchresults-container" class="c-search-dialog-searchresults-container"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>const searchDialogData = {"searchfieldPlaceholder":"What are you looking for?","searchResultsPlaceholder":{"title":"Try searching for","queries":["What is multitenancy?","GoodData pricing","Data monetization","Hospitality solutions","Embedded analytics"]},"searchResults":{"title":"Top Results","resultsPageLink":"All search results for <strong>{{keyword}}</strong>"},"recentSearchesTitle":"Your Recent Searches"}</script>
+<script src="/js/modules/search-common.js"></script>
+<script src="/js/modules/search-dialog.js"></script>
+
+    
+</header>
+
+        
+
+        
+        
+
+    <main class="c-pagecontent">
+
+        <div class="p-bloghub">
+
+            
+                
+<div class="c-searchbar field collapse" id="bloghub-searchbar" data-addsearch="exclude">
+        <div class="container">
+            <a href="#" class="c-searchbar__icon" id="searchbar-x" data-bs-toggle="collapse" data-bs-target="#bloghub-searchbar" aria-expanded="false" aria-controls="bloghub-searchbar" class="float-end">
+                <img src="/img/icons/x-blue.svg" alt="Close search" />
+            </a>
+            <p class="c-h2 c-smalltitle">Search blogs</p>
+            <img src="/img/icons/magnifier.svg" alt="Search" />
+            <input class="c-searchbar__input" type="search" placeholder="What are you looking for" id="searchField" autocomplete="off" autofocus>
+        </div>
+        <div class="c-searchbar__results" id="resultsContainer">
+            <div class="container">
+                <p class="c-h2 c-smalltitle" id="resultsMK">Matching keywords</p>
+                <p class="c-h2 c-smalltitle" id="resultsMB">Matching resources</p>
+                <ol id="searchResults"></ol>
+                <div id="noResults" class="c-footnotes text-center">No results</div>
+            </div>
+        </div>
+    </div>
+
+
+                
+                <div class="container">
+
+        
+        <header class="p-bloghub__header">
+            <div class="row">
+                <div class="col-10 col-md-8">
+                    <h1 class="c-h1-long">The GoodData Blog</h1>
+                </div>
+                <div class="col-2 col-md-4">
+                    <button id="searchbar-btn" class="btn c-searchbar__btn c-mute-link" type="button" data-bs-toggle="collapse" data-bs-target="#bloghub-searchbar" aria-expanded="false" aria-controls="bloghub-searchbar" aria-label="Search">
+                        <img src="/img/icons/magnifier.svg" alt="Search" />
+                        <span class="c-h4">Search</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+    </div>
+
+
+                <div class="container">
+
+                    
+                    <hr>
+
+                    
+
+                    
+                    <p class="c-smalltitle">All posts</p>
+
+                    
+                    
+                        
+
+<div class="row display-flex">
+
+<div class="col-md-6 col-lg-4 col-xxl-3">
+    <article class="c-teaser">
+        <div class="c-teaser__imagelink-container">
+            <a href="/blog/how-to-build-analytics-with-apache-arrow/" class="c-teaser__imagelink p-bloghub-image">
+                <img src="/img/blog/_540x284/apache_arrow_image5.png.webp"
+                    srcset="
+                        /img/blog/_150x79/apache_arrow_image5.png.webp 150w,
+                        /img/blog/_340x179/apache_arrow_image5.png.webp 340w,
+                        /img/blog/_540x284/apache_arrow_image5.png.webp 540w"
+                    sizes="
+                        (min-width: 1800px) 390px,
+                        (min-width: 1400px) 290px,
+                        (min-width: 1200px) 340px,
+                        (min-width: 992px) 280px,
+                        (min-width: 768px) 320px,
+                        (min-width: 576px) 150px,
+                        calc(30vw - 12px)"
+                    loading="lazy" width="100%" height="auto"
+                    class="o-fluidimage c-teaser__image" alt="How To Build Analytics With Apache Arrow?"
+                    onerror="this.onerror=null;this.srcset='/img/generic/img-150-placeholder.webp 150w, /img/generic/img-340-placeholder.webp 340w, /img/generic/img-540-placeholder.webp 540w';"/>
+            </a>
+        </div>
+        <div class="c-teaser__container">
+        <a class="c-teaser__link" href="/blog/how-to-build-analytics-with-apache-arrow/">
+            <h3 class="c-teaser__link__title c-h4 c-text-ellipsis">
+            How To Build Analytics With Apache Arrow?
+            </h3>
+        </a>
+        <div class="p-bloghub__tags">
+            
+                <a href="/resources/tags/business-intelligence/" class="c-tags-pill"><span>Business Intelligence</span></a>
+            
+                <a href="/resources/tags/bi-trends/" class="c-tags-pill"><span>BI Trends</span></a>
+            
+                <a href="/resources/tags/developers/" class="c-tags-pill"><span>Developers</span></a>
+            
+        </div>
+        <p class="c-blog-author-info">Patrik Braborec | 4 min read</p>
+        </div>
+        <div class="c-teaser__active"></div>
+    </article>
+</div>
+
+
+
+
+
+                    
+                        
+
+
+
+<div class="col-md-6 col-lg-4 col-xxl-3">
+    <article class="c-teaser">
+        <div class="c-teaser__imagelink-container">
+            <a href="/blog/gooddata-new-vision-analytics-bi/" class="c-teaser__imagelink p-bloghub-image">
+                <img src="/img/blog/_540x284/visionary-article_cover-01.png.webp"
+                    srcset="
+                        /img/blog/_150x79/visionary-article_cover-01.png.webp 150w,
+                        /img/blog/_340x179/visionary-article_cover-01.png.webp 340w,
+                        /img/blog/_540x284/visionary-article_cover-01.png.webp 540w"
+                    sizes="
+                        (min-width: 1800px) 390px,
+                        (min-width: 1400px) 290px,
+                        (min-width: 1200px) 340px,
+                        (min-width: 992px) 280px,
+                        (min-width: 768px) 320px,
+                        (min-width: 576px) 150px,
+                        calc(30vw - 12px)"
+                    loading="lazy" width="100%" height="auto"
+                    class="o-fluidimage c-teaser__image" alt="Our Vision for the Next Generation of BI and Analytics"
+                    onerror="this.onerror=null;this.srcset='/img/generic/img-150-placeholder.webp 150w, /img/generic/img-340-placeholder.webp 340w, /img/generic/img-540-placeholder.webp 540w';"/>
+            </a>
+        </div>
+        <div class="c-teaser__container">
+        <a class="c-teaser__link" href="/blog/gooddata-new-vision-analytics-bi/">
+            <h3 class="c-teaser__link__title c-h4 c-text-ellipsis">
+            Our Vision for the Next Generation of BI and Analytics
+            </h3>
+        </a>
+        <div class="p-bloghub__tags">
+            
+                <a href="/resources/tags/artificial-intelligence/" class="c-tags-pill"><span>Artificial Intelligence</span></a>
+            
+                <a href="/resources/tags/bi-trends/" class="c-tags-pill"><span>BI Trends</span></a>
+            
+        </div>
+        <p class="c-blog-author-info">Ryan Dolley | 3 min read</p>
+        </div>
+        <div class="c-teaser__active"></div>
+    </article>
+</div>
+
+
+
+
+
+                    
+                        
+
+
+
+<div class="col-md-6 col-lg-4 col-xxl-3">
+    <article class="c-teaser">
+        <div class="c-teaser__imagelink-container">
+            <a href="/blog/gooddata-way-to-artificial-business-intelligence-abi/" class="c-teaser__imagelink p-bloghub-image">
+                <img src="/img/blog/_540x284/abi_cover_01-1-.png.webp"
+                    srcset="
+                        /img/blog/_150x79/abi_cover_01-1-.png.webp 150w,
+                        /img/blog/_340x179/abi_cover_01-1-.png.webp 340w,
+                        /img/blog/_540x284/abi_cover_01-1-.png.webp 540w"
+                    sizes="
+                        (min-width: 1800px) 390px,
+                        (min-width: 1400px) 290px,
+                        (min-width: 1200px) 340px,
+                        (min-width: 992px) 280px,
+                        (min-width: 768px) 320px,
+                        (min-width: 576px) 150px,
+                        calc(30vw - 12px)"
+                    loading="lazy" width="100%" height="auto"
+                    class="o-fluidimage c-teaser__image" alt="The GoodData Way to Artificial Business Intelligence (ABI)"
+                    onerror="this.onerror=null;this.srcset='/img/generic/img-150-placeholder.webp 150w, /img/generic/img-340-placeholder.webp 340w, /img/generic/img-540-placeholder.webp 540w';"/>
+            </a>
+        </div>
+        <div class="c-teaser__container">
+        <a class="c-teaser__link" href="/blog/gooddata-way-to-artificial-business-intelligence-abi/">
+            <h3 class="c-teaser__link__title c-h4 c-text-ellipsis">
+            The GoodData Way to Artificial Business Intelligence (ABI)
+            </h3>
+        </a>
+        <div class="p-bloghub__tags">
+            
+                <a href="/resources/tags/beyond-bi/" class="c-tags-pill"><span>Beyond BI</span></a>
+            
+                <a href="/resources/tags/developers/" class="c-tags-pill"><span>Developers</span></a>
+            
+        </div>
+        <p class="c-blog-author-info">Jan Soubusta | 6 min read</p>
+        </div>
+        <div class="c-teaser__active"></div>
+    </article>
+</div>
+
+
+
+
+
+                    
+                        
+
+
+
+<div class="col-md-6 col-lg-4 col-xxl-3">
+    <article class="c-teaser">
+        <div class="c-teaser__imagelink-container">
+            <a href="/blog/alerts-are-dead-long-live-data-driven-actions/" class="c-teaser__imagelink p-bloghub-image">
+                <img src="/img/blog/_540x284/how-to-build-analytics-with-apache-arrow.png.webp"
+                    srcset="
+                        /img/blog/_150x79/how-to-build-analytics-with-apache-arrow.png.webp 150w,
+                        /img/blog/_340x179/how-to-build-analytics-with-apache-arrow.png.webp 340w,
+                        /img/blog/_540x284/how-to-build-analytics-with-apache-arrow.png.webp 540w"
+                    sizes="
+                        (min-width: 1800px) 390px,
+                        (min-width: 1400px) 290px,
+                        (min-width: 1200px) 340px,
+                        (min-width: 992px) 280px,
+                        (min-width: 768px) 320px,
+                        (min-width: 576px) 150px,
+                        calc(30vw - 12px)"
+                    loading="lazy" width="100%" height="auto"
+                    class="o-fluidimage c-teaser__image" alt="Alerts Are Dead: Long Live Data-Driven Actions"
+                    onerror="this.onerror=null;this.srcset='/img/generic/img-150-placeholder.webp 150w, /img/generic/img-340-placeholder.webp 340w, /img/generic/img-540-placeholder.webp 540w';"/>
+            </a>
+        </div>
+        <div class="c-teaser__container">
+        <a class="c-teaser__link" href="/blog/alerts-are-dead-long-live-data-driven-actions/">
+            <h3 class="c-teaser__link__title c-h4 c-text-ellipsis">
+            Alerts Are Dead: Long Live Data-Driven Actions
+            </h3>
+        </a>
+        <div class="p-bloghub__tags">
+            
+                <a href="/resources/tags/beyond-bi/" class="c-tags-pill"><span>Beyond BI</span></a>
+            
+                <a href="/resources/tags/developers/" class="c-tags-pill"><span>Developers</span></a>
+            
+        </div>
+        <p class="c-blog-author-info">Miroslav Koldus | 5 min read</p>
+        </div>
+        <div class="c-teaser__active"></div>
+    </article>
+</div>
+
+
+
+
+
+                    
+                        
+
+
+
+<div class="col-md-6 col-lg-4 col-xxl-3">
+    <article class="c-teaser">
+        <div class="c-teaser__imagelink-container">
+            <a href="/blog/machine-learning-in-dashboards/" class="c-teaser__imagelink p-bloghub-image">
+                <img src="/img/blog/_540x284/machine-learning-in-dashboards.png.webp"
+                    srcset="
+                        /img/blog/_150x79/machine-learning-in-dashboards.png.webp 150w,
+                        /img/blog/_340x179/machine-learning-in-dashboards.png.webp 340w,
+                        /img/blog/_540x284/machine-learning-in-dashboards.png.webp 540w"
+                    sizes="
+                        (min-width: 1800px) 390px,
+                        (min-width: 1400px) 290px,
+                        (min-width: 1200px) 340px,
+                        (min-width: 992px) 280px,
+                        (min-width: 768px) 320px,
+                        (min-width: 576px) 150px,
+                        calc(30vw - 12px)"
+                    loading="lazy" width="100%" height="auto"
+                    class="o-fluidimage c-teaser__image" alt="Machine Learning in Dashboards"
+                    onerror="this.onerror=null;this.srcset='/img/generic/img-150-placeholder.webp 150w, /img/generic/img-340-placeholder.webp 340w, /img/generic/img-540-placeholder.webp 540w';"/>
+            </a>
+        </div>
+        <div class="c-teaser__container">
+        <a class="c-teaser__link" href="/blog/machine-learning-in-dashboards/">
+            <h3 class="c-teaser__link__title c-h4 c-text-ellipsis">
+            Machine Learning in Dashboards
+            </h3>
+        </a>
+        <div class="p-bloghub__tags">
+            
+                <a href="/resources/tags/dashboard/" class="c-tags-pill"><span>Dashboard</span></a>
+            
+                <a href="/resources/tags/developers/" class="c-tags-pill"><span>Developers</span></a>
+            
+        </div>
+        <p class="c-blog-author-info">Štěpán Machovský | 5 min read</p>
+        </div>
+        <div class="c-teaser__active"></div>
+    </article>
+</div>
+
+
+
+
+
+                    
+                        
+
+
+
+<div class="col-md-6 col-lg-4 col-xxl-3">
+    <article class="c-teaser">
+        <div class="c-teaser__imagelink-container">
+            <a href="/blog/what-is-ai-in-analytics/" class="c-teaser__imagelink p-bloghub-image">
+                <img src="/img/blog/_540x284/what-is-ai-analytics_cover.png.webp"
+                    srcset="
+                        /img/blog/_150x79/what-is-ai-analytics_cover.png.webp 150w,
+                        /img/blog/_340x179/what-is-ai-analytics_cover.png.webp 340w,
+                        /img/blog/_540x284/what-is-ai-analytics_cover.png.webp 540w"
+                    sizes="
+                        (min-width: 1800px) 390px,
+                        (min-width: 1400px) 290px,
+                        (min-width: 1200px) 340px,
+                        (min-width: 992px) 280px,
+                        (min-width: 768px) 320px,
+                        (min-width: 576px) 150px,
+                        calc(30vw - 12px)"
+                    loading="lazy" width="100%" height="auto"
+                    class="o-fluidimage c-teaser__image" alt="What Is AI in Data Analytics?"
+                    onerror="this.onerror=null;this.srcset='/img/generic/img-150-placeholder.webp 150w, /img/generic/img-340-placeholder.webp 340w, /img/generic/img-540-placeholder.webp 540w';"/>
+            </a>
+        </div>
+        <div class="c-teaser__container">
+        <a class="c-teaser__link" href="/blog/what-is-ai-in-analytics/">
+            <h3 class="c-teaser__link__title c-h4 c-text-ellipsis">
+            What Is AI in Data Analytics?
+            </h3>
+        </a>
+        <div class="p-bloghub__tags">
+            
+                <a href="/resources/tags/artificial-intelligence/" class="c-tags-pill"><span>Artificial Intelligence</span></a>
+            
+                <a href="/resources/tags/business-intelligence/" class="c-tags-pill"><span>Business Intelligence</span></a>
+            
+        </div>
+        <p class="c-blog-author-info">Sandra Suszterova | 10 min read</p>
+        </div>
+        <div class="c-teaser__active"></div>
+    </article>
+</div>
+
+
+
+
+
+                    
+                        
+
+
+
+<div class="col-md-6 col-lg-4 col-xxl-3">
+    <article class="c-teaser">
+        <div class="c-teaser__imagelink-container">
+            <a href="/blog/how-to-build-data-analytics-using-llms-in-under-5-minutes/" class="c-teaser__imagelink p-bloghub-image">
+                <img src="/img/blog/_540x284/how-llms-change-everyday-analytics_-v1.jpg.webp"
+                    srcset="
+                        /img/blog/_150x79/how-llms-change-everyday-analytics_-v1.jpg.webp 150w,
+                        /img/blog/_340x179/how-llms-change-everyday-analytics_-v1.jpg.webp 340w,
+                        /img/blog/_540x284/how-llms-change-everyday-analytics_-v1.jpg.webp 540w"
+                    sizes="
+                        (min-width: 1800px) 390px,
+                        (min-width: 1400px) 290px,
+                        (min-width: 1200px) 340px,
+                        (min-width: 992px) 280px,
+                        (min-width: 768px) 320px,
+                        (min-width: 576px) 150px,
+                        calc(30vw - 12px)"
+                    loading="lazy" width="100%" height="auto"
+                    class="o-fluidimage c-teaser__image" alt="How to Build Data Analytics Using LLMs in Under 5 Minutes"
+                    onerror="this.onerror=null;this.srcset='/img/generic/img-150-placeholder.webp 150w, /img/generic/img-340-placeholder.webp 340w, /img/generic/img-540-placeholder.webp 540w';"/>
+            </a>
+        </div>
+        <div class="c-teaser__container">
+        <a class="c-teaser__link" href="/blog/how-to-build-data-analytics-using-llms-in-under-5-minutes/">
+            <h3 class="c-teaser__link__title c-h4 c-text-ellipsis">
+            How to Build Data Analytics Using LLMs in Under 5 Minutes
+            </h3>
+        </a>
+        <div class="p-bloghub__tags">
+            
+                <a href="/resources/tags/artificial-intelligence/" class="c-tags-pill"><span>Artificial Intelligence</span></a>
+            
+                <a href="/resources/tags/developers/" class="c-tags-pill"><span>Developers</span></a>
+            
+        </div>
+        <p class="c-blog-author-info">Patrik Braborec | 4 min read</p>
+        </div>
+        <div class="c-teaser__active"></div>
+    </article>
+</div>
+
+
+
+<div class="col-md-6 col-lg-4 col-xxl-3">
+    
+    
+<div class="c-teaser c-banner-results-cta">
+    
+    <h3 class="c-h3">Want to see what GoodData can do for you?</h3>
+        <a href="/request-a-demo/" class="btn btn-xs c-btn-primary" id="results-cta" data-bs-toggle="modal" data-bs-target="#modalDemo">Request a demo</a>
+        <img src="/img/banners/c-teaser-results.jpg" alt="Want to see what GoodData can do for you?" loading="lazy" class="o-fluidimage" />
+    
+</div>
+</div>
+
+
+
+                    
+                        
+
+
+
+<div class="col-md-6 col-lg-4 col-xxl-3">
+    <article class="c-teaser">
+        <div class="c-teaser__imagelink-container">
+            <a href="/blog/how-to-build-internal-analytics-without-relying-on-senior-engineers/" class="c-teaser__imagelink p-bloghub-image">
+                <img src="/img/blog/_540x284/internal_analytics_image4.png.webp"
+                    srcset="
+                        /img/blog/_150x79/internal_analytics_image4.png.webp 150w,
+                        /img/blog/_340x179/internal_analytics_image4.png.webp 340w,
+                        /img/blog/_540x284/internal_analytics_image4.png.webp 540w"
+                    sizes="
+                        (min-width: 1800px) 390px,
+                        (min-width: 1400px) 290px,
+                        (min-width: 1200px) 340px,
+                        (min-width: 992px) 280px,
+                        (min-width: 768px) 320px,
+                        (min-width: 576px) 150px,
+                        calc(30vw - 12px)"
+                    loading="lazy" width="100%" height="auto"
+                    class="o-fluidimage c-teaser__image" alt="How to Build Internal Analytics Without Relying on Senior Engineers"
+                    onerror="this.onerror=null;this.srcset='/img/generic/img-150-placeholder.webp 150w, /img/generic/img-340-placeholder.webp 340w, /img/generic/img-540-placeholder.webp 540w';"/>
+            </a>
+        </div>
+        <div class="c-teaser__container">
+        <a class="c-teaser__link" href="/blog/how-to-build-internal-analytics-without-relying-on-senior-engineers/">
+            <h3 class="c-teaser__link__title c-h4 c-text-ellipsis">
+            How to Build Internal Analytics Without Relying on Senior Engineers
+            </h3>
+        </a>
+        <div class="p-bloghub__tags">
+            
+                <a href="/resources/tags/best-practice/" class="c-tags-pill"><span>Best Practice</span></a>
+            
+                <a href="/resources/tags/developers/" class="c-tags-pill"><span>Developers</span></a>
+            
+        </div>
+        <p class="c-blog-author-info">Patrik Braborec | 4 min read</p>
+        </div>
+        <div class="c-teaser__active"></div>
+    </article>
+</div>
+
+
+
+
+
+                    
+                        
+
+
+
+<div class="col-md-6 col-lg-4 col-xxl-3">
+    <article class="c-teaser">
+        <div class="c-teaser__imagelink-container">
+            <a href="/blog/automating-user-provisioning-in-gooddata/" class="c-teaser__imagelink p-bloghub-image">
+                <img src="/img/blog/_540x284/provisioning_image3.png.webp"
+                    srcset="
+                        /img/blog/_150x79/provisioning_image3.png.webp 150w,
+                        /img/blog/_340x179/provisioning_image3.png.webp 340w,
+                        /img/blog/_540x284/provisioning_image3.png.webp 540w"
+                    sizes="
+                        (min-width: 1800px) 390px,
+                        (min-width: 1400px) 290px,
+                        (min-width: 1200px) 340px,
+                        (min-width: 992px) 280px,
+                        (min-width: 768px) 320px,
+                        (min-width: 576px) 150px,
+                        calc(30vw - 12px)"
+                    loading="lazy" width="100%" height="auto"
+                    class="o-fluidimage c-teaser__image" alt="How To Automate User Provisioning in GoodData"
+                    onerror="this.onerror=null;this.srcset='/img/generic/img-150-placeholder.webp 150w, /img/generic/img-340-placeholder.webp 340w, /img/generic/img-540-placeholder.webp 540w';"/>
+            </a>
+        </div>
+        <div class="c-teaser__container">
+        <a class="c-teaser__link" href="/blog/automating-user-provisioning-in-gooddata/">
+            <h3 class="c-teaser__link__title c-h4 c-text-ellipsis">
+            How To Automate User Provisioning in GoodData
+            </h3>
+        </a>
+        <div class="p-bloghub__tags">
+            
+                <a href="/resources/tags/best-practice/" class="c-tags-pill"><span>Best Practice</span></a>
+            
+                <a href="/resources/tags/developers/" class="c-tags-pill"><span>Developers</span></a>
+            
+        </div>
+        <p class="c-blog-author-info">Patrik Braborec | 3 min read</p>
+        </div>
+        <div class="c-teaser__active"></div>
+    </article>
+</div>
+
+
+
+
+
+                    
+                        
+
+
+
+<div class="col-md-6 col-lg-4 col-xxl-3">
+    <article class="c-teaser">
+        <div class="c-teaser__imagelink-container">
+            <a href="/blog/how-to-create-your-next-analytical-project-in-code/" class="c-teaser__imagelink p-bloghub-image">
+                <img src="/img/blog/_540x284/analytics-as-code-article-technical.png.webp"
+                    srcset="
+                        /img/blog/_150x79/analytics-as-code-article-technical.png.webp 150w,
+                        /img/blog/_340x179/analytics-as-code-article-technical.png.webp 340w,
+                        /img/blog/_540x284/analytics-as-code-article-technical.png.webp 540w"
+                    sizes="
+                        (min-width: 1800px) 390px,
+                        (min-width: 1400px) 290px,
+                        (min-width: 1200px) 340px,
+                        (min-width: 992px) 280px,
+                        (min-width: 768px) 320px,
+                        (min-width: 576px) 150px,
+                        calc(30vw - 12px)"
+                    loading="lazy" width="100%" height="auto"
+                    class="o-fluidimage c-teaser__image" alt="How to Create Your Next Analytics Project in Code"
+                    onerror="this.onerror=null;this.srcset='/img/generic/img-150-placeholder.webp 150w, /img/generic/img-340-placeholder.webp 340w, /img/generic/img-540-placeholder.webp 540w';"/>
+            </a>
+        </div>
+        <div class="c-teaser__container">
+        <a class="c-teaser__link" href="/blog/how-to-create-your-next-analytical-project-in-code/">
+            <h3 class="c-teaser__link__title c-h4 c-text-ellipsis">
+            How to Create Your Next Analytics Project in Code
+            </h3>
+        </a>
+        <div class="p-bloghub__tags">
+            
+                <a href="/resources/tags/best-practice/" class="c-tags-pill"><span>Best Practice</span></a>
+            
+                <a href="/resources/tags/developers/" class="c-tags-pill"><span>Developers</span></a>
+            
+        </div>
+        <p class="c-blog-author-info">Andy Chumak | 6 min read</p>
+        </div>
+        <div class="c-teaser__active"></div>
+    </article>
+</div>
+
+
+
+
+
+                    
+                        
+
+
+
+<div class="col-md-6 col-lg-4 col-xxl-3">
+    <article class="c-teaser">
+        <div class="c-teaser__imagelink-container">
+            <a href="/blog/why-you-should-create-your-next-analytical-project-in-code/" class="c-teaser__imagelink p-bloghub-image">
+                <img src="/img/blog/_540x284/vscode_intro_image7.png.webp"
+                    srcset="
+                        /img/blog/_150x79/vscode_intro_image7.png.webp 150w,
+                        /img/blog/_340x179/vscode_intro_image7.png.webp 340w,
+                        /img/blog/_540x284/vscode_intro_image7.png.webp 540w"
+                    sizes="
+                        (min-width: 1800px) 390px,
+                        (min-width: 1400px) 290px,
+                        (min-width: 1200px) 340px,
+                        (min-width: 992px) 280px,
+                        (min-width: 768px) 320px,
+                        (min-width: 576px) 150px,
+                        calc(30vw - 12px)"
+                    loading="lazy" width="100%" height="auto"
+                    class="o-fluidimage c-teaser__image" alt="Why You Should Create Your Next Analytics Project in Code"
+                    onerror="this.onerror=null;this.srcset='/img/generic/img-150-placeholder.webp 150w, /img/generic/img-340-placeholder.webp 340w, /img/generic/img-540-placeholder.webp 540w';"/>
+            </a>
+        </div>
+        <div class="c-teaser__container">
+        <a class="c-teaser__link" href="/blog/why-you-should-create-your-next-analytical-project-in-code/">
+            <h3 class="c-teaser__link__title c-h4 c-text-ellipsis">
+            Why You Should Create Your Next Analytics Project in Code
+            </h3>
+        </a>
+        <div class="p-bloghub__tags">
+            
+                <a href="/resources/tags/best-practice/" class="c-tags-pill"><span>Best Practice</span></a>
+            
+                <a href="/resources/tags/developers/" class="c-tags-pill"><span>Developers</span></a>
+            
+        </div>
+        <p class="c-blog-author-info">Andy Chumak | 4 min read</p>
+        </div>
+        <div class="c-teaser__active"></div>
+    </article>
+</div>
+
+
+
+
+</div>
+                    
+
+                    <hr>
+
+                    
+                    
+                    
+<nav aria-label="Paginations navigation" class="c-pagination">
+    <ul class="pagination">
+
+        
+            
+                <li class="page-item">
+                    <a class="page-link" href="/blog/" id="pagination-first">
+                        1
+                    </a>
+                </li>
+            
+            
+                
+                    <li>&hellip;</li>
+                
+            
+        
+
+        
+        
+
+        
+            <li class="page-item">
+                <a class="page-link" href="/blog/page-5/" id="pagination-previous">
+                    5
+                </a>
+            </li>
+        
+
+        <li class="page-item">
+            <a class="page-link active" href id="pagination-current">
+                6
+            </a>
+        </li>
+
+        
+            <li class="page-item">
+                <a class="page-link" href="/blog/page-7/" id="pagination-next">
+                    7
+                </a>
+            </li>
+        
+
+        
+        
+
+        
+            
+                
+                    <li>&hellip;</li>
+                
+            
+            
+                <li class="page-item">
+                    <a class="page-link" href="/blog/page-26/" id="pagination-last">
+                        26
+                    </a>
+                </li>
+            
+        
+    </ul>
+</nav>
+
+                </div>
+            <div class="c-section__default_condensed-mobile c-section__bg-mist-gray text-center">
+    <div class="container">
+        <h2 class="c-h2">
+            Subscribe to our newsletter
+        </h2>
+        <p class="c-p__huge">
+            Get your dose of interesting facts on analytics in your inbox every month.
+        </p>
+        <a href="#" class="btn c-btn-primary" id="subscribe-lg-cta" data-bs-toggle="modal" data-bs-target="#modalSubscribe">
+            Subscribe
+        </a>
+    </div>
+</div>
+<div class="c-divider c-divider-feather"></div>
+
+        </div>
+    </main>
+
+    
+    
+
+
+
+    
+	
+
+
+<div class="modal fade c-demo-modal" tabindex="-1" id="modalDemo" aria-labelledby="modalDemoLabel" role="dialog"
+	 aria-hidden="true" data-attr-form="modal-form">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content c-form__container-hs">
+			<div class="d-flex flex-column flex-md-row justify-content-between">
+				<div class="c-demo-modal__form-wrap">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<div class="modal-header c-form__fill pt-0 pb-3">
+						<p class="c-h5 mb-2 modal-title">GoodData Live Demo</p>
+						<p class="modal-subtitle">Talk with an expert and ask us about GoodData’s features, implementation, and pricing.</p>
+					</div>
+					<div class="modal-body c-form__demo c-form__fill pt-0">
+						
+						
+		
+
+
+
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Definitions
+    var hsRegion = "na1";
+    var hsPortalId = "8934247";
+    var hsFormId__demo = "5fedaf87-6596-4516-928e-906713b0a388";
+    var hsFormName__demo = "demo_step1";
+    var eventAction;
+    // Definitions DEV
+    // var hsPortalId = "14511621";
+    // var hsFormId__demo = "8f22f1a6-65c1-4186-b8a0-65c2c9c402dc";
+
+    // HS Form Create
+    hbspt.forms.create({
+        region: hsRegion,
+        portalId: hsPortalId,
+        formId: hsFormId__demo,
+        version: "V2_PRERELEASE",
+        onFormSubmit: function($form) {
+            const emailInputValue = $('.c-form__demo input[name="email"]').val();
+
+            // Hubspot JS on Submit
+            
+
+            // Legal change
+            legalCheck('demo');
+
+            // GTM | HS Form Submission
+            dataLayer.push({
+                'event': 'form_submission', //event name
+                'form_name': hsFormName__demo, // specific form name
+                'tracking_type': trackingType(emailInputValue), // testEvent vs trackEvent
+                'form_id': hsFormId__demo, //HS form ID
+                'asset_name': 'unknown', //asset name or unknown
+                'asset_format': 'unknown', //asset file type or unknown
+                'form_marketing_consent': window.optinTracker,
+                'page_url': document.location.pathname,
+                'form_email': isGmail(emailInputValue), // (business, gmail)
+                'form_company_size': 'unknown', // (enterprise, smb, unknown)
+                'form_email_submission': emailInputValue
+            });
+
+            // If modal Demo
+            if ($('#modalDemo').length) {
+                $('#modalDemo').removeClass('show');
+            } else {
+                // Hide form container
+                $('.c-form__container-hs').hide();
+            }
+
+            // Save email address to the localStorage
+            if(window.localStorage) {
+                window.localStorage.setItem("demoEmail", emailInputValue);
+            }
+
+            // Redirect
+            if (isGmail(emailInputValue) == "gmail") {
+                // GTM | Demo | Gmail
+                eventAction = "request a demo - submit - gmail";
+                // Redirect to thank-you-other
+                setTimeout(()=>{
+                    window.location.href = "/verify/";
+                }, 100);
+            } else {
+                // GTM | Demo | Business
+                eventAction = "request a demo - submit - business";
+                // Redirect to thank-you-business
+                setTimeout(()=>{
+                    window.location.href = "/thank-you-business/";
+                }, 100); 
+            }
+            // GTM | Event
+            dataLayer.push({
+                'event': trackingType(emailInputValue), // testEvent vs trackEvent
+                'eventCategory': 'Form',
+                'eventAction': eventAction,
+                'eventLabel': document.location.pathname
+            });
+        },
+        onFormReady: function ($form, ctx) {
+            // Form name (used on error DataLayer)
+            var $formName = hsFormName__demo;
+
+            // Hubspot JS ready
+			
+	window.setCookie=function(key,value,expiry){var expires=new Date;expires.setTime(expires.getTime()+expiry*24*60*60*1e3);document.cookie=key+"="+value+";path=/"+";expires="+expires.toUTCString()};window.getCookie=function(key){var keyValue=document.cookie.match("(^|;) ?"+key+"=([^;]*)(;|$)");return keyValue?keyValue[2]:null};function inputLabelFields(){$form.find(".hs-input").on("focus",function(){let thisLabel=$(this).parent().parent().find("label");thisLabel.css({opacity:1});$(this).parent().addClass("label-visible")});$form.find(".hs-input").on("focusout",function(){if($(this).val()===""){let thisLabel=$(this).parent().parent().find("label");let errorLabel=$(this).parent().parent().find("ul label");thisLabel.css({opacity:0});errorLabel.css({opacity:1});$(this).parent().removeClass("label-visible")}else{let thisLabel=$(this).parent().parent().find("label");thisLabel.css({opacity:1});$(this).parent().addClass("label-visible")}if($(this).hasClass("is-placeholder")){let thisLabel=$(this).parent().parent().find("label");thisLabel.css({opacity:0});$(this).parent().removeClass("label-visible")}})}inputLabelFields();$form.find('.hs-input[type="email"]').on("focusout",function(){inputLabelFields()});window.addEventListener("message",event=>{if(event.data.type==="hsFormCallback"&&event.data.eventName==="onFormReady"){function gaGacid(){var urlEnv=window.location.hostname;if(window.ga&&urlEnv=="www.gooddata.com"){ga(function(tracker){var clientId=ga.getAll()[0].get("clientId");$form.find('input[name="gacid"]').val(clientId).change()})}}var checkCookiePolicy=setInterval(function(){if(window.cookiesP){gaGacid();clearInterval(checkCookiePolicy)}else{if(!window.isEU){gaGacid();clearInterval(checkCookiePolicy)}}},1e3)}});window.GDDomains=["gooddata.com","cz.gooddata.com","insighti.com"];window.testKeywords=["forecom","lhv","test"];window.isGoodDataEmail=function(email){for(let i=0;i<window.GDDomains.length;i++){let domain=window.GDDomains[i];let email_domain=email.split("@").pop();if(email_domain===domain){return false}}return true};window.isGmail=function(email){if(email.indexOf("@gmail.com")>0){return"gmail"}else{return"business"}};window.isTest=function(email){for(let i=0;i<window.testKeywords.length;i++){let key=window.testKeywords[i];if(email.indexOf(key)>0){return true}}return false};window.trackingType=function(email){if(email){if(!isGoodDataEmail(email)||isTest(email)){return"testEvent"}else{return"trackEvent"}}else{return"unknown"}};window.legalCheck=function(thisForm){window.emailInputValue=$(".c-form__"+thisForm+' input[name="email"]').val();window.checkboxInputValue=$(".c-form__"+thisForm+' input[type="checkbox"]');window.hsgdprstateInputValue=$(".c-form__"+thisForm+' input[name="hsgdprstate"]');window.optinTracker;if(window.checkboxInputValue.is(":checked")){window.hsgdprstateInputValue.val("yes").change();window.optinTracker="optin"}else{window.hsgdprstateInputValue.val("no").change();window.optinTracker="none"}};var urlEnv=window.location.hostname;async function hutkCall(urlEnv){var hostUrl;if(urlEnv==="www.gooddata.com"||urlEnv==="staging--gooddata-gdc.netlify.app"||urlEnv==="dl-tracking--gooddata-gdc.netlify.app"){hostUrl="https://"+urlEnv}else if(urlEnv==="localhost"){hostUrl="http://localhost:8080"}const API_ENDPOINT=hostUrl+"/.netlify/functions/hubspotutk/hubspotutk.js?hutk="+window.hubspotutk;return fetch(API_ENDPOINT,{headers:{Accept:"application/json"}}).then(response=>response.json()).then(function(msg){window.hutkCallback=msg.msg}).catch(error=>console.log("no hubspotutk"))}async function zeroCall(email,thisField,form){var hostUrl;if(urlEnv==="localhost"){hostUrl="http://localhost:8888"}else{hostUrl="https://"+urlEnv}const API_ENDPOINT=hostUrl+"/.netlify/functions/zerobounce/zerobounce.js?email="+email;function printApproved(thisField,form){if(form.find(".error").length){thisField.attr("data-zb","reject");form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true);thisField.parent().after("<ul class='no-list hs-error-msgs inputs-list nb-custom' role='alert'><li><label class='hs-error-msg'>Please enter a valid business email.</label></li></ul>")}else{thisField.attr("data-zb","approved");form.find('.hs-button[type="submit"]').removeClass("disabled").attr("disabled",false);thisField.parent().after("<ul class='no-list hs-status-msgs inputs-list nb-custom' role='alert'><li><label class='hs-status-msg valid'>The email address is valid.</label></li></ul>")}}function printReject(thisField,form){thisField.attr("data-zb","reject");form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true);thisField.parent().after("<ul class='no-list hs-error-msgs inputs-list nb-custom' role='alert'><li><label class='hs-error-msg'>Please enter a valid email.</label></li></ul>")}return fetch(API_ENDPOINT,{headers:{Accept:"application/json"}}).then(response=>response.json()).then(function(msg){console.log("Status: "+msg.status+" and Substatus: "+msg.substatus);form.find(".hs-email .hs-error-msgs.nb-custom, .hs-email .hs-status-msgs.nb-custom").each(function(){$(this).remove()});if(msg.status=="valid"||msg.status=="catch-all"||msg.status=="unknown"){printApproved(thisField,form)}else if(msg.status=="invalid"){printReject(thisField,form)}else if(msg.status=="do_not_mail"){if(msg.substatus=="role_based"||msg.substatus=="role_based_catch_all"){printApproved(thisField,form)}else{printReject(thisField,form)}}else{printReject(thisField,form)}}).catch(error=>console.log("no zerobounce"))}if($form){$form.find(".hs-input").each(function(){$(this)[0].addEventListener("keypress",function(event){if(event.key==="Enter"){$form.find(".hs-input").each(function(index){if($(this)[0].hasAttribute("required")){if($(this).val()==""){$(this)[0].focus();$(this).trigger("blur")}if($(this).val()==""||$(this).hasClass("error")||$(this).attr("type")=="email"&&$(this).attr("data-zb")!="approved"){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true);event.preventDefault()}}})}},false);var zbTimer;var zbTimerPSF;var zbTimerPST;$(this).on("input paste keyup",function(){if($(this)[0].hasAttribute("required")){if($form.find('.hs-button[type="submit"]').hasClass("hasPactsafe")){if(window.pactsafeAgreeChecked==false){if($(this).attr("type")=="email"){zbEmailPSF=$(this);zbEmailValPSF=zbEmailPSF.val();zbEmailPSF.attr("data-zb","");clearTimeout(zbTimerPSF);zbEmailPSF.parent().after("<ul class='no-list hs-error-msgs inputs-list nb-custom' role='alert'><li><label class='hs-error-msg validating'>Validating email address...</label></li></ul>");zbTimerPSF=setTimeout(function(){if(zbEmailPSF!=""){zeroCall(zbEmailValPSF,zbEmailPSF,$form)}},600)}else{if($form.find(".error").length||$(this).val()==""){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true)}else{$form.find('.hs-button[type="submit"]').removeClass("disabled").attr("disabled",false)}}}else{if($(this).attr("type")=="email"){zbEmailPST=$(this);zbEmailValPST=zbEmailPST.val();zbEmailPST.attr("data-zb","");clearTimeout(zbTimerPST);zbEmailPST.parent().after("<ul class='no-list hs-error-msgs inputs-list nb-custom' role='alert'><li><label class='hs-error-msg validating'>Validating email address...</label></li></ul>");zbTimerPST=setTimeout(function(){if(zbEmailPST!=""){zeroCall(zbEmailValPST,zbEmailPST,$form)}},600)}else{$form.find('.hs-button[type="submit"]').removeClass("disabled").attr("disabled",false)}}}else{if($(this).attr("type")=="email"){if($(this).val().length>0){zbEmail=$(this);zbEmailVal=zbEmail.val();zbEmail.attr("data-zb","");clearTimeout(zbTimer);zbEmail.parent().after("<ul class='no-list hs-error-msgs inputs-list nb-custom' role='alert'><li><label class='hs-error-msg validating'>Validating email address...</label></li></ul>");zbTimer=setTimeout(function(){if(zbEmail!=""){zeroCall(zbEmailVal,zbEmail,$form)}},600)}}else{if($form.find(".error").length||$(this).val()==""||$form.find('[data-zb="reject"]').length){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true)}else{$form.find('.hs-button[type="submit"]').removeClass("disabled").attr("disabled",false)}}}}else{if($form.find(".error").length||$form.find('[data-zb="reject"]').length){}else{if($form.find('.hs-button[type="submit"]').hasClass("hasPactsafe")){if(window.pactsafeAgreeChecked==true){$form.find('.hs-button[type="submit"]').removeClass("disabled").attr("disabled",false)}}else{$form.find('.hs-button[type="submit"]').removeClass("disabled").attr("disabled",false)}}}})});$form.find("input[type='submit']").each(function(){$(this)[0].addEventListener("click",function(event){$form.find(".hs-input").each(function(index){if($(this)[0].hasAttribute("required")){if($(this).val()==""){$(this)[0].focus();$(this).trigger("blur")}if($(this).val()==""||$(this).hasClass("error")){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true);event.preventDefault()}}})},false)});var companyField=setInterval(function(){$form.find("input[name='company']").each(function(){$(this).on("input paste focusout",function(){if($(this)[0].hasAttribute("required")){if($form.find(".error").length||$(this).val()==""||window.pactsafeAgreeChecked==false){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true)}else{$form.find('.hs-button[type="submit"]').removeClass("disabled").attr("disabled",false)}}})})},500);$form.find(".hs_email").each(function(){if($.fn.childrenChange!==undefined){$(this).childrenChange((el,added)=>{let errorText="";if($(added[0]).hasClass("hs-error-msg")&&$(added[0]).text()!==""){errorText=$(added[0]).text()}if($(added[0]).hasClass("hs-error-msgs")&&$(added[0]).find("li").text()!==""){errorText=$(added[0]).find("li").text()}if($(el).hasClass("hs-error-msg")&&$(el).text()!==""){errorText=$(el).text()}if(errorText!==""){dataLayer.push({event:"form_email_error",form_name:$formName,error_value:errorText,form_id:$form.attr("data-form-id"),page_url:document.location.pathname})}})}});$form.find(".hs-form-field").each(function(){if($.fn.childrenChange!==undefined){$(this).childrenChange((el,added)=>{if($(added[0]).hasClass("hs-error-msg")&&$(added[0]).text()!==""){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true)}if($(added[0]).hasClass("hs-error-msgs")&&$(added[0]).find("li").text()!==""){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true)}if($(el).hasClass("hs-error-msg")&&$(el).text()!==""){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true)}})}})}
+
+
+            if (window.innerWidth < 992 || $('.p-demo__form').length) {
+                window.formInPageDemo = true;
+            }
+
+            // GTM | HS Form Ready - Modal Opened
+            var checkModalDemo = setInterval(function() {
+                if ((window.formInPageDemo || $('#modalDemo').hasClass('show'))) {
+
+                    dataLayer.push({
+                        'event': 'form_view',
+                        'form_name': hsFormName__demo,
+                        'form_id': hsFormId__demo, // hubspot form ID
+                        //'tracking_type': trackingType(window.hutkCallback), // testEvent vs trackEvent
+                        'asset_name': 'unknown', //asset name or unknown
+                        'asset_format': 'unknown', //asset file type or unknown
+                        'page_url': document.location.pathname
+                    });
+
+                    clearInterval(checkModalDemo);
+                }
+            }, 1000);
+
+            // Add attrs to modal
+            $('.c-demo-modal').attr('data-attr-form-id', hsFormId__demo);
+            $('.c-demo-modal').attr('data-attr-form-name', hsFormName__demo);
+
+        }
+    });
+});
+</script>
+	
+					</div>
+				</div>
+				<div class="c-demo-modal__right-col">
+					<h4 class="c-demo-modal__right-col-title">See how GoodData can help with your analytics goals</h4>
+					<div class="c-demo-modal__right-col-text"><ul><li>Discuss your specific business needs</li><li>Get a customized platform demo</li><li>Q&amp;A about how to implement GoodData</li></ul></div>
+					<div class="c-demo-modal__right-col-logostext">Trusted</div>
+					
+    
+    
+<div class="row c-logos__customers-reduced  justify-content-center">
+    
+        
+        
+        
+        <div class="col d-flex align-items-center justify-content-center">
+            <a 
+                href="/customers/"
+                class="d-flex align-items-center justify-content-center"
+                id="clients-visa-case-studies"
+            >
+                <img
+                    src="/img/logos/customers/white/visa.svg"
+                    alt="Visa"
+                    class="mw-100"
+                    width="73"
+                    height="50"
+                />
+            </a>
+        </div>
+    
+        
+        
+        
+        <div class="col d-flex align-items-center justify-content-center">
+            <a 
+                href="/customers/"
+                class="d-flex align-items-center justify-content-center"
+                id="clients-mavenlink-case-studies"
+            >
+                <img
+                    src="/img/logos/customers/white/mavenlink.svg"
+                    alt="Mavenlink"
+                    class="mw-100"
+                    width="170"
+                    height="50"
+                />
+            </a>
+        </div>
+    
+        
+        
+        
+        <div class="col d-flex align-items-center justify-content-center">
+            <a 
+                href="/customers/"
+                class="d-flex align-items-center justify-content-center"
+                id="clients-bentley-case-studies"
+            >
+                <img
+                    src="/img/logos/customers/white/bentley.svg"
+                    alt="Bentley"
+                    class="mw-100"
+                    width="122"
+                    height="50"
+                />
+            </a>
+        </div>
+    
+        
+        
+        
+        <div class="col d-flex align-items-center justify-content-center">
+            <a 
+                href="/customers/"
+                class="d-flex align-items-center justify-content-center"
+                id="clients-zartico-case-studies"
+            >
+                <img
+                    src="/img/logos/customers/white/zartico.svg"
+                    alt="Zartico"
+                    class="mw-100"
+                    width="151"
+                    height="50"
+                />
+            </a>
+        </div>
+    
+</div>
+
+
+					
+
+    
+
+    <section class="c-section " id="badges">
+        <div class="container badges-stripe my-0">
+            <div class="badges-stripe__section ">
+                
+                
+                <div class="d-flex flex-row align-items-center justify-content-around flex-wrap">
+                    
+                        
+                            
+                                
+                            
+                                
+                                    <div class="px-1 pb-3 pb-lg-0 text-center badge-item"><img src="/img/components/badges-stripe/users-love-us.png" alt="G2/TR Badge" class="mw-100"/></div>
+                                
+                            
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                            
+                                
+                                    <div class="px-1 pb-3 pb-lg-0 text-center badge-item"><img src="/img/components/badges-stripe/2024-g2-leader-summer.png" alt="G2/TR Badge" class="mw-100"/></div>
+                                
+                            
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                            
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                            
+                        
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+        
+        
+
+        
+        
+
+<footer class="c-sitefooter gd-footer" id="gd-footer">
+    
+        <ul class="gd-footer-banner-links gd-footer-links">
+            
+                <li class="gd-footer-banner-links-item gd-footer-links-item">
+                    <input type="checkbox" tabindex="-1" id="gd-footer-links-item-trigger-0" name="gd-footer-links-item-trigger-0" class="gd-footer-banner-links-item-trigger gd-footer-links-item-trigger"/>
+                    <label for="gd-footer-links-item-trigger-0" class="gd-footer-banner-links-item-text gd-footer-links-item-text">
+                        Start with GoodData
+                    </label>
+
+                    
+                        <ul class="gd-footer-banner-sublinks gd-footer-sublinks">
+                            
+                                <li class="gd-footer-banner-sublinks-item gd-footer-sublinks-item">
+                                    <a class="gd-footer-banner-sublinks-item-link gd-footer-sublinks-item-link" href="https://registration.cloud.gooddata.com/register" id="footer-sublink-start-trial">Start trial</a>
+                                </li>
+                            
+                                <li class="gd-footer-banner-sublinks-item gd-footer-sublinks-item">
+                                    <a class="gd-footer-banner-sublinks-item-link gd-footer-sublinks-item-link" href="/request-a-demo/" id="footer-sublink-request-a-demo">Request a demo</a>
+                                </li>
+                            
+                                <li class="gd-footer-banner-sublinks-item gd-footer-sublinks-item">
+                                    <a class="gd-footer-banner-sublinks-item-link gd-footer-sublinks-item-link" href="/pricing/" id="footer-sublink-see-pricing">See pricing</a>
+                                </li>
+                            
+                        </ul>
+                    
+                    
+                    
+    <div class="dropdown c-sitefooter__language__dropdown d-none d-lg-flex">
+        <button class="btn c-sitefooter__language__dropdown-btn c-btn-dropdown__invert btn-sm dropdown-toggle w-100 text-start" id="language-select" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="/img/icons/icon-world.svg" alt="Select language" />
+            <span>English (US)</span>
+        </button>
+        <ul class="dropdown-menu c-sitefooter__language__dropdown-menu">
+            <li>
+                <a href="/" class="dropdown-item active" id="language-select-en" type="button">English (US)</a>
+            </li>
+            <li>
+                <a href="/es/" class="dropdown-item " id="language-select-es" type="button">Español (Latinoamerica)</a>
+            </li>
+            <li>
+                <a href="/br/" class="dropdown-item " id="language-select-br" type="button">Português (Brazil)</a>
+            </li>
+            <li>
+                <span>Please note that not all the pages will be translated</span>
+            </li>
+        </ul>
+    </div>
+
+                    
+                </li>
+            
+        </ul>
+    
+
+    <ul class="gd-footer-links">
+        
+            <li class="gd-footer-links-item">
+                <input type="checkbox" tabindex="-1" id="gd-footer-links-item-trigger-1" name="gd-footer-links-item-trigger-1" class="gd-footer-links-item-trigger"/>
+                <label for="gd-footer-links-item-trigger-1" class="gd-footer-links-item-text">
+                    Product
+                </label>
+
+                
+                    <ul class="gd-footer-sublinks">
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/platform/" id="footer-sublink-product-overview">Product overview</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/embedded-analytics/" id="footer-sublink-embedded-analytics">Embedded Analytics</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/headless-bi/" id="footer-sublink-headless-bi">Headless BI</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/security/" id="footer-sublink-trust-and-security">Trust &amp; Security</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/solutions/professional-services/" id="footer-sublink-services">Services</a>
+                            </li>
+                        
+                    </ul>
+                
+            </li>
+        
+            <li class="gd-footer-links-item">
+                <input type="checkbox" tabindex="-1" id="gd-footer-links-item-trigger-2" name="gd-footer-links-item-trigger-2" class="gd-footer-links-item-trigger"/>
+                <label for="gd-footer-links-item-trigger-2" class="gd-footer-links-item-text">
+                    Industries
+                </label>
+
+                
+                    <ul class="gd-footer-sublinks">
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/solutions/ecommerce/" id="footer-sublink-e-commerce">E-commerce</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/solutions/insurance/" id="footer-sublink-insurance">Insurance</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/solutions/financial-services/" id="footer-sublink-financial-services">Financial Services</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/embedded-analytics-software-companies/" id="footer-sublink-software-companies">Software Companies</a>
+                            </li>
+                        
+                    </ul>
+                
+            </li>
+        
+            <li class="gd-footer-links-item">
+                <input type="checkbox" tabindex="-1" id="gd-footer-links-item-trigger-3" name="gd-footer-links-item-trigger-3" class="gd-footer-links-item-trigger"/>
+                <label for="gd-footer-links-item-trigger-3" class="gd-footer-links-item-text">
+                    Learn
+                </label>
+
+                
+                    <ul class="gd-footer-sublinks">
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/docs/cloud/" id="footer-sublink-documentation">Documentation</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="https://university.gooddata.com/" id="footer-sublink-university">University</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="https://community.gooddata.com/" id="footer-sublink-community">Community</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="https://support.gooddata.com/hc/en-us" id="footer-sublink-support">Support</a>
+                            </li>
+                        
+                    </ul>
+                
+            </li>
+        
+            <li class="gd-footer-links-item">
+                <input type="checkbox" tabindex="-1" id="gd-footer-links-item-trigger-4" name="gd-footer-links-item-trigger-4" class="gd-footer-links-item-trigger"/>
+                <label for="gd-footer-links-item-trigger-4" class="gd-footer-links-item-text">
+                    Developers
+                </label>
+
+                
+                    <ul class="gd-footer-sublinks">
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="https://www.gooddata.com/docs/python-sdk/latest/" id="footer-sublink-python-sdk">Python SDK</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="https://www.gooddata.com/docs/cloud/api-and-sdk/react-sdk/" id="footer-sublink-react-sdk">React SDK</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="https://gdui-examples.herokuapp.com/" id="footer-sublink-examples-gallery">Examples Gallery</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="https://www.gooddata.com/docs/cloud/api-and-sdk/api/api_reference_all/" id="footer-sublink-api-references">API References</a>
+                            </li>
+                        
+                    </ul>
+                
+            </li>
+        
+            <li class="gd-footer-links-item">
+                <input type="checkbox" tabindex="-1" id="gd-footer-links-item-trigger-5" name="gd-footer-links-item-trigger-5" class="gd-footer-links-item-trigger"/>
+                <label for="gd-footer-links-item-trigger-5" class="gd-footer-links-item-text">
+                    Resources
+                </label>
+
+                
+                    <ul class="gd-footer-sublinks">
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/resources/" id="footer-sublink-all-resources">All resources</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/resources/tags/case-studies/" id="footer-sublink-case-studies">Case studies</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/resources/tags/analyst-reports/" id="footer-sublink-analyst-reports">Analyst reports</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/resources/tags/briefs/" id="footer-sublink-briefs">Briefs</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/resources/tags/ebooks/" id="footer-sublink-e-books">E-books</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/resources/tags/podcasts/" id="footer-sublink-podcasts">Podcasts</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/resources/tags/videos/" id="footer-sublink-videos">Videos</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/resources/tags/webinars/" id="footer-sublink-webinars">Webinars</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/blog/" id="footer-sublink-blog">Blog</a>
+                            </li>
+                        
+                    </ul>
+                
+            </li>
+        
+            <li class="gd-footer-links-item">
+                <input type="checkbox" tabindex="-1" id="gd-footer-links-item-trigger-6" name="gd-footer-links-item-trigger-6" class="gd-footer-links-item-trigger"/>
+                <label for="gd-footer-links-item-trigger-6" class="gd-footer-links-item-text">
+                    About GoodData
+                </label>
+
+                
+                    <ul class="gd-footer-sublinks">
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/company/" id="footer-sublink-company">Company</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/customers/" id="footer-sublink-customers">Customers</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/partners/" id="footer-sublink-partners">Partners</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/company/careers/" id="footer-sublink-careers">Careers</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/in-the-news/" id="footer-sublink-newsroom">Newsroom</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/brand-guidelines/" id="footer-sublink-brand">Brand</a>
+                            </li>
+                        
+                    </ul>
+                
+            </li>
+        
+    </ul>
+
+    <div class="gd-footer-bottom">
+                    
+        
+    <div class="dropdown c-sitefooter__language__dropdown d-flex d-lg-none">
+        <button class="btn c-sitefooter__language__dropdown-btn c-btn-dropdown__invert btn-sm dropdown-toggle w-100 text-start" id="language-select" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="/img/icons/icon-world.svg" alt="Select language" />
+            <span>English (US)</span>
+        </button>
+        <ul class="dropdown-menu c-sitefooter__language__dropdown-menu">
+            <li>
+                <a href="/" class="dropdown-item active" id="language-select-en" type="button">English (US)</a>
+            </li>
+            <li>
+                <a href="/es/" class="dropdown-item " id="language-select-es" type="button">Español (Latinoamerica)</a>
+            </li>
+            <li>
+                <a href="/br/" class="dropdown-item " id="language-select-br" type="button">Português (Brazil)</a>
+            </li>
+            <li>
+                <span>Please note that not all the pages will be translated</span>
+            </li>
+        </ul>
+    </div>
+
+        
+        
+            <div class="gd-footer-buttons">
+                
+                    
+                    
+                    
+                        
+                    
+
+                    
+
+                    
+
+                    
+                    
+                        
+                        
+                    
+
+                    <div class="gd-footer-buttons-item">
+                        <a
+                            class=" gd-footer-buttons-item-icon-button"
+                            href="https://www.linkedin.com/company/gooddata" 
+                            id="footer-btn-linkedin" 
+                            rel="noreferer, noopener" 
+                            data-bs-toggle="" 
+                            data-bs-target=""
+                            
+                                aria-label="LinkedIn"
+                            
+                        >
+                            
+                                <svg viewbox="0 0 512 512"><path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"></path></svg>
+                            
+                        </a>
+                    </div>
+                
+                    
+                    
+                    
+                        
+                    
+
+                    
+
+                    
+
+                    
+                    
+                        
+                        
+                    
+
+                    <div class="gd-footer-buttons-item">
+                        <a
+                            class=" gd-footer-buttons-item-icon-button"
+                            href="https://twitter.com/gooddata" 
+                            id="footer-btn-twitter" 
+                            rel="noreferer, noopener" 
+                            data-bs-toggle="" 
+                            data-bs-target=""
+                            
+                                aria-label="Twitter"
+                            
+                        >
+                            
+                                <svg viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg"><path d="M16.119 13.1992 22.4486 6h-1.4994l-5.4983 6.2497L11.0626 6H6l6.6374 9.4514L6 22.9999h1.4994l5.8027-6.6012 4.6353 6.6012H23M8.04057 7.10634h2.30353L20.9481 21.948H18.644"/></svg>
+                            
+                        </a>
+                    </div>
+                
+                    
+                    
+                    
+                        
+                    
+
+                    
+
+                    
+
+                    
+                    
+                        
+                        
+                    
+
+                    <div class="gd-footer-buttons-item">
+                        <a
+                            class=" gd-footer-buttons-item-icon-button"
+                            href="https://www.facebook.com/gooddata" 
+                            id="footer-btn-facebook" 
+                            rel="noreferer, noopener" 
+                            data-bs-toggle="" 
+                            data-bs-target=""
+                            
+                                aria-label="Facebook"
+                            
+                        >
+                            
+                                <svg viewbox="0 0 512 512"><path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"></path></svg>
+                            
+                        </a>
+                    </div>
+                
+                    
+                    
+                    
+                        
+                    
+
+                    
+
+                    
+
+                    
+                    
+                        
+                        
+                    
+
+                    <div class="gd-footer-buttons-item">
+                        <a
+                            class=" gd-footer-buttons-item-icon-button"
+                            href="https://www.youtube.com/c/gooddata" 
+                            id="footer-btn-youtube" 
+                            rel="noreferer, noopener" 
+                            data-bs-toggle="" 
+                            data-bs-target=""
+                            
+                                aria-label="YouTube"
+                            
+                        >
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 90"><path d="M63.939 65.832H59l.023-2.869c0-1.275 1.047-2.318 2.326-2.318h.315c1.282 0 2.332 1.043 2.332 2.318l-.057 2.869zm-18.526-6.148c-1.253 0-2.278.842-2.278 1.873V75.51c0 1.029 1.025 1.869 2.278 1.869 1.258 0 2.284-.84 2.284-1.869V61.557c0-1.032-1.026-1.873-2.284-1.873zM75.5 51.879v26.544C75.5 84.79 69.979 90 63.23 90H12.771C6.02 90 .5 84.79.5 78.423V51.879c0-6.367 5.52-11.578 12.271-11.578H63.23c6.749 0 12.27 5.211 12.27 11.578zM16.137 81.305l-.004-27.961 6.255.002v-4.143l-16.674-.025v4.073l5.205.015v28.039h5.218zm18.75-23.796h-5.215V72.44c0 2.16.131 3.24-.008 3.621-.424 1.158-2.33 2.388-3.073.125-.126-.396-.015-1.591-.017-3.643l-.021-15.034h-5.186l.016 14.798c.004 2.268-.051 3.959.018 4.729.127 1.357.082 2.939 1.341 3.843 2.346 1.69 6.843-.252 7.968-2.668l-.01 3.083 4.188.005-.001-23.79zm16.6830139 17.098L51.559 62.18c-.004-4.736-3.547-7.572-8.356-3.74l.021-9.239-5.209.008-.025 31.89 4.284-.062.39-1.986c5.473 5.021 8.914 1.58 8.9060139-4.444zM67.891 72.96l-3.91.021c-.002.155-.008.334-.01.529v2.182c0 1.168-.965 2.119-2.137 2.119h-.766c-1.174 0-2.139-.951-2.139-2.119v-5.739h8.954v-3.37c0-2.463-.063-4.925-.267-6.333-.641-4.454-6.893-5.161-10.051-2.881-.991.712-1.748 1.665-2.188 2.945-.444 1.281-.665 3.031-.665 5.254v7.41c.002 12.318 14.964 10.577 13.179-.018zM47.833 32.732c.269.654.687 1.184 1.254 1.584.56.394 1.276.592 2.134.592.752 0 1.418-.203 1.998-.622.578-.417 1.065-1.04 1.463-1.871l-.099 2.046h5.813V9.74H55.82v19.24c0 1.042-.858 1.895-1.907 1.895-1.043 0-1.904-.853-1.904-1.895V9.74h-4.776v16.674c0 2.124.039 3.54.102 4.258.065.713.229 1.397.498 2.06zM30.217 18.77c0-2.373.198-4.226.591-5.562.396-1.331 1.107-2.401 2.137-3.208 1.027-.811 2.342-1.217 3.941-1.217 1.345 0 2.497.264 3.459.781.967.52 1.713 1.195 2.23 2.028.527.836.885 1.695 1.076 2.574.195.891.291 2.235.291 4.048v6.252c0 2.293-.092 3.98-.271 5.051-.177 1.074-.557 2.07-1.146 3.004-.58.924-1.329 1.615-2.237 2.056-.918.445-1.968.663-3.154.663-1.325 0-2.441-.183-3.361-.565-.923-.38-1.636-.953-2.144-1.714-.513-.762-.874-1.69-1.092-2.772-.219-1.081-.323-2.707-.323-4.874l.003-6.545zm4.553 9.82c0 1.4 1.042 2.543 2.311 2.543 1.27 0 2.308-1.143 2.308-2.543V15.43c0-1.398-1.038-2.541-2.308-2.541-1.269 0-2.311 1.143-2.311 2.541v13.16zm-16.088 6.645h5.484l.006-18.96L30.652.033h-5.998l-3.445 12.064L17.715 0h-5.936l6.894 16.284.009 18.951z" fill-rule="nonzero"/></svg>
+                            
+                        </a>
+                    </div>
+                
+                    
+                    
+                    
+                        
+                        
+                    
+
+                    
+                        
+                    
+
+                    
+
+                    
+                    
+                         
+                        
+                        
+                    
+
+                    <div class="gd-footer-buttons-item gd-footer-buttons-item-button">
+                        <a
+                            class="btn btn-xs c-btn-default__invert"
+                            href="#" 
+                            id="footer-btn-subscribe-for-updates" 
+                            rel="" 
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modalSubscribe"
+                            
+                        >
+                            
+                                Subscribe for updates
+                            
+                        </a>
+                    </div>
+                
+                    
+                    
+                    
+                        
+                        
+                    
+
+                    
+
+                    
+
+                    
+                    
+                        
+                        
+                    
+
+                    <div class="gd-footer-buttons-item gd-footer-buttons-item-button">
+                        <a
+                            class="btn btn-xs c-btn-primary"
+                            href="/contact/" 
+                            id="footer-btn-contact-us" 
+                            rel="" 
+                            data-bs-toggle="" 
+                            data-bs-target=""
+                            
+                        >
+                            
+                                Contact us
+                            
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+            <div class="gd-footer-copyright">
+                
+                    <div class="gd-footer-copyright-text">
+                        
+                            Copyright© 2007 - 2024 GoodData Corporation. All Rights Reserved.
+                        
+                    </div>
+                
+                    <div class="gd-footer-copyright-text">
+                        
+                            <a href="/legal/#privacy-policy" class="gd-footer-copyright-link" id="footer-copyright-privacy-policy">Privacy Policy</a>
+                        
+                    </div>
+                
+                    <div class="gd-footer-copyright-text">
+                        
+                            <a href="/legal/" class="gd-footer-copyright-link" id="footer-copyright-legal">Legal</a>
+                        
+                    </div>
+                
+                    <div class="gd-footer-copyright-text">
+                        
+                            <a href="/support-policies/" class="gd-footer-copyright-link" id="footer-copyright-support-policy">Support Policy</a>
+                        
+                    </div>
+                
+            </div>
+        
+    </div>
+</footer>
+
+
+<div class="modal fade" tabindex="-1" id="modalSubscribe" aria-labelledby="modalSubscribeLabel" role="dialog" aria-hidden="true" data-attr-form="modal-form">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content c-form__container-hs">
+            <button id="footer-newsletter-close" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header c-form__fill">
+                <p class="c-h5 modal-title">Subscribe to the GoodData Newsletter</p>
+                <p class="modal-subtitle">Receive regular updates from our blog, news, and more.</p>
+            </div>
+            <div class="modal-body c-form__subscribe c-form__fill">
+                
+                
+
+
+
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+<script>
+    // Definitions
+    var hsRegion = "na1";
+    var hsPortalId = "8934247";
+    var hsFormId__news = "c0df7971-3889-4cf2-bf69-98ccdd1bbf4a";
+    var hsFormName__news = "newsletter";
+    // Definitions DEV
+    // var hsPortalId = "14511621";
+    // var hsFormId__news = "f4da1c67-3585-4676-a867-8cde5289cc15";
+
+    // HS Form Create
+document.addEventListener("DOMContentLoaded", function() {
+    hbspt.forms.create({
+        region: hsRegion,
+        portalId: hsPortalId,
+        formId: hsFormId__news,
+        onFormSubmit: function($form) {
+
+            // Thanks
+            $('#modalSubscribe .c-form__fill').hide();
+            $('#modalSubscribe .c-form__submitted').show();
+
+            // GTM | Subscribe
+            var emailInputValue = $('.c-form__subscribe input[name="email"]').val();
+
+            // GTM | OptIn
+            legalCheck('subscribe');
+
+            // GTM | Event
+            dataLayer.push({
+                'event': trackingType(emailInputValue), // testEvent vs trackEvent
+                    'eventCategory': 'newsletter',
+                    'eventAction': 'submit',
+                    'eventLabel': 'subscribe'
+            });
+
+            // GTM | HS Form Submission
+            dataLayer.push({
+                'event': 'form_submission', //event name
+                'form_name': hsFormName__news, // specific form name
+                'tracking_type': trackingType(emailInputValue), // testEvent vs trackEvent
+                'form_id': hsFormId__news, //HS form ID
+                'asset_name': 'unknown', //asset name or unknown
+                'asset_format': 'unknown', //asset file type or unknown
+                'form_marketing_consent': window.optinTracker,
+                'page_url': document.location.pathname,
+                'form_email': isGmail(emailInputValue), // (business, gmail)
+                'form_company_size': 'unknown', // (enterprise, smb, unknown)
+                'form_email_submission': emailInputValue
+            });
+        },
+        onFormReady: function($form, ctx){
+            // Form name (used on error DataLayer)
+            var $formName = hsFormName__news;
+
+            // Hubspot JS ready
+            
+    window.setCookie=function(key,value,expiry){var expires=new Date;expires.setTime(expires.getTime()+expiry*24*60*60*1e3);document.cookie=key+"="+value+";path=/"+";expires="+expires.toUTCString()};window.getCookie=function(key){var keyValue=document.cookie.match("(^|;) ?"+key+"=([^;]*)(;|$)");return keyValue?keyValue[2]:null};function inputLabelFields(){$form.find(".hs-input").on("focus",function(){let thisLabel=$(this).parent().parent().find("label");thisLabel.css({opacity:1});$(this).parent().addClass("label-visible")});$form.find(".hs-input").on("focusout",function(){if($(this).val()===""){let thisLabel=$(this).parent().parent().find("label");let errorLabel=$(this).parent().parent().find("ul label");thisLabel.css({opacity:0});errorLabel.css({opacity:1});$(this).parent().removeClass("label-visible")}else{let thisLabel=$(this).parent().parent().find("label");thisLabel.css({opacity:1});$(this).parent().addClass("label-visible")}if($(this).hasClass("is-placeholder")){let thisLabel=$(this).parent().parent().find("label");thisLabel.css({opacity:0});$(this).parent().removeClass("label-visible")}})}inputLabelFields();$form.find('.hs-input[type="email"]').on("focusout",function(){inputLabelFields()});window.addEventListener("message",event=>{if(event.data.type==="hsFormCallback"&&event.data.eventName==="onFormReady"){function gaGacid(){var urlEnv=window.location.hostname;if(window.ga&&urlEnv=="www.gooddata.com"){ga(function(tracker){var clientId=ga.getAll()[0].get("clientId");$form.find('input[name="gacid"]').val(clientId).change()})}}var checkCookiePolicy=setInterval(function(){if(window.cookiesP){gaGacid();clearInterval(checkCookiePolicy)}else{if(!window.isEU){gaGacid();clearInterval(checkCookiePolicy)}}},1e3)}});window.GDDomains=["gooddata.com","cz.gooddata.com","insighti.com"];window.testKeywords=["forecom","lhv","test"];window.isGoodDataEmail=function(email){for(let i=0;i<window.GDDomains.length;i++){let domain=window.GDDomains[i];let email_domain=email.split("@").pop();if(email_domain===domain){return false}}return true};window.isGmail=function(email){if(email.indexOf("@gmail.com")>0){return"gmail"}else{return"business"}};window.isTest=function(email){for(let i=0;i<window.testKeywords.length;i++){let key=window.testKeywords[i];if(email.indexOf(key)>0){return true}}return false};window.trackingType=function(email){if(email){if(!isGoodDataEmail(email)||isTest(email)){return"testEvent"}else{return"trackEvent"}}else{return"unknown"}};window.legalCheck=function(thisForm){window.emailInputValue=$(".c-form__"+thisForm+' input[name="email"]').val();window.checkboxInputValue=$(".c-form__"+thisForm+' input[type="checkbox"]');window.hsgdprstateInputValue=$(".c-form__"+thisForm+' input[name="hsgdprstate"]');window.optinTracker;if(window.checkboxInputValue.is(":checked")){window.hsgdprstateInputValue.val("yes").change();window.optinTracker="optin"}else{window.hsgdprstateInputValue.val("no").change();window.optinTracker="none"}};var urlEnv=window.location.hostname;async function hutkCall(urlEnv){var hostUrl;if(urlEnv==="www.gooddata.com"||urlEnv==="staging--gooddata-gdc.netlify.app"||urlEnv==="dl-tracking--gooddata-gdc.netlify.app"){hostUrl="https://"+urlEnv}else if(urlEnv==="localhost"){hostUrl="http://localhost:8080"}const API_ENDPOINT=hostUrl+"/.netlify/functions/hubspotutk/hubspotutk.js?hutk="+window.hubspotutk;return fetch(API_ENDPOINT,{headers:{Accept:"application/json"}}).then(response=>response.json()).then(function(msg){window.hutkCallback=msg.msg}).catch(error=>console.log("no hubspotutk"))}async function zeroCall(email,thisField,form){var hostUrl;if(urlEnv==="localhost"){hostUrl="http://localhost:8888"}else{hostUrl="https://"+urlEnv}const API_ENDPOINT=hostUrl+"/.netlify/functions/zerobounce/zerobounce.js?email="+email;function printApproved(thisField,form){if(form.find(".error").length){thisField.attr("data-zb","reject");form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true);thisField.parent().after("<ul class='no-list hs-error-msgs inputs-list nb-custom' role='alert'><li><label class='hs-error-msg'>Please enter a valid business email.</label></li></ul>")}else{thisField.attr("data-zb","approved");form.find('.hs-button[type="submit"]').removeClass("disabled").attr("disabled",false);thisField.parent().after("<ul class='no-list hs-status-msgs inputs-list nb-custom' role='alert'><li><label class='hs-status-msg valid'>The email address is valid.</label></li></ul>")}}function printReject(thisField,form){thisField.attr("data-zb","reject");form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true);thisField.parent().after("<ul class='no-list hs-error-msgs inputs-list nb-custom' role='alert'><li><label class='hs-error-msg'>Please enter a valid email.</label></li></ul>")}return fetch(API_ENDPOINT,{headers:{Accept:"application/json"}}).then(response=>response.json()).then(function(msg){console.log("Status: "+msg.status+" and Substatus: "+msg.substatus);form.find(".hs-email .hs-error-msgs.nb-custom, .hs-email .hs-status-msgs.nb-custom").each(function(){$(this).remove()});if(msg.status=="valid"||msg.status=="catch-all"||msg.status=="unknown"){printApproved(thisField,form)}else if(msg.status=="invalid"){printReject(thisField,form)}else if(msg.status=="do_not_mail"){if(msg.substatus=="role_based"||msg.substatus=="role_based_catch_all"){printApproved(thisField,form)}else{printReject(thisField,form)}}else{printReject(thisField,form)}}).catch(error=>console.log("no zerobounce"))}if($form){$form.find(".hs-input").each(function(){$(this)[0].addEventListener("keypress",function(event){if(event.key==="Enter"){$form.find(".hs-input").each(function(index){if($(this)[0].hasAttribute("required")){if($(this).val()==""){$(this)[0].focus();$(this).trigger("blur")}if($(this).val()==""||$(this).hasClass("error")||$(this).attr("type")=="email"&&$(this).attr("data-zb")!="approved"){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true);event.preventDefault()}}})}},false);var zbTimer;var zbTimerPSF;var zbTimerPST;$(this).on("input paste keyup",function(){if($(this)[0].hasAttribute("required")){if($form.find('.hs-button[type="submit"]').hasClass("hasPactsafe")){if(window.pactsafeAgreeChecked==false){if($(this).attr("type")=="email"){zbEmailPSF=$(this);zbEmailValPSF=zbEmailPSF.val();zbEmailPSF.attr("data-zb","");clearTimeout(zbTimerPSF);zbEmailPSF.parent().after("<ul class='no-list hs-error-msgs inputs-list nb-custom' role='alert'><li><label class='hs-error-msg validating'>Validating email address...</label></li></ul>");zbTimerPSF=setTimeout(function(){if(zbEmailPSF!=""){zeroCall(zbEmailValPSF,zbEmailPSF,$form)}},600)}else{if($form.find(".error").length||$(this).val()==""){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true)}else{$form.find('.hs-button[type="submit"]').removeClass("disabled").attr("disabled",false)}}}else{if($(this).attr("type")=="email"){zbEmailPST=$(this);zbEmailValPST=zbEmailPST.val();zbEmailPST.attr("data-zb","");clearTimeout(zbTimerPST);zbEmailPST.parent().after("<ul class='no-list hs-error-msgs inputs-list nb-custom' role='alert'><li><label class='hs-error-msg validating'>Validating email address...</label></li></ul>");zbTimerPST=setTimeout(function(){if(zbEmailPST!=""){zeroCall(zbEmailValPST,zbEmailPST,$form)}},600)}else{$form.find('.hs-button[type="submit"]').removeClass("disabled").attr("disabled",false)}}}else{if($(this).attr("type")=="email"){if($(this).val().length>0){zbEmail=$(this);zbEmailVal=zbEmail.val();zbEmail.attr("data-zb","");clearTimeout(zbTimer);zbEmail.parent().after("<ul class='no-list hs-error-msgs inputs-list nb-custom' role='alert'><li><label class='hs-error-msg validating'>Validating email address...</label></li></ul>");zbTimer=setTimeout(function(){if(zbEmail!=""){zeroCall(zbEmailVal,zbEmail,$form)}},600)}}else{if($form.find(".error").length||$(this).val()==""||$form.find('[data-zb="reject"]').length){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true)}else{$form.find('.hs-button[type="submit"]').removeClass("disabled").attr("disabled",false)}}}}else{if($form.find(".error").length||$form.find('[data-zb="reject"]').length){}else{if($form.find('.hs-button[type="submit"]').hasClass("hasPactsafe")){if(window.pactsafeAgreeChecked==true){$form.find('.hs-button[type="submit"]').removeClass("disabled").attr("disabled",false)}}else{$form.find('.hs-button[type="submit"]').removeClass("disabled").attr("disabled",false)}}}})});$form.find("input[type='submit']").each(function(){$(this)[0].addEventListener("click",function(event){$form.find(".hs-input").each(function(index){if($(this)[0].hasAttribute("required")){if($(this).val()==""){$(this)[0].focus();$(this).trigger("blur")}if($(this).val()==""||$(this).hasClass("error")){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true);event.preventDefault()}}})},false)});var companyField=setInterval(function(){$form.find("input[name='company']").each(function(){$(this).on("input paste focusout",function(){if($(this)[0].hasAttribute("required")){if($form.find(".error").length||$(this).val()==""||window.pactsafeAgreeChecked==false){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true)}else{$form.find('.hs-button[type="submit"]').removeClass("disabled").attr("disabled",false)}}})})},500);$form.find(".hs_email").each(function(){if($.fn.childrenChange!==undefined){$(this).childrenChange((el,added)=>{let errorText="";if($(added[0]).hasClass("hs-error-msg")&&$(added[0]).text()!==""){errorText=$(added[0]).text()}if($(added[0]).hasClass("hs-error-msgs")&&$(added[0]).find("li").text()!==""){errorText=$(added[0]).find("li").text()}if($(el).hasClass("hs-error-msg")&&$(el).text()!==""){errorText=$(el).text()}if(errorText!==""){dataLayer.push({event:"form_email_error",form_name:$formName,error_value:errorText,form_id:$form.attr("data-form-id"),page_url:document.location.pathname})}})}});$form.find(".hs-form-field").each(function(){if($.fn.childrenChange!==undefined){$(this).childrenChange((el,added)=>{if($(added[0]).hasClass("hs-error-msg")&&$(added[0]).text()!==""){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true)}if($(added[0]).hasClass("hs-error-msgs")&&$(added[0]).find("li").text()!==""){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true)}if($(el).hasClass("hs-error-msg")&&$(el).text()!==""){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true)}})}})}
+
+
+            // GTM | HS Form Ready - Modal Opened
+            var checkModalSubscribe = setInterval(function() {
+                if ($('#modalSubscribe').hasClass('show')) {
+
+                    dataLayer.push({
+                        'event': 'form_view',
+                        'form_name': hsFormName__news,
+                        'form_id': hsFormId__news, // hubspot form ID
+                        //'tracking_type': trackingType(window.hutkCallback), // testEvent vs trackEvent
+                        'asset_name': 'unknown', //asset name or unknown
+                        'asset_format': 'unknown', //asset file type or unknown
+                        'page_url': document.location.pathname
+                    });
+                    clearInterval(checkModalSubscribe);
+                }
+            }, 1000);
+
+            // Add attrs to modal
+            $('#modalSubscribe').attr('data-attr-form-name', hsFormName__news);
+            $('#modalSubscribe').attr('data-attr-form-id', hsFormId__news);
+            
+        }
+    });
+});
+</script>
+            </div>
+            <div class="c-form__submitted text-center">
+                <p>Thank you for subscribing to the GoodData newsletter.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+        <script src="/js/vendors/jquery.min.js"></script>
+        
+        <script src="/js/vendors/bootstrap.bundle.min.js"></script>
+        
+        <script src="/js/vendors/bootstrap.init.js"></script>
+        
+        <script src="/location/location.js"></script>
+        <script src="/js/modules/cookies.js"></script>
+        
+        
+        <script>
+            
+            const elNavLinks=document.querySelectorAll(".navbar-toggler");const elBody=document.querySelector("body");const classActive="c-siteheader-active";const classSubmenuActive="c-siteheader-submenu-active";const headerInitClass="c-siteheader-init";const headerNav=$(".c-siteheader");const $dropdown=$(".nav-item");const $dropdownToggle=$(".nav-link");const $dropdownMenu=$(".c-siteheader__l1");const showClass="show";setCookie=function(key,value,expiry){var expires=new Date;expires.setTime(expires.getTime()+expiry*24*60*60*1e3);document.cookie=key+"="+value+";path=/"+";expires="+expires.toUTCString()};getCookie=function(key){var keyValue=document.cookie.match("(^|;) ?"+key+"=([^;]*)(;|$)");return keyValue?keyValue[2]:null};var gdPromoBannerCookie=getCookie("gd-banner-promo");console.log(gdPromoBannerCookie);if(gdPromoBannerCookie){$(".c-siteheader-top").addClass("top-hide")}jQuery(document).ready(function(){var isChrome=/Chrome/.test(navigator.userAgent)&&/Google Inc/.test(navigator.vendor);if(window.location.hash&&isChrome){setTimeout(function(){var hash=window.location.hash;window.location.hash="";window.location.hash=hash},800)}});function init(){$.fn.isInViewport=function(){var elementTop=$(this).offset().top;var elementBottom=elementTop+$(this).outerHeight();var viewportTop=$(window).scrollTop();var viewportBottom=viewportTop+$(window).height();return elementBottom>viewportTop&&elementTop<viewportBottom};if($(".c-siteheader-top").length){var mainMenuDistance=$(".c-siteheader").offset().top;$(window).on("resize, scroll",function(){if($(window).width()<768){if(window.gdBannerClose==1){mainMenuDistance=64}else{mainMenuDistance=144}}else{if($(window).width()>=1200){mainMenuDistance=64}else{mainMenuDistance=86}$(".c-siteheader").removeAttr("style")}});$(window).on("scroll",function(){if($(this).scrollTop()===0){$(".c-siteheader").removeClass("c-siteheader__fixed")}else{if($(this).scrollTop()>=mainMenuDistance){$(".c-siteheader").addClass("c-siteheader__fixed")}else{$(".c-siteheader").removeClass("c-siteheader__fixed")}}});$("#promo-banner-collapse").on("click",function(){if($(".c-siteheader-top").hasClass("top-hide")){$(".c-siteheader-top").removeClass("top-hide");window.gdBannerClose=0;setCookie("gd-banner-promo","false","0")}else{$(".c-siteheader-top").addClass("top-hide");window.gdBannerClose=1;setCookie("gd-banner-promo","true","1")}})}for(let i=0;i<elNavLinks.length;i++){let el=elNavLinks[i];el.addEventListener("click",event=>{event.preventDefault();elBody.classList.toggle(classActive);if($(elNavLinks).attr("aria-expanded")=="false"){headerNav.removeClass(classSubmenuActive);$dropdownToggle.attr("aria-expanded","false");$dropdownMenu.removeClass(showClass)}},false)}$(window).on("load resize",function(){$dropdownMenu.addClass(headerInitClass);if($(window).width()>=1200){$("html").on("click",function(){$dropdownToggle.attr("aria-expanded","false");$dropdownMenu.removeClass(showClass)});headerNav.on("click",function(event){event.stopPropagation()});$("body").removeClass("c-siteheader-active");const navItems=document.getElementsByClassName("c-siteheader__l1");$("body").on("click",function(e){for(const navItem of navItems){if($(this).hasClass("show")){headerNav.addClass(classSubmenuActive)}else{headerNav.removeClass(classSubmenuActive)}}});if($(elNavLinks).attr("aria-expanded")=="true"){if($("body").hasClass(classActive)){headerNav.addClass(classSubmenuActive)}}else{if($("body").hasClass(classActive)){headerNav.removeClass(classSubmenuActive)}}}else{$dropdown.off("mouseenter mouseleave");if($(elNavLinks).attr("aria-expanded")=="true"){$("body").addClass("c-siteheader-active")}else{$("#siteHeader").removeClass("show");$("body").removeClass("c-siteheader-active")}}$dropdownToggle.on("click",function(event){if($(this).attr("aria-expanded")=="true"){var navItemHide=this.nextElementSibling.querySelector(".c-siteheader__l1");navItemHide.addEventListener("shown.bs.collapse",function(){headerNav.addClass(classSubmenuActive);this.blur()})}else{var navItemHide=this.nextElementSibling.querySelector(".c-siteheader__l1");navItemHide.addEventListener("hidden.bs.collapse",function(){headerNav.removeClass(classSubmenuActive);this.blur()})}})});$(window).on("ready",function(){$("#navLink-blog.nav-link").removeAttr("data-bs-toggle")});$('.c-siteheader .c-siteheader__submenu a:not([href="#"])').on("click",function(e){$("#siteHeader").removeClass("show");$(".c-siteheader-init").removeClass("show");$("body").removeClass("c-siteheader-active")});function siteHeaderTopMenu(){if(window.innerWidth>=992){$(".c-siteheader .c-siteheader-top__menu__ul").detach().appendTo(".c-siteheader-top .c-siteheader-top__menu")}else{$(".c-siteheader-top .c-siteheader-top__menu__ul").detach().prependTo(".c-siteheader .c-login")}}if($(window).width()>=992){window.headerTopMenu="desk"}else{window.headerTopMenu="mobile";siteHeaderTopMenu()}$(window).on("resize",function(){if($(window).width()>=992&&window.headerTopMenu==="mobile"){window.headerTopMenu="desk";siteHeaderTopMenu()}else if($(window).width()<992&&window.headerTopMenu==="desk"){window.headerTopMenu="mobile";siteHeaderTopMenu()}});let header=$(".c-siteheader");$('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event){if(location.pathname.replace(/^\//,"")===this.pathname.replace(/^\//,"")&&location.hostname===this.hostname){let target=$(this.hash);target=target.length?target:$("[name="+this.hash.slice(1)+"]");if(target.length){if($(this).hasClass("submenu-multiline")&&$(window).width()<992){$('[data-target="#navbarsExampleDefault"]').click()}event.preventDefault();$("html, body").animate({scrollTop:target.offset().top-header.height()},100)}}});$("body").on("click",function(e){$("[data-bs-toggle=tooltip]").each(function(){if(!$(this).is(e.target)&&$(this).has(e.target).length===0&&$(".tooltip").has(e.target).length===0){$(this).tooltip("hide")}})});window.testInView=function($el){var wTop=$(window).scrollTop();var wBot=wTop+$(window).height();var wMid=wBot-$(window).height()/2;var eTop=$el.offset().top;var eBot=eTop+$el.height();return eTop<=wMid&&eBot>=wMid};window.quarterInView=function($el){var wTop=$(window).scrollTop();var wBot=wTop+$(window).height();var wQuat=wBot-$(window).height()/4;var eTop=$el.offset().top;var eBot=eTop+$el.height();return eTop<=wQuat&&eBot>=wQuat};window.topInView=function($el){var wTop=$(window).scrollTop();var wBot=wTop+$(window).height();var wQuat=wBot-$(window).height();var eTop=$el.offset().top;var eBot=eTop+$el.height();return eTop<=wQuat&&eBot>=wQuat};window.pixelBottomInView=function($el){var wTop=$(window).scrollTop();var wBot=wTop+$(window).height();var wQuat=wBot-$(window).height()+1;var eTop=$el.offset().top;var eBot=eTop+$el.height();return eTop<=wQuat&&eBot>=wQuat};window.pixelTopInView=function($el){var wTop=$(window).scrollTop();var wBot=wTop+$(window).height();var wQuat=wBot-1;var eTop=$el.offset().top;var eBot=eTop+$el.height();return eTop<=wQuat&&eBot>=wQuat};window.bottomVisible=(()=>document.documentElement.clientHeight+window.scrollY>=(document.documentElement.scrollHeight||document.documentElement.clientHeight));$.fn.inView=function(inViewType){var viewport={};viewport.top=$(window).scrollTop();viewport.bottom=viewport.top+$(window).height();var bounds={};bounds.top=this.offset().top;bounds.bottom=bounds.top+this.outerHeight();switch(inViewType){case"bottomOnly":return bounds.bottom<=viewport.bottom&&bounds.bottom>=viewport.top;case"topOnly":return bounds.top<=viewport.bottom&&bounds.top>=viewport.top;case"both":return bounds.top>=viewport.top&&bounds.bottom<=viewport.bottom;default:return bounds.top>=viewport.top&&bounds.bottom<=viewport.bottom}};window._wq=window._wq||[];_wq.push({id:"_all",onReady:function(video){var alltime;var wVideoId;var setVideoInView=function(wVideoId){if(testInView($("#wistia-"+wVideoId+"-1_popover"))){return"yes"}else{return"no"}};var setVideoOverlayInView=function(wVideoId){if($("#wistia-"+wVideoId+"-1_popover_overlay").length){return true}};var checkEmbeddedVideo=function(wVideoId){if($("#wistia-"+wVideoId+"-1_popover").length==0){return true}};video.bind("play",function(){wVideoId=video.hashedId();if(video.isMuted()&&checkEmbeddedVideo(wVideoId)){return false}dataLayer.push({event:"video-on-demand-start",video_id:video.hashedId(),video_name:video.name(),page_url:document.location.pathname,in_the_viewport:setVideoInView(wVideoId)});return this.unbind}).bind("end",function(){wVideoId=video.hashedId();if(video.isMuted()&&checkEmbeddedVideo(wVideoId)){return false}dataLayer.push({event:"video-on-demand-complete",video_id:video.hashedId(),video_name:video.name(),page_url:document.location.pathname,in_the_viewport:setVideoInView(wVideoId)});return this.unbind}).bind("secondchange",function(s){wVideoId=video.hashedId();if(video.isMuted()&&checkEmbeddedVideo(wVideoId)){return false}alltime=video.secondsWatched();if(alltime%15==0&&alltime!=0){dataLayer.push({event:"video-on-demand-duration",video_id:video.hashedId(),video_name:video.name(),page_url:document.location.pathname,in_the_viewport:setVideoInView(wVideoId),on_demand_seconds_watched:alltime})}})}});$(".c-video__youtube__loop").each(function(){$(this).find("iframe").attr("src",$(this).find("iframe").attr("src")+"&autoplay=1")});$("[data-bs-toggle=modal]").click(function(){if(getScrollbarWidth()>0&&$("body").hasClass("modal-open")){header.addClass("scrollbar-on")}else{header.removeClass("scrollbar-on")}});function getScrollbarWidth(){const outer=document.createElement("div");outer.style.visibility="hidden";outer.style.overflow="scroll";outer.style.msOverflowStyle="scrollbar";document.body.appendChild(outer);const inner=document.createElement("div");outer.appendChild(inner);const scrollbarWidth=outer.offsetWidth-inner.offsetWidth;outer.parentNode.removeChild(outer);return scrollbarWidth}}init();$.fn.childrenChange=function(cb){return $(this).each((_,el)=>{new MutationObserver(mutations=>{mutations.forEach(mutation=>cb&&cb(mutation.target,mutation.addedNodes))}).observe(el,{subtree:true,childList:true})})};
+        
+        </script>
+
+        
+        
+
+        
+        
+
+        <script>
+            
+            
+            
+                
+
+!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var n in e)e.hasOwnProperty(n)&&(t[n]=e[n]);return t}var t=function(e){var n=new t.Index;return n.pipeline.add(t.trimmer,t.stopWordFilter,t.stemmer),e&&e.call(n,n),n};t.version="0.9.5",lunr=t,t.utils={},t.utils.warn=function(e){return function(t){e.console&&console.warn&&console.warn(t)}}(this),t.utils.toString=function(e){return void 0===e||null===e?"":e.toString()},t.EventEmitter=function(){this.events={}},t.EventEmitter.prototype.addListener=function(){var e=Array.prototype.slice.call(arguments),t=e.pop(),n=e;if("function"!=typeof t)throw new TypeError("last argument must be a function");n.forEach(function(e){this.hasHandler(e)||(this.events[e]=[]),this.events[e].push(t)},this)},t.EventEmitter.prototype.removeListener=function(e,t){if(this.hasHandler(e)){var n=this.events[e].indexOf(t);-1!==n&&(this.events[e].splice(n,1),0==this.events[e].length&&delete this.events[e])}},t.EventEmitter.prototype.emit=function(e){if(this.hasHandler(e)){var t=Array.prototype.slice.call(arguments,1);this.events[e].forEach(function(e){e.apply(void 0,t)},this)}},t.EventEmitter.prototype.hasHandler=function(e){return e in this.events},t.tokenizer=function(e){if(!arguments.length||null===e||void 0===e)return[];if(Array.isArray(e)){var n=e.filter(function(e){return null===e||void 0===e?!1:!0});n=n.map(function(e){return t.utils.toString(e).toLowerCase()});var i=[];return n.forEach(function(e){var n=e.split(t.tokenizer.seperator);i=i.concat(n)},this),i}return e.toString().trim().toLowerCase().split(t.tokenizer.seperator)},t.tokenizer.defaultSeperator=/[\s\-]+/,t.tokenizer.seperator=t.tokenizer.defaultSeperator,t.tokenizer.setSeperator=function(e){null!==e&&void 0!==e&&"object"==typeof e&&(t.tokenizer.seperator=e)},t.tokenizer.resetSeperator=function(){t.tokenizer.seperator=t.tokenizer.defaultSeperator},t.tokenizer.getSeperator=function(){return t.tokenizer.seperator},t.Pipeline=function(){this._queue=[]},t.Pipeline.registeredFunctions={},t.Pipeline.registerFunction=function(e,n){n in t.Pipeline.registeredFunctions&&t.utils.warn("Overwriting existing registered function: "+n),e.label=n,t.Pipeline.registeredFunctions[n]=e},t.Pipeline.getRegisteredFunction=function(e){return e in t.Pipeline.registeredFunctions!=!0?null:t.Pipeline.registeredFunctions[e]},t.Pipeline.warnIfFunctionNotRegistered=function(e){var n=e.label&&e.label in this.registeredFunctions;n||t.utils.warn("Function is not registered with pipeline. This may cause problems when serialising the index.\n",e)},t.Pipeline.load=function(e){var n=new t.Pipeline;return e.forEach(function(e){var i=t.Pipeline.getRegisteredFunction(e);if(!i)throw new Error("Cannot load un-registered function: "+e);n.add(i)}),n},t.Pipeline.prototype.add=function(){var e=Array.prototype.slice.call(arguments);e.forEach(function(e){t.Pipeline.warnIfFunctionNotRegistered(e),this._queue.push(e)},this)},t.Pipeline.prototype.after=function(e,n){t.Pipeline.warnIfFunctionNotRegistered(n);var i=this._queue.indexOf(e);if(-1===i)throw new Error("Cannot find existingFn");this._queue.splice(i+1,0,n)},t.Pipeline.prototype.before=function(e,n){t.Pipeline.warnIfFunctionNotRegistered(n);var i=this._queue.indexOf(e);if(-1===i)throw new Error("Cannot find existingFn");this._queue.splice(i,0,n)},t.Pipeline.prototype.remove=function(e){var t=this._queue.indexOf(e);-1!==t&&this._queue.splice(t,1)},t.Pipeline.prototype.run=function(e){for(var t=[],n=e.length,i=this._queue.length,o=0;n>o;o++){for(var r=e[o],s=0;i>s&&(r=this._queue[s](r,o,e),void 0!==r&&null!==r);s++);void 0!==r&&null!==r&&t.push(r)}return t},t.Pipeline.prototype.reset=function(){this._queue=[]},t.Pipeline.prototype.get=function(){return this._queue},t.Pipeline.prototype.toJSON=function(){return this._queue.map(function(e){return t.Pipeline.warnIfFunctionNotRegistered(e),e.label})},t.Index=function(){this._fields=[],this._ref="id",this.pipeline=new t.Pipeline,this.documentStore=new t.DocumentStore,this.index={},this.eventEmitter=new t.EventEmitter,this._idfCache={},this.on("add","remove","update",function(){this._idfCache={}}.bind(this))},t.Index.prototype.on=function(){var e=Array.prototype.slice.call(arguments);return this.eventEmitter.addListener.apply(this.eventEmitter,e)},t.Index.prototype.off=function(e,t){return this.eventEmitter.removeListener(e,t)},t.Index.load=function(e){e.version!==t.version&&t.utils.warn("version mismatch: current "+t.version+" importing "+e.version);var n=new this;n._fields=e.fields,n._ref=e.ref,n.documentStore=t.DocumentStore.load(e.documentStore),n.pipeline=t.Pipeline.load(e.pipeline),n.index={};for(var i in e.index)n.index[i]=t.InvertedIndex.load(e.index[i]);return n},t.Index.prototype.addField=function(e){return this._fields.push(e),this.index[e]=new t.InvertedIndex,this},t.Index.prototype.setRef=function(e){return this._ref=e,this},t.Index.prototype.saveDocument=function(e){return this.documentStore=new t.DocumentStore(e),this},t.Index.prototype.addDoc=function(e,n){if(e){var n=void 0===n?!0:n,i=e[this._ref];this.documentStore.addDoc(i,e),this._fields.forEach(function(n){var o=this.pipeline.run(t.tokenizer(e[n]));this.documentStore.addFieldLength(i,n,o.length);var r={};o.forEach(function(e){e in r?r[e]+=1:r[e]=1},this);for(var s in r){var u=r[s];u=Math.sqrt(u),this.index[n].addToken(s,{ref:i,tf:u})}},this),n&&this.eventEmitter.emit("add",e,this)}},t.Index.prototype.removeDocByRef=function(e){if(e&&this.documentStore.isDocStored()!==!1&&this.documentStore.hasDoc(e)){var t=this.documentStore.getDoc(e);this.removeDoc(t,!1)}},t.Index.prototype.removeDoc=function(e,n){if(e){var n=void 0===n?!0:n,i=e[this._ref];this.documentStore.hasDoc(i)&&(this.documentStore.removeDoc(i),this._fields.forEach(function(n){var o=this.pipeline.run(t.tokenizer(e[n]));o.forEach(function(e){this.index[n].removeToken(e,i)},this)},this),n&&this.eventEmitter.emit("remove",e,this))}},t.Index.prototype.updateDoc=function(e,t){var t=void 0===t?!0:t;this.removeDocByRef(e[this._ref],!1),this.addDoc(e,!1),t&&this.eventEmitter.emit("update",e,this)},t.Index.prototype.idf=function(e,t){var n="@"+t+"/"+e;if(Object.prototype.hasOwnProperty.call(this._idfCache,n))return this._idfCache[n];var i=this.index[t].getDocFreq(e),o=1+Math.log(this.documentStore.length/(i+1));return this._idfCache[n]=o,o},t.Index.prototype.getFields=function(){return this._fields.slice()},t.Index.prototype.search=function(e,n){if(!e)return[];e="string"==typeof e?{any:e}:JSON.parse(JSON.stringify(e));var i=null;null!=n&&(i=JSON.stringify(n));for(var o=new t.Configuration(i,this.getFields()).get(),r={},s=Object.keys(e),u=0;u<s.length;u++){var a=s[u];r[a]=this.pipeline.run(t.tokenizer(e[a]))}var l={};for(var c in o){var d=r[c]||r.any;if(d){var f=this.fieldSearch(d,c,o),h=o[c].boost;for(var p in f)f[p]=f[p]*h;for(var p in f)p in l?l[p]+=f[p]:l[p]=f[p]}}var v,g=[];for(var p in l)v={ref:p,score:l[p]},this.documentStore.hasDoc(p)&&(v.doc=this.documentStore.getDoc(p)),g.push(v);return g.sort(function(e,t){return t.score-e.score}),g},t.Index.prototype.fieldSearch=function(e,t,n){var i=n[t].bool,o=n[t].expand,r=n[t].boost,s=null,u={};return 0!==r?(e.forEach(function(e){var n=[e];1==o&&(n=this.index[t].expandToken(e));var r={};n.forEach(function(n){var o=this.index[t].getDocs(n),a=this.idf(n,t);if(s&&"AND"==i){var l={};for(var c in s)c in o&&(l[c]=o[c]);o=l}n==e&&this.fieldSearchStats(u,n,o);for(var c in o){var d=this.index[t].getTermFrequency(n,c),f=this.documentStore.getFieldLength(c,t),h=1;0!=f&&(h=1/Math.sqrt(f));var p=1;n!=e&&(p=.15*(1-(n.length-e.length)/n.length));var v=d*a*h*p;c in r?r[c]+=v:r[c]=v}},this),s=this.mergeScores(s,r,i)},this),s=this.coordNorm(s,u,e.length)):void 0},t.Index.prototype.mergeScores=function(e,t,n){if(!e)return t;if("AND"==n){var i={};for(var o in t)o in e&&(i[o]=e[o]+t[o]);return i}for(var o in t)o in e?e[o]+=t[o]:e[o]=t[o];return e},t.Index.prototype.fieldSearchStats=function(e,t,n){for(var i in n)i in e?e[i].push(t):e[i]=[t]},t.Index.prototype.coordNorm=function(e,t,n){for(var i in e)if(i in t){var o=t[i].length;e[i]=e[i]*o/n}return e},t.Index.prototype.toJSON=function(){var e={};return this._fields.forEach(function(t){e[t]=this.index[t].toJSON()},this),{version:t.version,fields:this._fields,ref:this._ref,documentStore:this.documentStore.toJSON(),index:e,pipeline:this.pipeline.toJSON()}},t.Index.prototype.use=function(e){var t=Array.prototype.slice.call(arguments,1);t.unshift(this),e.apply(this,t)},t.DocumentStore=function(e){this._save=null===e||void 0===e?!0:e,this.docs={},this.docInfo={},this.length=0},t.DocumentStore.load=function(e){var t=new this;return t.length=e.length,t.docs=e.docs,t.docInfo=e.docInfo,t._save=e.save,t},t.DocumentStore.prototype.isDocStored=function(){return this._save},t.DocumentStore.prototype.addDoc=function(t,n){this.hasDoc(t)||this.length++,this.docs[t]=this._save===!0?e(n):null},t.DocumentStore.prototype.getDoc=function(e){return this.hasDoc(e)===!1?null:this.docs[e]},t.DocumentStore.prototype.hasDoc=function(e){return e in this.docs},t.DocumentStore.prototype.removeDoc=function(e){this.hasDoc(e)&&(delete this.docs[e],delete this.docInfo[e],this.length--)},t.DocumentStore.prototype.addFieldLength=function(e,t,n){null!==e&&void 0!==e&&0!=this.hasDoc(e)&&(this.docInfo[e]||(this.docInfo[e]={}),this.docInfo[e][t]=n)},t.DocumentStore.prototype.updateFieldLength=function(e,t,n){null!==e&&void 0!==e&&0!=this.hasDoc(e)&&this.addFieldLength(e,t,n)},t.DocumentStore.prototype.getFieldLength=function(e,t){return null===e||void 0===e?0:e in this.docs&&t in this.docInfo[e]?this.docInfo[e][t]:0},t.DocumentStore.prototype.toJSON=function(){return{docs:this.docs,docInfo:this.docInfo,length:this.length,save:this._save}},t.stemmer=function(){var e={ational:"ate",tional:"tion",enci:"ence",anci:"ance",izer:"ize",bli:"ble",alli:"al",entli:"ent",eli:"e",ousli:"ous",ization:"ize",ation:"ate",ator:"ate",alism:"al",iveness:"ive",fulness:"ful",ousness:"ous",aliti:"al",iviti:"ive",biliti:"ble",logi:"log"},t={icate:"ic",ative:"",alize:"al",iciti:"ic",ical:"ic",ful:"",ness:""},n="[^aeiou]",i="[aeiouy]",o=n+"[^aeiouy]*",r=i+"[aeiou]*",s="^("+o+")?"+r+o,u="^("+o+")?"+r+o+"("+r+")?$",a="^("+o+")?"+r+o+r+o,l="^("+o+")?"+i,c=new RegExp(s),d=new RegExp(a),f=new RegExp(u),h=new RegExp(l),p=/^(.+?)(ss|i)es$/,v=/^(.+?)([^s])s$/,g=/^(.+?)eed$/,m=/^(.+?)(ed|ing)$/,y=/.$/,S=/(at|bl|iz)$/,x=new RegExp("([^aeiouylsz])\\1$"),w=new RegExp("^"+o+i+"[^aeiouwxy]$"),I=/^(.+?[^aeiou])y$/,b=/^(.+?)(ational|tional|enci|anci|izer|bli|alli|entli|eli|ousli|ization|ation|ator|alism|iveness|fulness|ousness|aliti|iviti|biliti|logi)$/,E=/^(.+?)(icate|ative|alize|iciti|ical|ful|ness)$/,D=/^(.+?)(al|ance|ence|er|ic|able|ible|ant|ement|ment|ent|ou|ism|ate|iti|ous|ive|ize)$/,F=/^(.+?)(s|t)(ion)$/,_=/^(.+?)e$/,P=/ll$/,k=new RegExp("^"+o+i+"[^aeiouwxy]$"),z=function(n){var i,o,r,s,u,a,l;if(n.length<3)return n;if(r=n.substr(0,1),"y"==r&&(n=r.toUpperCase()+n.substr(1)),s=p,u=v,s.test(n)?n=n.replace(s,"$1$2"):u.test(n)&&(n=n.replace(u,"$1$2")),s=g,u=m,s.test(n)){var z=s.exec(n);s=c,s.test(z[1])&&(s=y,n=n.replace(s,""))}else if(u.test(n)){var z=u.exec(n);i=z[1],u=h,u.test(i)&&(n=i,u=S,a=x,l=w,u.test(n)?n+="e":a.test(n)?(s=y,n=n.replace(s,"")):l.test(n)&&(n+="e"))}if(s=I,s.test(n)){var z=s.exec(n);i=z[1],n=i+"i"}if(s=b,s.test(n)){var z=s.exec(n);i=z[1],o=z[2],s=c,s.test(i)&&(n=i+e[o])}if(s=E,s.test(n)){var z=s.exec(n);i=z[1],o=z[2],s=c,s.test(i)&&(n=i+t[o])}if(s=D,u=F,s.test(n)){var z=s.exec(n);i=z[1],s=d,s.test(i)&&(n=i)}else if(u.test(n)){var z=u.exec(n);i=z[1]+z[2],u=d,u.test(i)&&(n=i)}if(s=_,s.test(n)){var z=s.exec(n);i=z[1],s=d,u=f,a=k,(s.test(i)||u.test(i)&&!a.test(i))&&(n=i)}return s=P,u=d,s.test(n)&&u.test(n)&&(s=y,n=n.replace(s,"")),"y"==r&&(n=r.toLowerCase()+n.substr(1)),n};return z}(),t.Pipeline.registerFunction(t.stemmer,"stemmer"),t.stopWordFilter=function(e){return e&&t.stopWordFilter.stopWords[e]!==!0?e:void 0},t.clearStopWords=function(){t.stopWordFilter.stopWords={}},t.addStopWords=function(e){null!=e&&Array.isArray(e)!==!1&&e.forEach(function(e){t.stopWordFilter.stopWords[e]=!0},this)},t.resetStopWords=function(){t.stopWordFilter.stopWords=t.defaultStopWords},t.defaultStopWords={"":!0,a:!0,able:!0,about:!0,across:!0,after:!0,all:!0,almost:!0,also:!0,am:!0,among:!0,an:!0,and:!0,any:!0,are:!0,as:!0,at:!0,be:!0,because:!0,been:!0,but:!0,by:!0,can:!0,cannot:!0,could:!0,dear:!0,did:!0,do:!0,does:!0,either:!0,else:!0,ever:!0,every:!0,for:!0,from:!0,get:!0,got:!0,had:!0,has:!0,have:!0,he:!0,her:!0,hers:!0,him:!0,his:!0,how:!0,however:!0,i:!0,if:!0,in:!0,into:!0,is:!0,it:!0,its:!0,just:!0,least:!0,let:!0,like:!0,likely:!0,may:!0,me:!0,might:!0,most:!0,must:!0,my:!0,neither:!0,no:!0,nor:!0,not:!0,of:!0,off:!0,often:!0,on:!0,only:!0,or:!0,other:!0,our:!0,own:!0,rather:!0,said:!0,say:!0,says:!0,she:!0,should:!0,since:!0,so:!0,some:!0,than:!0,that:!0,the:!0,their:!0,them:!0,then:!0,there:!0,these:!0,they:!0,this:!0,tis:!0,to:!0,too:!0,twas:!0,us:!0,wants:!0,was:!0,we:!0,were:!0,what:!0,when:!0,where:!0,which:!0,while:!0,who:!0,whom:!0,why:!0,will:!0,with:!0,would:!0,yet:!0,you:!0,your:!0},t.stopWordFilter.stopWords=t.defaultStopWords,t.Pipeline.registerFunction(t.stopWordFilter,"stopWordFilter"),t.trimmer=function(e){if(null===e||void 0===e)throw new Error("token should not be undefined");return e.replace(/^\W+/,"").replace(/\W+$/,"")},t.Pipeline.registerFunction(t.trimmer,"trimmer"),t.InvertedIndex=function(){this.root={docs:{},df:0}},t.InvertedIndex.load=function(e){var t=new this;return t.root=e.root,t},t.InvertedIndex.prototype.addToken=function(e,t,n){for(var n=n||this.root,i=0;i<=e.length-1;){var o=e[i];o in n||(n[o]={docs:{},df:0}),i+=1,n=n[o]}var r=t.ref;n.docs[r]?n.docs[r]={tf:t.tf}:(n.docs[r]={tf:t.tf},n.df+=1)},t.InvertedIndex.prototype.hasToken=function(e){if(!e)return!1;for(var t=this.root,n=0;n<e.length;n++){if(!t[e[n]])return!1;t=t[e[n]]}return!0},t.InvertedIndex.prototype.getNode=function(e){if(!e)return null;for(var t=this.root,n=0;n<e.length;n++){if(!t[e[n]])return null;t=t[e[n]]}return t},t.InvertedIndex.prototype.getDocs=function(e){var t=this.getNode(e);return null==t?{}:t.docs},t.InvertedIndex.prototype.getTermFrequency=function(e,t){var n=this.getNode(e);return null==n?0:t in n.docs?n.docs[t].tf:0},t.InvertedIndex.prototype.getDocFreq=function(e){var t=this.getNode(e);return null==t?0:t.df},t.InvertedIndex.prototype.removeToken=function(e,t){if(e){var n=this.getNode(e);null!=n&&t in n.docs&&(delete n.docs[t],n.df-=1)}},t.InvertedIndex.prototype.expandToken=function(e,t,n){if(null==e||""==e)return[];var t=t||[];if(void 0==n&&(n=this.getNode(e),null==n))return t;n.df>0&&t.push(e);for(var i in n)"docs"!==i&&"df"!==i&&this.expandToken(e+i,t,n[i]);return t},t.InvertedIndex.prototype.toJSON=function(){return{root:this.root}},t.Configuration=function(e,n){var e=e||"";if(void 0==n||null==n)throw new Error("fields should not be null");this.config={};var i;try{i=JSON.parse(e),this.buildUserConfig(i,n)}catch(o){t.utils.warn("user configuration parse failed, will use default configuration"),this.buildDefaultConfig(n)}},t.Configuration.prototype.buildDefaultConfig=function(e){this.reset(),e.forEach(function(e){this.config[e]={boost:1,bool:"OR",expand:!1}},this)},t.Configuration.prototype.buildUserConfig=function(e,n){var i="OR",o=!1;if(this.reset(),"bool"in e&&(i=e.bool||i),"expand"in e&&(o=e.expand||o),"fields"in e)for(var r in e.fields)if(n.indexOf(r)>-1){var s=e.fields[r],u=o;void 0!=s.expand&&(u=s.expand),this.config[r]={boost:s.boost||0===s.boost?s.boost:1,bool:s.bool||i,expand:u}}else t.utils.warn("field name in user configuration not found in index instance fields");else this.addAllFields2UserConfig(i,o,n)},t.Configuration.prototype.addAllFields2UserConfig=function(e,t,n){n.forEach(function(n){this.config[n]={boost:1,bool:e,expand:t}},this)},t.Configuration.prototype.get=function(){return this.config},t.Configuration.prototype.reset=function(){this.config={}},lunr.SortedSet=function(){this.length=0,this.elements=[]},lunr.SortedSet.load=function(e){var t=new this;return t.elements=e,t.length=e.length,t},lunr.SortedSet.prototype.add=function(){var e,t;for(e=0;e<arguments.length;e++)t=arguments[e],~this.indexOf(t)||this.elements.splice(this.locationFor(t),0,t);this.length=this.elements.length},lunr.SortedSet.prototype.toArray=function(){return this.elements.slice()},lunr.SortedSet.prototype.map=function(e,t){return this.elements.map(e,t)},lunr.SortedSet.prototype.forEach=function(e,t){return this.elements.forEach(e,t)},lunr.SortedSet.prototype.indexOf=function(e){for(var t=0,n=this.elements.length,i=n-t,o=t+Math.floor(i/2),r=this.elements[o];i>1;){if(r===e)return o;e>r&&(t=o),r>e&&(n=o),i=n-t,o=t+Math.floor(i/2),r=this.elements[o]}return r===e?o:-1},lunr.SortedSet.prototype.locationFor=function(e){for(var t=0,n=this.elements.length,i=n-t,o=t+Math.floor(i/2),r=this.elements[o];i>1;)e>r&&(t=o),r>e&&(n=o),i=n-t,o=t+Math.floor(i/2),r=this.elements[o];return r>e?o:e>r?o+1:void 0},lunr.SortedSet.prototype.intersect=function(e){for(var t=new lunr.SortedSet,n=0,i=0,o=this.length,r=e.length,s=this.elements,u=e.elements;;){if(n>o-1||i>r-1)break;s[n]!==u[i]?s[n]<u[i]?n++:s[n]>u[i]&&i++:(t.add(s[n]),n++,i++)}return t},lunr.SortedSet.prototype.clone=function(){var e=new lunr.SortedSet;return e.elements=this.toArray(),e.length=e.elements.length,e},lunr.SortedSet.prototype.union=function(e){var t,n,i;this.length>=e.length?(t=this,n=e):(t=e,n=this),i=t.clone();for(var o=0,r=n.toArray();o<r.length;o++)i.add(r[o]);return i},lunr.SortedSet.prototype.toJSON=function(){return this.toArray()},function(e,t){"function"==typeof define&&define.amd?define(t):"object"==typeof exports?module.exports=t():e.elasticlunr=t()}(this,function(){return t})}();
+(function(window,document){"use strict";var contains=function(needle){var findNaN=needle!==needle;var indexOf;if(!findNaN&&typeof Array.prototype.indexOf==="function"){indexOf=Array.prototype.indexOf}else{indexOf=function(needle){var i=-1,index=-1;for(i=0;i<this.length;i++){var item=this[i];if(findNaN&&item!==item||item===needle){index=i;break}}return index}}return indexOf.call(this,needle)>-1};function string_to_slug(str){str=str.replace(/^\s+|\s+$/g,"");str=str.toLowerCase();var from="àáãäâèéëêìíïîòóöôùúüûñç·_,:;/";var to="aaaaaeeeeiiiioooouuuunc-----";for(var i=0,l=from.length;i<l;i++){str=str.replace(new RegExp(from.charAt(i),"g"),to.charAt(i))}str=str.replace(/[^a-z0-9 -]/g,"").replace(/\s+/g,"-").replace(/-+/g,"-");return str}const search=e=>{const results=window.searchIndex.search(e.target.value,{expand:true});const resEl=document.getElementById("searchResults");resEl.innerHTML="";const searchF=document.getElementById("searchField");const resMK=document.getElementById("resultsMK");const resMB=document.getElementById("resultsMB");const matchT=document.getElementById("matchingTags");const noRes=document.getElementById("noResults");var arrTags=[];var arrSorted=[];if(results&&results.length>0){results.map(r=>{const{id:id,title:title,image:image,tags:tags}=r.doc;for(var i=0;i<tags.length;i++){if(contains.call(arrTags,tags[i])){}else{arrTags=arrTags.concat([tags[i]])}}const el=document.createElement("li");resEl.appendChild(el);const a=document.createElement("a");a.setAttribute("href",id);a.textContent=title;a.setAttribute("class","c-mute-link");el.appendChild(a);const h5=document.createElement("h5");h5.setAttribute("class","c-h4");a.appendChild(h5);const imgCont=document.createElement("div");imgCont.setAttribute("class","c-searchbar__results__thumb");a.appendChild(imgCont);const img=document.createElement("img");img.setAttribute("src",`/img/blog/_80x80/${image}.webp`);img.setAttribute("alt",title);img.setAttribute("loading","lazy");imgCont.appendChild(img)});if(matchT){matchT.remove()}const divTags=document.createElement("div");divTags.setAttribute("id","matchingTags");resMK.parentNode.insertBefore(divTags,resMK.nextSibling);for(var i=0;i<arrTags.length;i++){arrSorted.push(arrTags[i].toLowerCase())}arrSorted.sort();for(var i=0;i<arrSorted.length;i++){if(arrSorted[i].includes(searchF.value.toLowerCase())){const a=document.createElement("a");a.setAttribute("href","/resources/tags/"+string_to_slug(arrSorted[i]));a.setAttribute("id","matchingTag-"+string_to_slug(arrSorted[i]));a.setAttribute("class","c-tags-pill");a.innerHTML="<span>"+arrSorted[i]+"</span>";divTags.appendChild(a)}}if(divTags.innerHTML===""){resMK.classList.remove("show");divTags.classList.remove("show")}else{resMK.classList.add("show");divTags.classList.add("show")}resMB.classList.add("show");noRes.classList.remove("show")}else{resMK.classList.remove("class","show");resMB.classList.remove("class","show");noRes.classList.add("show");if(matchT){matchT.remove()}}};fetch(document.location.protocol+"//"+document.location.host+"/search-blogposts.json").then(response=>response.json().then(rawIndex=>{window.searchIndex=elasticlunr.Index.load(rawIndex);document.getElementById("searchField").addEventListener("input",search)}));document.getElementById("searchbar-btn").onclick=function(){searchBtn();if(this.getAttribute("aria-expanded")==="true"){document.querySelector("body").classList.add("modal-open")}};document.getElementById("searchbar-x").onclick=function(){if(this.getAttribute("aria-expanded")==="false"){document.querySelector("body").classList.remove("modal-open")}};function searchBtn(){document.getElementById("searchField").focus()}})(window,document);
+
+            
+        </script>
+
+        
+        
+
+        
+        
+
+        
+        <script src="/js/modules/lazy.js"></script>
+
+        
+        <script src="/js/vendors/wistia.lazyload.js"></script>
+    </body>
+</html>

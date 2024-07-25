@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title></title>
+
+        <meta name="copyright" content="Copyright © 2008 - 2019 GoodData Corporation. All rights reserved.">
+<link rel="stylesheet" href="packages/gdc-status_1-min.6380cd1.css">
+    </head>
+    <body style="display:none">
+
+    <noscript>
+        <div class="l-page">
+            <div class="box-wrap l-table">
+                <div class="l-table-row">
+                    <div class="l-col-12 message is-error">
+                        <h2>JavaScript not enabled</h2>
+                        <p>The application requires JavaScript enabled to function properly. You can enable JavaScript through your browser preferences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </noscript>
+
+    <script type="text/javascript" charset="utf-8">// Copyright (C) 2007-2010, GoodData(R) Corporation. All rights reserved.
+GDC = window.GDC || {};
+GDC.env = {};
+GDC.ui = {};
+
+GDC.env.BrowserDetect = {
+    init: function () {
+        this.browser = this.searchString(this.dataBrowser) || "An unknown browser";
+        this.version = this.searchVersion(navigator.userAgent)
+        || this.searchVersion(navigator.appVersion)
+        || "an unknown version";
+
+        this.OS = this.searchString(this.dataOS) || "an unknown OS";
+
+        this.compatibilityMode = this.isInCompatibilityMode();
+        this.hasSilverlight = this.isSilverlightEnabled();
+        this.hasCookiesSupport = this.checkCookiesSupport();
+    },
+
+    searchString: function (data) {
+        var dataString, dataProp, i;
+        for (i=0;i<data.length;i++) {
+            dataString = data[i].string;
+            dataProp = data[i].prop;
+            this.versionSearchString = data[i].versionSearch || data[i].identity;
+            if (dataString) {
+                if (dataString.indexOf(data[i].subString) != -1)
+                return data[i].identity;
+            }
+            else if (dataProp)
+            return data[i].identity;
+        }
+    },
+    searchVersion: function (dataString) {
+        var index = dataString.indexOf(this.versionSearchString);
+        if (index == -1) return;
+        return parseFloat(dataString.substring(index+this.versionSearchString.length+1));
+    },
+    dataBrowser: [
+        {
+            string: navigator.userAgent,
+            subString: "Minefield",
+            versionSearch: "Minefield",
+            identity: "Firefox"
+        },
+        {
+            string: navigator.userAgent,
+            subString: "Chrome",
+            identity: "Chrome"
+        },
+        {   string: navigator.userAgent,
+            subString: "OmniWeb",
+            versionSearch: "OmniWeb/",
+            identity: "OmniWeb"
+        },
+        {
+            string: navigator.vendor,
+            subString: "Apple",
+            identity: "Safari",
+            versionSearch: "Version"
+        },
+        {
+            prop: window.opera,
+            identity: "Opera"
+        },
+        {
+            string: navigator.vendor,
+            subString: "iCab",
+            identity: "iCab"
+        },
+        {
+            string: navigator.vendor,
+            subString: "KDE",
+            identity: "Konqueror"
+        },
+        {
+            string: navigator.userAgent,
+            subString: "Firefox",
+            identity: "Firefox"
+        },
+        {
+            string: navigator.vendor,
+            subString: "Camino",
+            identity: "Camino"
+        },
+        {   // for newer Netscapes (6+)
+            string: navigator.userAgent,
+            subString: "Netscape",
+            identity: "Netscape"
+        },
+        {
+            string: navigator.userAgent,
+            subString: "MSIE",
+            identity: "Explorer",
+            versionSearch: "MSIE"
+        },
+        {
+            string: navigator.userAgent,
+            subString: "Trident",
+            identity: "Explorer",
+            versionSearch: "rv"
+        },
+        {
+            string: navigator.userAgent,
+            subString: "Gecko",
+            identity: "Mozilla",
+            versionSearch: "rv"
+        },
+        {   // for older Netscapes (4-)
+            string: navigator.userAgent,
+            subString: "Mozilla",
+            identity: "Netscape",
+            versionSearch: "Mozilla"
+        }
+    ],
+    dataOS : [
+        {
+            string: navigator.platform,
+            subString: "Win",
+            identity: "Windows"
+        },
+        {
+            string: navigator.platform,
+            subString: "Mac",
+            identity: "Mac"
+        },
+        {
+            string: navigator.userAgent,
+            subString: "iPhone",
+            identity: "iPhone/iPod"
+        },
+        {
+            string: navigator.userAgent,
+            subString: "iPad",
+            identity: "iPad"
+        },
+        {
+            string: navigator.platform,
+            subString: "Linux",
+            identity: "Linux"
+        }
+    ],
+
+    isInCompatibilityMode: function() {
+        if(this.browser === "Explorer"){
+            var matcher = navigator.userAgent.match(/Trident\/(\d+)/);
+            var tridentVersion = matcher && matcher[1] || 0;
+            // in standart mode, browser version is trident + 4
+            return (this.version - tridentVersion) < 4;
+        }
+        return false;
+    },
+
+    isSilverlightEnabled: function() {
+        var flag, sl;
+        try{
+            if(this.browser === "Ie"){
+                sl = new ActiveXObject("AgControl.AgControl");
+                if(sl && sl.IsVersionSupported("1.0")){
+                    flag = true;
+                }
+            }else{
+                if(navigator.plugins["Silverlight Plug-In"]){
+                    flag = true;
+                }
+            }
+        }catch(e){
+            flag = false;
+        }finally{
+            sl = null;
+        }
+        if(flag){
+            return true;
+        }
+        return false;
+    },
+
+    /**
+     * checks if the browser has cookies enabled
+     * @method checkCookiesSupport
+     * @return {Boolean}
+     */
+    checkCookiesSupport: function() {
+        this.createCookie("GDC-check", "I have cookies");
+        var value = this.readCookie("GDC-check");
+
+        if (value === "I have cookies") {
+            this.eraseCookie("GDC-check");
+            return true;
+        } else {
+            return false;
+        }
+    },
+
+    createCookie: function(name,value,days) {
+        var expires, date;
+        if (days) {
+            date = new Date();
+            date.setTime(date.getTime()+(days*24*60*60*1000));
+            expires = "; expires="+date.toGMTString();
+        } else {
+            expires = "";
+        }
+        document.cookie = name+"="+value+expires+"; path=/";
+    },
+
+    readCookie: function(name) {
+        var nameEQ = name + "=", ca = document.cookie.split(';'), c, i;
+        for(i=0;i < ca.length;i++) {
+            c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    },
+
+    eraseCookie: function(name) {
+        this.createCookie(name,"",-1);
+    }
+
+
+};
+GDC.env.BrowserDetect.init();
+
+GDC.env.BrowserSupport = {
+
+    init: function(uaProvider) {
+        this.uaProvider = uaProvider;
+
+        uaProvider.isFullySupported = this.isBrowserFullySupported();
+        uaProvider.isSemiSupported = this.isBrowserSemiSupported();
+
+        uaProvider.isUnsupported = !(uaProvider.isSemiSupported || uaProvider.isFullySupported);
+        GDC.env.BrowserSupport = uaProvider;
+    },
+
+    fullySupportedBrowserRules: [
+        "Firefox >= 3",
+        "Explorer >= 9",
+        "Safari >= 4",
+        "Chrome >= 4"
+    ],
+
+    semiSupportedBrowserRules: [],
+
+    /**
+     * checks the browser against the provided rules and compares it to the actual version (but not the version of the browser, but the version of the platform) and returns boolean according to the rules, for now it supports only ">=" and "=" operators. If it succeeds in any of the checks, returns true.
+     * @method _checkBrowserSupport
+     * @param {Array}
+     * @return {Boolean}
+     *
+     */
+    _checkBrowserSupport: function(rules) {
+        var result = false,
+            browserMetric;
+
+        for (var i=0; i < rules.length; i++) {
+            browserMetric = rules[i];
+            var ar = browserMetric.split(" "),
+                browser = ar[0],
+                operator = ar[1],
+                version = ar[2],
+                provider = this.uaProvider,
+                uaBrowser = provider.browser,
+                uaVersion = provider.version,
+                uaCompatMode = provider.compatibilityMode;
+
+            if (uaBrowser !== browser) continue;
+
+            if (operator === "=") {
+                if (uaVersion !== version) result = true;
+            } else if (operator === ">=") {
+                if (uaVersion >= version) result =  true;
+            } else {
+                throw("Unsupported operator");
+            }
+
+            // we unofficially support IE8 in compat mode (identifing as IE7)
+            // GD-31689
+            if( uaCompatMode ) result =  true;
+        };
+
+        return result;
+    },
+
+    /**
+     * checks, whether the browser in use is fully supported. Fully supported browsers are defined in GDC.env.ua.fullySupportedBrowserRules
+     * @method isBrowserFullySupported
+     * @return {Boolean}
+     */
+    isBrowserFullySupported: function() {
+        return this._checkBrowserSupport(this.fullySupportedBrowserRules);
+    },
+
+    /**
+     * checks, whether the browser in use is fully supported. Fully supported browsers are defined in GDC.env.ua.semiSupportedBrowserRules
+     * @method isBrowserSemiSupported
+     * @return {Boolean}
+     */
+    isBrowserSemiSupported: function() {
+        return this._checkBrowserSupport(this.semiSupportedBrowserRules);
+    }
+};
+GDC.env.BrowserSupport.init(GDC.env.BrowserDetect);
+
+/**
+ * Class encapsulating chain of checks, which can be checked. It should not be used by its own unless, you want to define your own detector. Recommended usage is to use one of the predefined detectors.
+ *
+ * @class CompatibilityDetector
+ * @namespace GDC.ui
+ * @constructor
+ */
+GDC.ui.CompatibilityDetector = function(uaProvider) {
+    this.uaProvider = uaProvider || GDC.env.BrowserSupport;
+    this.checks = [];
+
+    this.cookiesError        = document.getElementById("noCookiesCompatibilityError");
+    this.notSupportedInfoBox = document.getElementById("notSupportedBrowserCompatibilityError");
+};
+
+GDC.ui.CompatibilityDetector.getIcon = function(title) {
+    return "<img src=\"./images/icons/big-alert.png\" border=\"0\" title=\""+title+"\" style=\"float: left; margin: 8px 15px 0 5px;\" alt=\""+title+"\">";
+};
+
+GDC.ui.CompatibilityDetector.NOT_SUPPORT_MESSAGE = GDC.ui.CompatibilityDetector.getIcon("The browser you are using is currently unsupported.") + "The browser you are using is currently unsupported. While many application features may work on your browser, it has not been fully tested and you may encounter some problems.";
+GDC.ui.CompatibilityDetector.SUPPORTED_BROWSERS = ' <a href=\"http://support.gooddata.com/forums/46715/entries/51093\" target=\"_blank\">(List of supported browsers)</a>';
+
+GDC.ui.CompatibilityDetector.IE_COMPAT_MESSAGE = 'Your Web browser is currently in Compatibility mode. This can cause you trouble while using the application. In case of any trouble switch to Standard mode to run the application smoothly.';
+
+GDC.ui.CompatibilityDetector.prototype = {
+
+    /**
+     * Checks all defined checks and returns ANDed results of each check
+     * @method checkAll
+     * @return {Boolean}
+     */
+    checkAll: function() {
+
+        // return this.checks.reduce(function(result, check) { return result && check.check();}, true);
+        var result = true, i;
+        for (i=0; i < this.checks.length; i++) {
+            result = this.checks[i].check() && result;
+            if (result === false ) return result;
+        }
+        return result;
+    },
+
+    /**
+     * Adds a check into the queue
+     * @method addCheck
+     * @param {Object} the object which should have the check function
+     * @return {Object} returns itself, so adding checks could be chained
+     *
+     */
+    addCheck: function(checkObject) {
+        this.checks.push(checkObject);
+        return this;
+    },
+
+    /**
+     * Helper method for hiding element
+     * @method hide
+     * @param {Element}
+     *
+     */
+    hide: function(element) {
+        if (!element) {
+            throw "tried to hide not existing element during compatibility detection";
+        }
+
+        element.style.display = "none";
+    },
+
+    /**
+     * Helper method for showing element
+     * @method show
+     * @param {Element}
+     *
+     */
+    show: function(element) {
+        if(!element) {
+            throw "tried to show not existing element during compatibility detection";
+        }
+        element.style.display = "block";
+    }
+
+};
+
+
+/**
+ * This is the default detector, that we use on the standalone pages. It defines the check on javascript, cookies and brwser compatibility with respective callbacks.
+ * @method createStandalonePagesDetector
+ * @static
+ * @return {CompatibilityDetector}
+ */
+GDC.ui.CompatibilityDetector.createStandalonePagesDetector = function() {
+    var detector = new GDC.ui.CompatibilityDetector();
+    detector.addCheck(new GDC.ui.JavascriptEnabledCheck({
+        enabled: function() {},
+        scope: detector
+    }));
+    detector.addCheck(new GDC.ui.CookieEnabledCheck({
+        disabled: function() {
+            // console.log(this, this.show, this.cookiesError);
+            this.show(this.cookiesError);
+        },
+        enabled: function() {
+            // console.log("You have cookies");
+            this.hide(this.cookiesError);
+        },
+        scope: detector
+    }));
+    detector.addCheck(new GDC.ui.BrowserTypeCheck({
+        fullySupported: function() {
+            // console.log("You have supported browser");
+        },
+        notSupported: function() {
+            // console.log("You have unsupported browser");
+            this.notSupportedInfoBox.innerHTML = GDC.ui.CompatibilityDetector.NOT_SUPPORT_MESSAGE;
+            this.show(this.notSupportedInfoBox);
+        },
+        semiSupported: function() {},
+        scope: detector
+    }));
+    detector.addCheck(new GDC.ui.SilverlightEnabledCheck({
+        notInstalled: function() {
+            // TODO PUT THIS INTO Unsupported div
+            // console.log("NO SILVERLIGHT");
+            this.notSupportedInfoBox.innerHTML = "<h2>Increase Charting Speed!</h2>We recommend <a href=\"http://www.microsoft.com/silverlight/downloads.aspx\">installing Silverlight</a> for Internet Explorer to improve performance (optional).";
+            this.show(this.notSupportedInfoBox);
+        },
+        scope: detector
+    }));
+    return detector;
+};
+
+
+/**
+ * Creates compatibility detector, which is used on the application page. It cointains the checks for javascript and cookies enabled browsers. and defines respective callbacks.
+ * @method createApplicationPagesDetector
+ * @static
+ * @return {CompatibilityDetector}
+ */
+GDC.ui.CompatibilityDetector.createApplicationPagesDetector = function() {
+    var detector = new GDC.ui.CompatibilityDetector();
+    detector.addCheck(new GDC.ui.JavascriptEnabledCheck({
+        enabled: function() {},
+        scope: detector
+    }));
+    detector.addCheck(new GDC.ui.CookieEnabledCheck({
+        disabled: function() {
+            this.show(this.cookiesError);
+        },
+        enabled: function() {
+            // console.log("Cookies");
+            this.hide(this.cookiesError);
+        },
+        scope: detector
+    }));
+    detector.addCheck(new GDC.ui.BrowserTypeCheck({
+        notSupported: function() {
+            this.notSupportedInfoBox.innerHTML = GDC.ui.CompatibilityDetector.NOT_SUPPORT_MESSAGE;
+            this.show(this.notSupportedInfoBox);
+        },
+        scope: detector
+    }));
+    return detector;
+};
+
+GDC.ui.CompatibilityDetector.createWidgetsDetector = function() {
+    var detector = new GDC.ui.CompatibilityDetector();
+    detector.addCheck(new GDC.ui.JavascriptEnabledCheck({
+        enabled: function() {},
+        scope: detector
+    }));
+    detector.addCheck(new GDC.ui.BrowserTypeCheck({
+        notSupported: function() {
+            this.notSupportedInfoBox.innerHTML = GDC.ui.CompatibilityDetector.NOT_SUPPORT_MESSAGE;
+            this.show(this.notSupportedInfoBox);
+        },
+        semiSupported: function() {},
+        scope: detector
+    }));
+    return detector;
+};
+
+GDC.ui.CompatibilityDetector.createLoginPageDetector = function() {
+    var detector = new GDC.ui.CompatibilityDetector();
+    detector.addCheck(new GDC.ui.JavascriptEnabledCheck({
+        enabled: function() {},
+        scope: detector
+    }));
+    detector.addCheck(new GDC.ui.IECompatibilityModeCheck({
+        enabled: function() {
+            this.notSupportedInfoBox.innerHTML = GDC.ui.CompatibilityDetector.IE_COMPAT_MESSAGE;
+            this.show(this.notSupportedInfoBox);
+        },
+        scope: detector
+    }));
+    detector.addCheck(new GDC.ui.BrowserTypeCheck({
+        notSupported: function() {
+            this.notSupportedInfoBox.innerHTML = GDC.ui.CompatibilityDetector.NOT_SUPPORT_MESSAGE;
+            this.show(this.notSupportedInfoBox);
+        },
+        semiSupported: function() {},
+        scope: detector
+    }));
+    return detector;
+};
+
+/**
+ * Creates compatibility detector, which is used on projects central, confirm registration and password reset page. It cointains the checks for javascript and cookies enabled browsers.
+ * @method createMinimumDetector
+ * @static
+ * @return {CompatibilityDetector}
+ */
+GDC.ui.CompatibilityDetector.createMinimumDetector = function() {
+    var detector = new GDC.ui.CompatibilityDetector();
+    detector.addCheck(new GDC.ui.JavascriptEnabledCheck({
+        enabled: function() {
+        },
+        scope: detector
+    }));
+    detector.addCheck(new GDC.ui.CookieEnabledCheck({
+        disabled: function() {
+            // console.log("Cookies disabled");
+            this.show(this.cookiesError);
+        },
+        enabled: function() {
+            // console.log("Cookies enabled");
+            this.hide(this.cookiesError);
+        },
+        scope: detector
+    }));
+    return detector;
+};
+
+
+/**
+ * Class defining the check for the javascript. Since this cannot be run, if the javascript is not enabled, it defines only the case, when it succeeds.
+ * @class JavascriptEnabledCheck
+ * @namespace GDC.ui
+ * @constructor
+ */
+GDC.ui.JavascriptEnabledCheck = function(options) {
+    this.options = options || {};
+    this.uaProvider = options.uaProvider || GDC.env.BrowserSupport;
+
+};
+
+GDC.ui.JavascriptEnabledCheck.prototype ={
+    /**
+     * @see GDC.ui.JavascriptEnabledCheck#check
+     */
+    check: function() {
+        var options = this.options;
+        options.enabled.call(options.scope);
+        return true;
+    }
+};
+//
+GDC.ui.SilverlightEnabledCheck = function(options) {
+    this.options = options || {};
+    this.uaProvider = options.uaProvider || GDC.env.BrowserSupport;
+};
+
+GDC.ui.SilverlightEnabledCheck.prototype = {
+    check: function() {
+        var options = this.options;
+        // I check silverlight in 7 and above, because only one undismissable message can be shown at once and in IE6 clashed "No sliverlight" vs "Unsuported browser". Since IE6 is not supported anymore, I think it is lesser evil
+        if (this.uaProvider.browser === "Ie" &&  this.uaProvider.version > 6 && !this.uaProvider.hasSilverlight) {
+          options.notInstalled.call(options.scope);
+        }
+    }
+};
+
+/**
+ * Class defining the check for the cookie. It expects two callbacks "enabled", "disabled"
+ * @class CookieEnabledCheck
+ * @namespace GDC.ui
+ * @constructor
+ */
+GDC.ui.CookieEnabledCheck = function(options) {
+    this.options = options || {};
+    this.uaProvider = options.uaProvider || GDC.env.BrowserSupport;
+};
+
+GDC.ui.CookieEnabledCheck.prototype = {
+    /**
+     * @see GDC.ui.CookieEnabledCheck#check
+     */
+    check: function() {
+        var options = this.options;
+        // GDC.util.log("cookie enabled check");
+        if (this.uaProvider.hasCookiesSupport) {
+            options.enabled.call(options.scope);
+            return true;
+        } else {
+            options.disabled.call(options.scope);
+            throw("Unable to run this application, because cookies are not supported");
+        }
+    }
+};
+//
+// /**
+//  * Class defining the check for the browser type. It expects three callbacks "fullySupported", "semiSupported", "notSupported"
+//  * @class BrowserTypeCheck
+//  * @namespace GDC.ui
+//  * @constructor
+//  */
+GDC.ui.BrowserTypeCheck = function(options) {
+    this.options = options || {};
+    this.uaProvider = options.uaProvider || GDC.env.BrowserSupport;
+};
+
+GDC.ui.BrowserTypeCheck.prototype = {
+
+    check: function() {
+
+        var ua = this.uaProvider,
+            options = this.options;
+        if (ua.isFullySupported) {
+            options.fullySupported && options.fullySupported.call(options.scope);
+            return true;
+        } else if (ua.isSemiSupported) {
+            options.semiSupported && options.semiSupported.call(options.scope);
+            return true;
+        } else {
+            options.notSupported && options.notSupported.call(options.scope);
+            return true;
+        }
+    }
+};
+
+/**
+ * Class defining the check for the IE compatibility mode
+ * @class IECompatibilityModeCheck
+ * @namespace GDC.ui
+ * @constructor
+ */
+GDC.ui.IECompatibilityModeCheck = function(options) {
+    this.options = options || {};
+    this.uaProvider = options.uaProvider || GDC.env.BrowserSupport;
+};
+
+GDC.ui.IECompatibilityModeCheck.prototype = {
+    check: function() {
+        var ua = this.uaProvider;
+        var options = this.options;
+        if (ua.compatibilityMode && options.enabled) {
+            options.enabled.call(options.scope);
+        }
+    }
+};
+</script>
+
+    <script src="packages/gdc-status_1-min.6380cd1.js" type="text/javascript"></script>
+<script src="packages/gdc-status_2-min.6380cd1.js" type="text/javascript"></script>
+<script src="packages/gdc-status_3-min.6380cd1.js" type="text/javascript"></script>
+
+    </body>
+</html>

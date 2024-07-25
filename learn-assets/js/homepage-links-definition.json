@@ -1,0 +1,35 @@
+{
+    "section": {
+        "heading": "Didn’t find your answer?",
+        "links": [
+            {
+                "title": "University",
+                "link": "https://university.gooddata.com",
+                "text": "Learn something new with our hands‑on tutorials and recorded video tutorials",
+                "linkText": "Check the courses",
+                "icon": "https://www.gooddata.com/learn-assets/img/icon-university-c.svg"
+            },
+            {
+                "title": "Community",
+                "link": "https://community.gooddata.com",
+                "text": "Find your answers, communicate and be inspired!",
+                "linkText": "Talk to us!",
+                "icon": "https://www.gooddata.com/learn-assets/img/icon-community-c.svg"
+            },
+            {
+                "title": "Documentation",
+                "link": "https://www.gooddata.com/docs/cloud/",
+                "text": "Find answers for all your question in our single point of truth",
+                "linkText": "See Documentation",
+                "icon": "https://www.gooddata.com/learn-assets/img/icon-documentation-c.svg"
+            },
+            {
+                "title": "Support",
+                "link": "https://support.gooddata.com/hc/en-us",
+                "text": "Stuck? Get help from our Support Team",
+                "linkText": "Ask for help",
+                "icon": "https://www.gooddata.com/learn-assets/img/icon-support-c.svg"
+            }
+        ]
+    }
+}

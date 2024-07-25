@@ -1,0 +1,36 @@
+{
+    "header": {
+        "links": [
+            {
+                "title": "Learn",
+                "link": "https://www.gooddata.com/learn/"
+            },
+            {
+                "title": "University",
+                "link": "https://university.gooddata.com",
+                "icon": "https://www.gooddata.com/learn-assets/img/navicon-university-gray.svg"
+            },
+            {
+                "title": "Community",
+                "link": "https://community.gooddata.com",
+                "icon": "https://www.gooddata.com/learn-assets/img/navicon-community-gray.svg"
+            },
+            {
+                "title": "Documentation",
+                "link": "https://www.gooddata.com/docs/cloud/",
+                "icon": "https://www.gooddata.com/learn-assets/img/navicon-documentation-gray.svg"
+            },
+            {
+                "title": "Support",
+                "link": "https://support.gooddata.com/hc/en-us",
+                "icon": "https://www.gooddata.com/learn-assets/img/navicon-support-gray.svg"
+            },
+            {
+                "title": "Go to GoodData.com",
+                "type": "button",
+                "link": "https://www.gooddata.com/",
+                "mobileOnly": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GoodData - Documentation - Search UI Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="/css/main.purged.min.css"/>
+</head>
+<body>
+<div class="main text-center">
+  <header>
+    <h1>Documentation</h1>
+    <div>
+      <h2>Cloud:</h2>
+      <div id="adds-container"></div>
+    </div>
+  </header>
+  <script src="/learn-assets/js/quicksearch-plugin.js"></script>
+  <script>
+    $("#adds-container").gdQuickSearch({tab: "gd-cn-doc", version: "v1.7"});
+  </script>
+</div>
+</body>
+</html>
+

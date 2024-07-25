@@ -1,0 +1,2660 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        
+        
+        
+        
+        <script>
+            dataLayer = [];
+            function gtag(){dataLayer.push(arguments);}
+        </script>
+        
+        <script>
+            var _hsq = window._hsq = window._hsq || [];
+        </script>
+        
+        <script>
+            window.startPageLoad = (new Date()).getTime();
+        </script>
+
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+
+        <title>10 Reasons Why Estimating Time For Data Projects is Hard | GoodData</title>
+        <meta name="description" content="Factors you need to consider to provide more realistic estimates">
+
+        
+        <link rel="preload" href="/fonts/dc8ebcd096d8d65d80200bbe8e045d86-subset.woff2" as="font" type="font/woff2">
+<link rel="preload" href="/fonts/bca6d3310b5c9dae1dae416e8abc8405-subset.woff2" as="font" type="font/woff2">
+
+<style>
+@font-face{font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset;src:url(/fonts/dc8ebcd096d8d65d80200bbe8e045d86-subset.woff2) format("woff2"),url(/fonts/dc8ebcd096d8d65d80200bbe8e045d86-subset.woff) format("woff");font-weight:400;font-style:normal}@font-face{font-family:bca6d3310b5c9dae1dae416e8abc8405-subset;src:url(/fonts/bca6d3310b5c9dae1dae416e8abc8405-subset.woff2) format("woff2"),url(/fonts/bca6d3310b5c9dae1dae416e8abc8405-subset.woff) format("woff");font-weight:400;font-style:normal}@font-face{font-family:bca6d3310b5c9dae1dae416e8abc8405-subset;src:url(/fonts/bca6d3310b5c9dae1dae416e8abc8405-subset.woff2) format("woff2"),url(/fonts/bca6d3310b5c9dae1dae416e8abc8405-subset.woff) format("woff");font-weight:700;font-style:normal}body,h1{font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif}.btn,h2{font-family:bca6d3310b5c9dae1dae416e8abc8405-subset,bca6d3310b5c9dae1dae416e8abc8405,Helvetica,Arial,sans-serif}
+</style>
+        
+        <link rel="stylesheet" href="/css/main.purged.min.css?ref=1721900287">
+
+        <style>
+            
+            
+                .c-h1,h1{font-size:3rem;margin-bottom:2rem;line-height:1.25}@media (min-width:1200px){.c-h1,h1{font-size:4.25rem}}.c-h1-long,.l-blog-content h1,h1-long{font-size:2.5rem;margin-bottom:2rem;line-height:1.25}@media (min-width:1200px){.c-h1-long,.l-blog-content h1,h1-long{font-size:3.625rem}}.c-h2,h2{font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;font-size:2.375rem;line-height:1.25;margin-bottom:1.5rem}@media (min-width:1200px){.c-h2,h2{font-size:3.25rem;margin-bottom:2rem}}.c-h3,.l-blog-content h2,h3{font-family:bca6d3310b5c9dae1dae416e8abc8405-subset,bca6d3310b5c9dae1dae416e8abc8405,Helvetica,Arial,sans-serif;font-size:1.4375rem;font-weight:700;line-height:1.25;margin-bottom:1rem}@media (min-width:1200px){.c-h3,.l-blog-content h2,h3{font-size:2rem;margin-bottom:1.5rem}}.c-h4,.l-blog-content h3,.l-blog-content h4,h4{font-family:bca6d3310b5c9dae1dae416e8abc8405-subset,bca6d3310b5c9dae1dae416e8abc8405,Helvetica,Arial,sans-serif;font-size:1.125rem;line-height:1.25;margin-bottom:1rem}@media (min-width:1200px){.c-h4,.l-blog-content h3,.l-blog-content h4,h4{font-size:1.3125rem;margin-bottom:1.5rem}}.c-h5,h5{font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;font-size:1.125rem;line-height:1.25;margin-bottom:1rem}@media (min-width:1200px){.c-h5,h5{font-size:1.25rem;margin-bottom:1.5rem}}.c-h1__invert,.c-h2__invert,.c-h3__invert,.c-h4__invert,.c-h5__invert,.c-h6__invert{color:#fff}.c-h3-h2{font-family:bca6d3310b5c9dae1dae416e8abc8405-subset,bca6d3310b5c9dae1dae416e8abc8405,Helvetica,Arial,sans-serif;font-size:1.4375rem;font-weight:700;line-height:1.25;margin-bottom:1rem}@media (min-width:992px){.c-h3-h2{font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;font-size:2.375rem;font-weight:unset;line-height:1.25;margin-bottom:1.5rem}}@media (min-width:1200px){.c-h3-h2{font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;font-size:3.25rem;line-height:1.25;margin-bottom:2rem}}.c-suptitle{font-weight:600;font-size:.8125rem;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;text-transform:uppercase;letter-spacing:1px;margin-bottom:.75rem}.c-suptitle,.c-suptitle--dark{color:#ed26b7}.c-smalltitle{font-size:1rem;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;color:rgba(28,13,63,.6);text-transform:uppercase;margin-bottom:1.875rem}@media (min-width:1200px){.c-smalltitle{font-size:1.125rem}}@media (min-width:1800px){.c-smalltitle{font-size:1.375rem;margin-bottom:2.5rem}}.c-pretitle{font-size:1.125rem;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;line-height:1.25;margin-bottom:1rem}@media (min-width:1200px){.c-pretitle{font-size:1.3125rem;margin-bottom:1.5rem}}.c-pretitle__sm{font-size:.875rem;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;line-height:1.25;margin-bottom:1rem}@media (min-width:1200px){.c-pretitle__sm{margin-bottom:1.5rem}}.c-subtitle{font-size:1rem;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;margin-bottom:1.875rem}@media (min-width:1200px){.c-subtitle{font-size:1.125rem}}@media (min-width:1800px){.c-subtitle{font-size:1.375rem;margin-bottom:2.5rem}}.c-cardtitle{font-size:16px;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;margin-bottom:1.25rem}@media (min-width:1200px){.c-cardtitle{font-size:24px}}@media (min-width:1800px){.c-cardtitle{font-size:30px;margin-bottom:1.875rem}}.c-footnotes{font-size:.75rem;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;opacity:.5;margin-bottom:1.875rem}@media (min-width:1200px){.c-footnotes{font-size:.875rem}}@media (min-width:1800px){.c-footnotes{font-size:1rem;margin-bottom:2.5rem}}.c-microfootnotes{font-size:.6875rem;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif;opacity:.5;margin-bottom:1.25rem}@media (min-width:1200px){.c-microfootnotes{font-size:.8125rem}}@media (min-width:1800px){.c-microfootnotes{font-size:.875rem;margin-bottom:1.875rem}}.c-titleimgthumbs{font-size:.875rem;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif}@media (min-width:1200px){.c-titleimgthumbs{font-size:1.125rem}}@media (min-width:1800px){.c-titleimgthumbs{font-size:1.375rem}}.c-titletagteaser{font-size:.6875rem;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif}@media (min-width:1200px){.c-titletagteaser{font-size:.8125rem}}@media (min-width:1800px){.c-titletagteaser{font-size:.875rem}}.c-info-time{font-size:1rem;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif}@media (min-width:768px){.c-info-time{font-size:1.125rem}}.c-title-quote{font-size:1.125rem;font-family:dc8ebcd096d8d65d80200bbe8e045d86-subset,dc8ebcd096d8d65d80200bbe8e045d86,Helvetica,Arial,sans-serif}@media (min-width:1200px){.c-title-quote{font-size:2rem}}@media (min-width:1800px){.c-title-quote{font-size:2rem}}.c-title-quote span{font-size:1rem}@media (min-width:1200px){.c-title-quote span{font-size:1.125rem}}.c-title__w-restricted-short{display:block;margin:0 auto;max-width:600px}@media (min-width:1800px){.c-title__w-restricted-short{max-width:800px}}.c-title__w-restricted-long{display:block;margin-top:0;margin-left:auto;margin-right:auto;max-width:800px}@media (min-width:1800px){.c-title__w-restricted-long{max-width:1000px}}.c-title__w-restricted-x-long{display:block;margin-top:0;margin-left:auto;margin-right:auto;max-width:800px}@media (min-width:1200px){.c-title__w-restricted-x-long{max-width:1000px}}@media (min-width:1800px){.c-title__w-restricted-x-long{max-width:1200px}}.hs-fieldtype-select{position:relative}.hs-fieldtype-select .input:before{content:"";position:absolute;top:1rem;right:.625rem;width:21px;height:11px;background-image:url(../img/icons/chevron-down-purple.svg);background-repeat:no-repeat;background-position:50%;z-index:5;pointer-events:none;line-height:0}.c-sharebtns{display:inline-block}@media (min-width:768px){.c-sharebtns{float:right}}.c-sharebtns__title{display:inline-block;padding-top:.25rem}.c-sharebtns__buttons{display:inline-block;margin-left:.3125rem;margin-bottom:2.5rem}@media (min-width:1200px){.c-sharebtns__buttons{margin-bottom:1.9375rem}}@media (min-width:1800px){.c-sharebtns__buttons{margin-bottom:2.4375rem}}.c-sharebtns__buttons a{position:relative;height:1.875rem;width:auto;line-height:1.875rem;border:none;background-color:transparent;display:inline-block;padding-left:.3125rem;padding-right:.3125rem;margin-top:-3px;color:#1c0d3f;fill:#1c0d3f;opacity:.6;-webkit-transition:all .2s;transition:all .2s}.c-sharebtns__buttons a:focus,.c-sharebtns__buttons a:hover{top:0;opacity:1}.c-sharebtns__buttons a>svg{top:.3125rem;width:auto;height:100%;vertical-align:top}.c-sharebtns__buttons a:last-child{padding-right:0}.l-blogpost{padding-top:2.1875rem}.l-blogpost #banner-wrap{position:relative}@media (max-width:1199px){.l-blogpost #banner-wrap[style]{top:unset!important;left:unset!important;width:unset!important}}@media (min-width:1200px){.l-blogpost #banner-wrap.sticked{position:fixed}}@media (min-width:1200px){.l-blogpost #banner-wrap.bottom{position:absolute}}@media (min-width:1200px){.l-blogpost #banner-wrap.sticked.bottom{margin-top:130px}}.l-blog-nav{margin-bottom:2.5rem}.l-blog-nav a{text-decoration:none}.l-blog-nav span.p-blog-nav-title{font-size:1rem}.l-blog-nav__back{float:left}.l-blog-nav__tags{display:table}.l-blog-info{color:rgba(28,13,63,.6)}.l-blog-info p{margin-bottom:1.25rem}@media (min-width:1200px){.l-blog-info p{margin-bottom:1.9375rem}}@media (min-width:1800px){.l-blog-info p{margin-bottom:2.4375rem}}.l-blog-info time{display:inline-block}.l-blog-image{display:block;border:1px solid #dfe4e8}.l-blog-content{border-bottom:1px solid #d7dfe5;margin-bottom:2.5rem;padding-top:5rem;padding-bottom:6.25rem}.l-blog-content p:has(+h2,+h3,+h4,+h5,+figure,+ul,+ol){margin-bottom:2.5rem}.l-blog-content figure>img,.l-blog-content p>a>img,.l-blog-content p>img{width:100%}@media (min-width:768px){.l-blog-content figure>img,.l-blog-content p>a>img,.l-blog-content p>img{margin:20px -40px;width:calc(100% + 80px)}}.l-blog-content figure{margin-bottom:4rem}.l-blog-content figure>figcaption{font-size:14px;color:#667d8e;margin-top:16px}@media (max-width:1199px){.l-blog-rc.rc-right{display:none}}@media (min-width:1200px){.l-blog-content .l-blog-rc.rc-right h2,.l-blog-rc.rc-right .c-h3,.l-blog-rc.rc-right .l-blog-content h2{margin-bottom:1.875rem}}.l-blog-rc.rc-bottom{margin-top:5.625rem;margin-bottom:5rem}@media (min-width:1200px){.l-blog-rc.rc-bottom .rc-2{text-align:center}}.l-blog-rc.rc-bottom .rc-2 .title{margin-left:auto;margin-right:auto}@media (min-width:1200px){.l-blog-rc.rc-bottom .rc-2{margin:0 auto}}@media (min-width:1200px){.l-blog-rc.rc-bottom .rc-3{float:right}}
+            
+        </style>
+
+        
+        <link rel="alternate" href="/feed.xml" title="GoodData.com" type="application/atom+xml">
+
+        
+        
+
+
+        
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:site" content="@gooddata">
+        <meta name="twitter:creator" content="@gooddata"/>
+
+        
+        
+            <meta name="twitter:title" content="10 Reasons Why Estimating Time For Data Projects is Hard">
+            <meta name="twitter:description" content="Factors you need to consider to provide more realistic estimates">
+            <meta name="twitter:image" content="https://www.gooddata.com/img/blog/_1200x630/10-reasons-why-estimating-time-for-data-projects-is-hard.jpg.webp">
+            <meta name="twitter:image:alt" content="10 Reasons Why Estimating Time For Data Projects is Hard">
+            <meta property="og:type" content="article" />
+        
+
+        
+        <meta property="og:url" content="https://www.gooddata.com/blog/10-reasons-why-estimating-time-for-data-projects-is-hard/"/>
+        <meta property="og:site_name" content="GoodData">
+        <meta property="og:title" content="10 Reasons Why Estimating Time For Data Projects is Hard"/>
+        <meta property="og:description" content="Factors you need to consider to provide more realistic estimates"/>
+        <meta property="og:image" content="https://www.gooddata.com/img/blog/_1200x630/10-reasons-why-estimating-time-for-data-projects-is-hard.jpg.webp"/>
+        <meta property="og:image:alt" content="10 Reasons Why Estimating Time For Data Projects is Hard" />
+
+        
+        <meta name="facebook-domain-verification" content="4tc8kma9fxdd2ydwehrxdm2k3za1ii" />
+
+        
+        
+            <meta name="robots" content="index, follow">
+            <link rel="canonical" href="https://www.gooddata.com/blog/10-reasons-why-estimating-time-for-data-projects-is-hard/" />
+        
+
+        
+
+        
+        
+            <script type="application/ld+json">
+                
+    
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://www.gooddata.com#organization",
+            "url": "https://www.gooddata.com",
+            "name": "GoodData",
+            "logo": {
+                "@type": "ImageObject",
+                "@id": "https://www.gooddata.com#logo",
+                "url": "https://www.gooddata.com/img/generic/logo-gd-b.svg"
+            },
+            "image": {
+                "@id": "https://www.gooddata.com#logo"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "333 Kearny Street, Floor 2",
+                "addressLocality": "San Francisco",
+                "addressRegion": "CA",
+                "postalCode": "94108"
+            },
+            "email": "contact@gooddata.com",
+            "telephone": "(415) 200-0186",
+            "foundingDate": "2007",
+            "description": "GoodData is a leading composable data and analytics platform. Build, embed, and scale analytics on demand, with zero vendor lock-in.",
+            "sameAs": [
+                "https://www.facebook.com/gooddata/",
+                "https://www.linkedin.com/company/gooddata",
+                "https://www.youtube.com/gooddata",
+                "https://en.wikipedia.org/wiki/GoodData",
+                "https://twitter.com/gooddata"
+            ],
+            "founder": {
+                "@type": "Person",
+                "name": "Roman Stanek",
+                "image": "https://www.gooddata.com/img/pages/company/round-portrait-copy-1.png"
+            }
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://www.gooddata.com#website",
+            "url": "https://www.gooddata.com",
+            "name": "GoodData",
+            "publisher": {
+                "@id": "https://www.gooddata.com#organization"
+            },
+            "potentialAction": [
+                {
+                    "@type": "SearchAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": "https://www.gooddata.com/?s={search_term_string}"
+                    },
+                    "query-input": "required name=search_term_string"
+                }
+            ]
+        },
+{
+    "@type": "WebPage",
+    "@id": "https://www.gooddata.com/blog/10-reasons-why-estimating-time-for-data-projects-is-hard/#webpage",
+    "isPartOf": {
+        "@id": "https://www.gooddata.com#website"
+    },
+    "url": "https://www.gooddata.com/blog/10-reasons-why-estimating-time-for-data-projects-is-hard/",
+    "name": "10 Reasons Why Estimating Time For Data Projects is Hard",
+    "description": "Factors you need to consider to provide more realistic estimates"
+},
+{
+    "@type": "BlogPosting",
+    "@id": "https://www.gooddata.com/blog/10-reasons-why-estimating-time-for-data-projects-is-hard/#blogposting",
+    "mainEntityOfPage": {
+        "@id": "https://www.gooddata.com/blog/10-reasons-why-estimating-time-for-data-projects-is-hard/#webpage"
+    },
+    "headline": "10 Reasons Why Estimating Time For Data Projects is Hard",
+    "description": "Factors you need to consider to provide more realistic estimates",
+    "image": "https://www.gooddata.com/img/blog/_1200x630/10-reasons-why-estimating-time-for-data-projects-is-hard.jpg",
+    "author": {
+        "@type": "Person",
+        "name": "Anna Geller",
+        "url": "https://www.gooddata.com/img/generic/logo-gd-b.svg"
+    },
+    "publisher": {
+        "@id": "https://www.gooddata.com#organization"
+    },
+    "datePublished": "2021-06-11",
+    "dateModified": "2024-02-22"
+}
+
+    ]
+}
+
+            </script>
+        
+
+        
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+        
+        <script src="/js/vendors/gtm.js" defer></script>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/combine/npm/addsearch-js-client@0.8.12/dist/addsearch-js-client.min.js,npm/addsearch-search-ui@0.8.8/dist/addsearch-search-ui.min.js"></script>
+    </head>
+
+    
+        <body>
+    
+
+        
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5G49LK" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+
+        
+        
+            
+    
+
+<header class="c-siteheader-header no-promo"><div class="c-siteheader-top " id="siteHeaderTop">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-lg-8">
+                        <a class="c-banner-promo__collapse" type="button" id="promo-banner-collapse">
+                            <div class="c-banner-promo__collapse__icon"></div>
+                        </a>
+                        
+                        
+
+
+    
+
+        <div id="promoCarouselControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            
+            <button id="carousel-control-prev" class="carousel-control-prev" type="button" data-bs-target="#promoCarouselControls" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button id="carousel-control-next" class="carousel-control-next" type="button" data-bs-target="#promoCarouselControls" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>
+            </button>
+            
+            <div class="carousel-inner">
+                <div class="flex-spacer"></div>
+                
+                    <a href="https://www.gooddata.com/resources/gartner-magic-quadrant-for-analytics-and-business-intelligence-platforms/" id="promo-slide-gartner(r)-magic-quadranttm-for-analytics-and-bi-platforms" class="carousel-item active">
+                        <div class="carousel-item__content">
+                            <div class="carousel-item__content__first">
+                                <span class="carousel-item__label">Analyst Report</span>
+                            </div>
+                            <div class="carousel-item__content__last">
+                                <span class="carousel-item__title">
+                                    <img src="/img/icons/megaphone.svg" alt="Megaphone icon" width="28" height="25" />
+                                    Gartner® Magic Quadrant™ for Analytics and BI Platforms
+                                </span>
+                                <span class="carousel-item__cta">Read the report</span>
+                            </div>
+                        </div>
+                    </a>
+                
+                    <a href="https://www.gooddata.com/resources/your-guide-to-monetizing-data-with-use-case/" id="promo-slide-unlock-revenue-streams:-your-guide-to-monetizing-data" class="carousel-item">
+                        <div class="carousel-item__content">
+                            <div class="carousel-item__content__first">
+                                <span class="carousel-item__label">Webinar</span>
+                            </div>
+                            <div class="carousel-item__content__last">
+                                <span class="carousel-item__title">
+                                    <img src="/img/icons/megaphone.svg" alt="Megaphone icon" width="28" height="25" />
+                                    Unlock Revenue Streams: Your Guide to Monetizing Data
+                                </span>
+                                <span class="carousel-item__cta">Register now!</span>
+                            </div>
+                        </div>
+                    </a>
+                
+            </div>
+            
+        </div>
+
+    
+    
+
+                    </div>
+                    <div class="col col-lg-4 d-none d-lg-block text-end c-siteheader-top__menu">
+                        <ul class="c-siteheader-top__menu__ul">
+                            
+                                
+                                    <li>
+                                        <a
+                                            href="/docs/cloud/"
+                                            id="main-menu-top-documentation"
+                                            target="_blank"
+                                            
+                                        >Documentation</a>
+                                    </li>
+                                
+                            
+                                
+                                    <li>
+                                        <a
+                                            href="https://support.gooddata.com/hc/en-us"
+                                            id="main-menu-top-support"
+                                            target="_blank"
+                                            
+                                        >Support</a>
+                                    </li>
+                                
+                            
+                                
+                                    <li>
+                                        <a
+                                            href="https://registration.cloud.gooddata.com/login"
+                                            id="main-menu-top-login"
+                                            target="_self"
+                                            
+                                        >Login</a>
+                                    </li>
+                                
+                            
+                                
+                                    <li>
+                                        <a
+                                            href="#"
+                                            id="main-menu-top-search"
+                                            
+                                            
+                                                
+                                                    data-bs-toggle="modal"
+                                                
+                                                    data-bs-target="#searchDialog"
+                                                
+                                            
+                                        ></a>
+                                    </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <div class="c-siteheader" id="gd-header">
+        <nav class="navbar navbar-expand-xl navbar-light">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="/" id="gooddata-home">
+                        <img src="/img/generic/logo-gd-b.svg" alt="GoodData" class="navbar-logo navbar-logo__default" width="182" height="40" />
+                        <img src="/img/generic/logo-gd-w.svg" alt="GoodData" class="navbar-logo navbar-logo__invert" width="182" height="40" />
+                    </a>
+                </div>
+                <div>
+                    
+                        
+                            <button
+                                href="#"
+                                id="main-menu-top-mobile-search"
+                                class="navbar-mobile-button d-lg-none"
+                                
+                                
+                                    
+                                        data-bs-toggle="modal"
+                                    
+                                        data-bs-target="#searchDialog"
+                                    
+                                
+                            ></button>
+                        
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteHeader"
+                            aria-controls="siteHeader" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="siteHeader">
+                    
+                    
+
+                        
+                        
+                            <ul class="navbar-nav justify-content-center" id="navMain">
+                        
+
+                        
+                        <li class="nav-item"
+                            id="navItem-platform">
+
+                            
+                            
+                                <a class="nav-link "
+                                id="main-menu-platform"
+                                href="/platform/">Product</a>
+                            
+                        </li>
+
+                        
+                    
+
+                        
+                        
+
+                        
+                        <li class="nav-item nav-item__has-submenu"
+                            id="navItem-solutions">
+
+                            
+                            
+                                <button
+                                    type="button"
+                                    id="main-menu-solutions"
+                                    class="nav-link "
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#navSubitem-solutions"
+                                    role="button"
+                                    aria-expanded="false"
+                                    aria-controls="navSubitem-solutions"
+                                >
+                                    Solutions
+                                </button>
+
+                                
+                                <div class="c-siteheader__submenu">
+
+                                    <div class="container">
+
+                                        
+
+                                            
+                                                <div class="c-siteheader__l1 l1-first collapse" id="navSubitem-solutions" data-bs-parent=".c-siteheader">
+                                                    <div class="row c-siteheader__l1__row__4">
+                                            
+
+                                            
+                                            
+                                                <div class="col-xs-12 c-siteheader__l1__sub pb-0">
+                                                    
+                                                        <span class="c-siteheader__l1__title-feat">Solutions overview</span>
+<span class="c-siteheader__l1__subtitle">GoodData is changing the dynamics of how organisations interact with data.</span>
+<a class="c-siteheader__l1__link-feat"
+    id="main-menu-solutions-solutions-overview"
+    href="/solutions/" >
+    Learn more
+</a>
+<hr class="show-desk">
+                                                    
+                                                </div>
+                                            
+                                            
+                                                <div class="col-md-3 pe-xl-0 c-siteheader__l1__sub">
+                                                    
+                                                        
+    <span class="c-siteheader__l1__title">Industry</span>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-solutions-software-companies"
+        href="/embedded-analytics-software-companies/" >
+        Software companies
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-solutions-e-commerce"
+        href="/solutions/ecommerce/" >
+        E-commerce / Retail
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-solutions-financial-services"
+        href="/solutions/financial-services/" >
+        Financial services
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-solutions-healthcare"
+        href="/solutions/healthcare/" >
+        Healthcare
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link-all c-link__arrow"
+        id="main-menu-solutions-industry-see-all"
+        href="/solutions/#industry" >
+        See all
+    </a>
+    
+
+                                                    
+                                                </div>
+                                            
+                                            
+                                                <div class="col-md-3 ps-xl-4 pe-xl-0 c-siteheader__l1__sub">
+                                                    
+                                                        
+    <span class="c-siteheader__l1__title">Departments</span>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-solutions-customer-services"
+        href="/solutions/customer-services/" >
+        Customer service
+    </a>
+    
+
+                                                    
+                                                </div>
+                                            
+                                            
+                                                <div class="col-md-3 ps-xl-1 pe-xl-0 c-siteheader__l1__sub">
+                                                    
+                                                        
+    <span class="c-siteheader__l1__title">Product use cases</span>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-solutions-embedded-analytics"
+        href="/embedded-analytics/" >
+        Embedded analytics
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-solutions-data-visualization"
+        href="/platform/data-visualization/" >
+        Data visualization
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-solutions-analytics-lake"
+        href="/solutions/analytics-lake/" >
+        Analytics Lake
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-solutions-data-monetization"
+        href="/solutions/data-monetization/" >
+        Data Monetization
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link-all c-link__arrow"
+        id="main-menu-solutions-product-use-cases-see-all"
+        href="/solutions/#product-use-cases" >
+        See all
+    </a>
+    
+
+                                                    
+                                                </div>
+                                            
+                                            
+                                                <div class="col-md-3 ps-xl-1 pe-xl-0 c-siteheader__l1__sub">
+                                                    
+                                                        
+    <span class="c-siteheader__l1__title">Services</span>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-solutions-services"
+        href="/solutions/professional-services/" >
+        Professional services
+    </a>
+    
+
+                                                    
+                                                </div>
+                                            
+
+                                            
+                                                    </div>
+                                                </div>
+
+                                            
+                                        
+                                    </div>
+
+                                </div>
+                            
+                        </li>
+
+                        
+                    
+
+                        
+                        
+
+                        
+                        <li class="nav-item nav-item__has-submenu"
+                            id="navItem-resources">
+
+                            
+                            
+                                <button
+                                    type="button"
+                                    id="main-menu-resources"
+                                    class="nav-link "
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#navSubitem-resources"
+                                    role="button"
+                                    aria-expanded="false"
+                                    aria-controls="navSubitem-resources"
+                                >
+                                    Resources
+                                </button>
+
+                                
+                                <div class="c-siteheader__submenu">
+
+                                    <div class="container">
+
+                                        
+
+                                            
+                                                <div class="c-siteheader__l1 l1-first collapse" id="navSubitem-resources" data-bs-parent=".c-siteheader">
+                                                    <div class="row c-siteheader__l1__row__3">
+                                            
+
+                                            
+                                            
+                                            
+                                                <div class="col-md-4 c-siteheader__l1__sub">
+                                                    
+                                                        
+    <span class="c-siteheader__l1__title">Learn</span>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-learn"
+        href="/learn/" >
+        Learning hub
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-documentation"
+        href="/docs/cloud/" >
+        Documentation
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-university"
+        href="https://university.gooddata.com/" >
+        University
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-community"
+        href="https://community.gooddata.com/" >
+        Community
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-slack"
+        href="/slack/" >
+        Slack channel
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-support"
+        href="https://support.gooddata.com/hc/en-us" >
+        Support
+    </a>
+    
+
+                                                    
+                                                </div>
+                                            
+                                            
+                                                <div class="col-md-4 c-siteheader__l1__sub">
+                                                    
+                                                        
+    <span class="c-siteheader__l1__title">Resources</span>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-resources"
+        href="/resources/" >
+        All resources
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-case-studies"
+        href="/resources/tags/case-studies/" >
+        Case studies
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-whitepapers"
+        href="/resources/tags/whitepapers/" >
+        Whitepapers
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-e-books"
+        href="/resources/tags/ebooks/" >
+        E-books
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-webinars"
+        href="/resources/tags/webinars/" >
+        Webinars
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-blog"
+        href="/blog/" >
+        Blog
+    </a>
+    
+
+                                                    
+                                                </div>
+                                            
+                                            
+                                                <div class="col-md-4 c-siteheader__l1__sub">
+                                                    
+                                                        
+    <span class="c-siteheader__l1__title">Developers</span>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-python-sdk"
+        href="/docs/python-sdk/latest/" >
+        Python SDK
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-react-sdk"
+        href="/docs/cloud/api-and-sdk/react-sdk/" >
+        React SDK
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-resources-api-references"
+        href="/docs/cloud/api-and-sdk/api/api_reference_all/" >
+        API References
+    </a>
+    
+
+                                                    
+                                                </div>
+                                            
+                                            
+
+                                            
+                                                    </div>
+                                                </div>
+
+                                            
+                                        
+                                    </div>
+
+                                </div>
+                            
+                        </li>
+
+                        
+                    
+
+                        
+                        
+
+                        
+                        <li class="nav-item"
+                            id="navItem-partners">
+
+                            
+                            
+                                <a class="nav-link "
+                                id="main-menu-partners"
+                                href="/partners/">Partners</a>
+                            
+                        </li>
+
+                        
+                    
+
+                        
+                        
+
+                        
+                        <li class="nav-item nav-item__has-submenu"
+                            id="navItem-company">
+
+                            
+                            
+                                <button
+                                    type="button"
+                                    id="main-menu-company"
+                                    class="nav-link "
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#navSubitem-company"
+                                    role="button"
+                                    aria-expanded="false"
+                                    aria-controls="navSubitem-company"
+                                >
+                                    Company
+                                </button>
+
+                                
+                                <div class="c-siteheader__submenu">
+
+                                    <div class="container">
+
+                                        
+
+                                            
+                                                <div class="c-siteheader__l1 l1-first collapse" id="navSubitem-company" data-bs-parent=".c-siteheader">
+                                                    <div class="row c-siteheader__l1__row__1">
+                                            
+
+                                            
+                                            
+                                            
+                                                <div class="col-md-4 c-siteheader__l1__sub">
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-company-about-us"
+        href="/company/" >
+        About us
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-company-customers"
+        href="/customers/" >
+        Customers
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-company-careers"
+        href="/company/careers/" >
+        Careers
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-company-events"
+        href="/resources/tags/events/" >
+        Events
+    </a>
+    <hr>
+
+                                                    
+                                                        
+    <a class="c-siteheader__l1__link"
+        id="main-menu-company-newsroom"
+        href="/in-the-news/" >
+        Newsroom
+    </a>
+    
+
+                                                    
+                                                </div>
+                                            
+                                            
+                                            
+                                            
+
+                                            
+                                                    </div>
+                                                </div>
+
+                                            
+                                        
+                                    </div>
+
+                                </div>
+                            
+                        </li>
+
+                        
+                    
+
+                        
+                        
+
+                        
+                        <li class="nav-item"
+                            id="navItem-pricing">
+
+                            
+                            
+                                <a class="nav-link "
+                                id="main-menu-pricing"
+                                href="/pricing/">Pricing</a>
+                            
+                        </li>
+
+                        
+                            </ul>
+                        
+                    
+                    
+                        
+                            <div class="c-login d-flex">
+                                <div class="nav-login-cta">
+                                    <a href="/request-a-demo/" id="main-menu-request-a-demo"
+                                    class="btn btn-sm c-btn-primary">Request a demo</a>
+                                </div>
+                            </div>
+                        
+                    
+                </div>
+            </div>
+        </nav>
+        <script>document.addEventListener('DOMContentLoaded', function() {setTimeout(function() {$(".navbar img").removeAttr("loading")}, 1000)});</script>
+    </div>
+
+    
+        <div class="c-search-dialog-modal modal fade" id="searchDialog" tabindex="-1" aria-labelledby="searchDialogLabel" aria-hidden="true">
+    <div class="c-search-dialog modal-dialog">
+        <div class="c-search-dialog-content modal-content">
+            <div class="c-search-dialog-header modal-header flex-column align-items-start">
+                <div class="c-search-dialog-searchbar-wrapper">
+                    <div id="searchfield-container" class="c-search-dialog-searchbar"></div>
+                    <button type="button" class="c-search-dialog-close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="adds-filter-wrapper">
+                    <div id="tabs"></div>
+                </div>
+            </div>
+            <div class="c-search-dialog-body modal-body">
+                <div id="searchresults-container" class="c-search-dialog-searchresults-container"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>const searchDialogData = {"searchfieldPlaceholder":"What are you looking for?","searchResultsPlaceholder":{"title":"Try searching for","queries":["What is multitenancy?","GoodData pricing","Data monetization","Hospitality solutions","Embedded analytics"]},"searchResults":{"title":"Top Results","resultsPageLink":"All search results for <strong>{{keyword}}</strong>"},"recentSearchesTitle":"Your Recent Searches"}</script>
+<script src="/js/modules/search-common.js"></script>
+<script src="/js/modules/search-dialog.js"></script>
+
+    
+</header>
+
+        
+
+        
+        
+
+    <main class="c-pagecontent">
+        <article class="l-blogpost">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8">
+
+                        
+                        <header>
+
+                            
+                            
+                            <div class="l-blog-nav">
+    <div class="l-blog-nav__back">
+        <a href="/blog/" id="blog-go-back-1">
+            
+            <img src="/img/icons/arrow-left-thin.svg" alt="Go back to Blog&#39;s hub" />
+                <span class="l-blog-nav-title">Blog</span>
+            
+        </a>
+        <span class="l-blog-nav-title">&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;tags:&nbsp;&nbsp;</span>
+    </div>
+    <div class="l-blog-nav__tags">
+    
+        <a href="/resources/tags/tech-talk/" class="c-tags-pill"><span>Tech Talk</span></a>
+    
+    </div>
+</div>
+
+                            <h1 class="c-h1-long">10 Reasons Why Estimating Time For Data Projects is Hard</h1>
+                        </header>
+
+                    </div>
+                    <div class="col-xl-8">
+
+                        
+                        <div class="l-blog-info">
+    <div class="row">
+        <div class="col-md-8">
+            <p>
+            
+            <span>Written by Anna Geller&nbsp;&nbsp;|&nbsp;</span>
+            
+            <time class="c-info-time" datetime="2021-6-11">Jun 11, 2021</time>
+            </p>
+        </div>
+        <div class="col-md-4">
+            
+            <div class="c-sharebtns">
+                <div class="c-sharebtns__title"><span>Share </span></div>
+                <div class="c-sharebtns__buttons">
+                    <a id="blogShareLinkedin" href="https://www.linkedin.com/sharing/share-offsite/?&url=https%3A%2F%2Fwww.gooddata.com%2Fblog%2F10-reasons-why-estimating-time-for-data-projects-is-hard%2F" target="_blank">
+                        <svg viewbox="0 0 512 512"><path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"></path></svg>
+                    </a>
+                    <a id="blogShareTwitter" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.gooddata.com%2Fblog%2F10-reasons-why-estimating-time-for-data-projects-is-hard%2F&via=gooddata" target="_blank">
+                        <svg viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg"><path d="M16.119 13.1992 22.4486 6h-1.4994l-5.4983 6.2497L11.0626 6H6l6.6374 9.4514L6 22.9999h1.4994l5.8027-6.6012 4.6353 6.6012H23M8.04057 7.10634h2.30353L20.9481 21.948H18.644"/></svg>
+                    </a>
+                    <a id="blogShareFacebook" href="https://www.facebook.com/sharer.php?t=10%20Reasons%20Why%20Estimating%20Time%20For%20Data%20Projects%20is%20Hard&u=https%3A%2F%2Fwww.gooddata.com%2Fblog%2F10-reasons-why-estimating-time-for-data-projects-is-hard%2F&display=popup" target="_blank">
+                        <svg viewbox="0 0 512 512"><path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        
+                        
+                        <picture>
+                            <source srcset="/img/blog/_340x179/10-reasons-why-estimating-time-for-data-projects-is-hard.jpg.webp" media="(max-width: 340px)">
+                            <source srcset="/img/blog/_540x284/10-reasons-why-estimating-time-for-data-projects-is-hard.jpg.webp" media="(max-width: 767px)">
+                            <source srcset="/img/blog/_1200x630/10-reasons-why-estimating-time-for-data-projects-is-hard.jpg.webp" media="(min-width: 768px)">
+                            <img
+                                src="/img/generic/img-150-placeholder.webp"
+                                class="o-fluidimage h-auto l-blog-image"
+                                alt="10 Reasons Why Estimating Time For Data Projects is Hard"
+                                width="1200"
+                                height="630"
+                                onerror="this.onerror=null;this.srcset='/img/generic/img-150-placeholder.webp 150w, /img/generic/img-340-placeholder.webp 340w, /img/generic/img-540-placeholder.webp 540w, /img/generic/img-1200-placeholder.webp 1200w';"
+                            />
+                        </picture>
+                        
+
+                        
+                        <div class="row">
+                            <div class="col-md-8 offset-md-2 col-xl-10 offset-xl-1">
+                                <div class="l-blog-content">
+                                    
+                                    <p>Imagine that you’re asked to give an estimate for how long a data project will take. How can you realistically assess the timeline for it? When thinking about all the unknowns that we need to take into account, the only correct answer seems to be “It depends!”. There are too many unknowns in nearly every data project which makes most estimates wrong.</p>
+<h2 id="1.-it-all-boils-down-to-data-availability-and-quality" tabindex="-1">1. It all boils down to data availability and quality</h2>
+<p>If you need to first get data from five different data sources and establish a regular pipeline for all of them before even starting the actual project that you were assigned to do, then a one-day task can easily extend to several days or weeks. Even if data is already available, but it has poor quality, your project automatically extends beyond its planned duration.</p>
+<h2 id="2.-requirement-engineering-usually-takes-longer-than-we-think" tabindex="-1">2. Requirement engineering usually takes longer than we think</h2>
+<p>In most data projects, the requirements are almost never entirely clear. Regardless of how hard the product managers may try to document the scope and acceptance criteria, often <strong>you only know what the project really entails once you started it</strong>, i.e. once you started talking to stakeholders and diving deeper into the problem that needs to be solved. That’s one of the reasons why agile development gained so much popularity.</p>
+<p>Data projects inherently lend themselves for <strong>iterations</strong>. In the first phase, you may be <strong>examining the problem</strong> and talking to business stakeholders to know which data and other requirements are needed to solve it. In the next phase, you gather data and build pipelines to ensure you have all you need in your staging area. Then, you analyze it and see what <strong>transformations</strong> or additional data may be required for the problem at hand. Next, you will think about data schemas and the processes that will consume that data, such as ML models or business logic. And finally, you can ask the stakeholders for their <strong>feedback</strong> on your initial prototype (<em>the dataset, table, report, ML model, business logic, or API</em>). It can even happen that based on the feedback, you may need to repeat the full cycle.</p>
+<h2 id="3.-you-found-the-&quot;real&quot;-business-problem" tabindex="-1">3. You found the “real” business problem</h2>
+<p>Sometimes you may be assigned to do project A, but after taking a deeper look into the actual data, you found out that the “real” problem that needs to be solved is something else. Perhaps your task was to combine data for a specific report and you realized that a crucial piece of data required for that is not even collected, or that this data makes no sense.</p>
+<p>Also, sometimes, when discussing one problem with business stakeholders, we encounter another, perhaps a much bigger one, or notice that there are other issues that must be tackled first in order to start working on what we initially should be doing… Real-life data projects are riddled with unknowns.</p>
+<p><strong>TL;DR:</strong> We can only get a realistic estimate once we talked to the business stakeholders and looked at the data.</p>
+<h2 id="4.-the-amount-and-quality-of-available-documentation" tabindex="-1">4. The amount and quality of available documentation</h2>
+<p>You most likely encountered this situation at some point in your data career: you start working with SQL tables and notice <strong>mysterious column names</strong> that tell absolutely nothing about the data stored there and you are unsure about the <strong>units of measure</strong> due to <strong>the lack of any data dictionary</strong>. You start searching for an explanation in your company’s internal documentation, shared emails, or within code comments. Sadly you found nothing. You ask business users about this data. They tell you, it was created by somebody who left the company, and nobody really knows the full story behind that data even though it’s used in five different business reports and data pipelines.</p>
+<p>Sounds like utter chaos? Perhaps it’s exaggerated, but I do think that it’s not far from reality about data management in many companies. **When you then have to build some data product with this data, what will you say?**It’s hard to plan anything if you don’t even understand the column names and units of measure of that data.</p>
+<div class="c-blog-content-cta"><div class="row"><div class="col-lg-8"><p class="c-blog-content-cta__title">Why not try our 30-day free trial?</p><p class="c-blog-content-cta__subtitle ">Fully managed, API-first analytics platform. Get instant access — no installation or credit card required.</p><a href="https://registration.cloud.gooddata.com/register" class="btn btn-md c-btn-primary" id="blog-trial">Get started</a></div></div></div>
+<h2 id="5.-expecting-best-case-scenarios" tabindex="-1">5. Expecting best-case scenarios</h2>
+<p>When estimating projects, we often only account for what we think it might take <strong>given “normal” circumstances</strong>. This means that we plan for things that we typically would expect if we encounter no issues or roadblocks. But if you think about it: how often did you come across issues or roadblocks along the way? Probably quite often.</p>
+<p>There can always be some broken dependencies, missing data, or some other impediments that we must take into account. The only viable solution is to <strong>plan enough buffer</strong> for such unexpected events. Realistic planning is better than overenthusiastic thinking that everything will follow the happy path.</p>
+<h2 id="6.-waiting-for-external-resources" tabindex="-1">6. Waiting for external resources</h2>
+<p>In many cases, your project duration can also be hindered by the time you need to wait for DevOps resources to create new users, provide access to databases, or provision resources. Also, you often need to wait for other colleagues to hand over some documentation, transfer their knowledge, point you to a location where data is stored... Then, you also need to wait for others to review and approve your code. Those are all essential factors that need to be additionally taken into account when estimating the project duration.</p>
+<h2 id="7.-emergency-support-and-maintenance-scenarios" tabindex="-1">7. Emergency, support &amp; maintenance scenarios</h2>
+<p>You may have given an estimate of one week for a specific project. Meanwhile, a super-critical process broke and you need to spend one or two days fixing it, which delays your project delivery. Similarly, when some junior developers need support, you’ll obviously give them a hand regardless of your project deadlines. The same is true when some colleague is sick and you need to take over some tasks from him or her.</p>
+<p>Those factors are not specific to data projects, but they also need to be taken into account before estimating any strict project deadline.</p>
+<h2 id="8.-the-lack-of-process-knowledge-and-resultant-incorrect-assumptions" tabindex="-1">8. The lack of process knowledge &amp; resultant incorrect assumptions</h2>
+<p>The knowledge silos are probably equally dangerous as data silos. What may seem obvious to business users, may not be obvious to data scientists and engineers.</p>
+<p>Even within the data team, there may be some manual processes, mysterious files being shared via SFTP, undocumented mapping tables, and processes that you will need to familiarize yourself with in order to address the project you are currently working on, which again, can affect the duration of your data project. The process-knowledge becomes particularly important if your task is to <strong>automate</strong> something. As Bill Gates famously said:</p>
+<blockquote>
+<p>“The first rule of any technology used in a business is that automation applied to an efficient operation will magnify the efficiency. The second is that automation applied to an inefficient operation will magnify the inefficiency.”</p>
+</blockquote>
+<h2 id="9.-conflicting-interests-about-the-scope-between-business-and-it" tabindex="-1">9. Conflicting interests about the scope between business and IT</h2>
+<p>Typically, <strong>business</strong> users want <strong>more features</strong> and they want it <strong>NOW</strong>. From their perspective, their requests are of the highest priority. In contrast, <strong>IT</strong> wants <strong>standardization</strong> and easier <strong>maintenance</strong>.</p>
+<p>This should illustrate that there are many stakeholders (with potentially conflicting interests) that need to <strong>agree</strong> on the way of implementing something before you can even start working on it. This makes it challenging to give a good estimate. Given that people agree on option A, the estimate could be two days. Given they go for option B, the estimate may turn into two weeks. And what if they don’t reach an agreement?</p>
+<h2 id="10.-dependencies-in-code-environments-and-data" tabindex="-1">10. Dependencies in code, environments, and data</h2>
+<p>Finally, there is always the potential issue of <strong>dependencies</strong> that result in the extra time needed to <strong>consolidate code and data</strong> across different projects and teams. For instance, you may have built an amazing <strong>authorization layer</strong> for your backend API, but then when talking to other developers, it turns out that you need to standardize on a <strong>common Auth mechanism across different projects</strong> and that DevOps requires Active Directory integration for that. You then need to consolidate your work with others and agree on a common interface that can be reused across different APIs.</p>
+<h2 id="how-to-reduce-dependencies-in-your-business-intelligence-technology-stack" tabindex="-1">How to reduce dependencies in your Business Intelligence technology stack?</h2>
+<p>Another type of challenge that we need to consider is the <strong>hand-off</strong> between data engineers, data analysts, and software engineers embedding analytics in custom business applications. In order to facilitate this process, you may want to use a platform that makes it easy to <strong>run your analytical applications close to your data</strong>. With the cloud-native GoodData platform, you can spin up an entire analytical <strong>BI stack in a single Docker container</strong>. Then, within your browser, you can connect to a data warehouse of your choice (<em>Amazon Redshift, Snowflake, …</em>) and start building visualizations. The platform makes it easy to combine your charts and KPIs into analytical <strong>dashboards</strong> that you can <strong>share</strong> with others in your organization. Additionally, you can <strong>embed your visualizations</strong> into any custom application by leveraging the developer-friendly <a href="/docs/cloud-native/latest/getting-started/create-ui-sdk-app/">React-based Accelerator Toolkit</a>.</p>
+<p>To start experimenting with the <a href="/developers/cloud-native/">free Community Edition</a> of GoodData, you need to start a single <a href="https://hub.docker.com/r/gooddata/gooddata-cn-ce">Docker container</a>:</p>
+<pre class="language-dockerfile"><code class="language-dockerfile"><span class="highlight-line">docker run --name gooddata -p 3000:3000 -p 5432:5432 \</span><br><span class="highlight-line">  -e LICENSE_AND_PRIVACY_POLICY_ACCEPTED=YES gooddata/gooddata-cn-ce:latest</span></code></pre>
+<p>For a deep dive into the cloud-native BI platform and all its benefits, you can have a look at <a href="https://medium.com/gooddata-developers/here-is-what-happens-if-you-decouple-your-bi-stack-cd365a97ee74">my previous article</a>. And if you want to try it directly in a Kubernetes cluster, you can use the following <a href="/developers/cloud-native/#plans">Helm chart</a> making the deployment so much easier.</p>
+<h2 id="conclusion" tabindex="-1">Conclusion</h2>
+<p>In this article, we discussed different aspects that can impact the duration of your data projects. Estimates are important in prioritizing work across teams. Nonetheless, data projects are often riddled with so many unknowns that realistic estimates can only be given by explaining our assumptions, taking into account potential roadblocks, consolidation efforts, and planning ahead enough buffer for the unexpected events.</p>
+<p>If you provide a larger than expected estimate for project duration, it doesn’t mean that you are slow or lazy, but rather that you are experienced in how long data projects really take. It’s better to overdeliver than to disappoint. Everything that we create needs to be maintained, and this can already take up a significant portion of our time.</p>
+<p><strong>Thank you for reading!</strong></p>
+<div class="c-blog-content-cta"><div class="row"><div class="col-lg-8"><p class="c-blog-content-cta__title">Why not try our 30-day free trial?</p><p class="c-blog-content-cta__subtitle ">Fully managed, API-first analytics platform. Get instant access — no installation or credit card required.</p><a href="https://registration.cloud.gooddata.com/register" class="btn btn-md c-btn-primary" id="blog-trial">Get started</a></div></div></div>
+<hr>
+<p><em>If you are interested in GoodData.CN, please <a href="/contact/">contact us</a>. Alternatively, sign up for a trial version of GoodData Cloud: <a href="https://www.gooddata.com/trial/">https://www.gooddata.com/trial/</a></em></p>
+<p><em>Cover image by <a href="https://www.pexels.com/@olly?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels">Andrea Piacquadio</a></em><a href="https://www.pexels.com/@anete-lusina?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels"></a> <em>from</em> <a href="https://www.pexels.com/photo/crop-hacker-silhouette-typing-on-computer-keyboard-while-hacking-system-5240547/?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels"></a><em><a href="https://www.pexels.com/photo/woman-leaning-on-table-3767411/?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels">Pexels</a> | <a href="https://www.annageller.com/disclosure">Branded content disclosure</a></em></p>
+
+
+                                    
+                                    
+                                </div>
+
+                                
+                                <div class="l-blog-info">
+    <div class="row">
+        <div class="col-md-8">
+            <p>
+            
+            <span>Written by Anna Geller&nbsp;&nbsp;|&nbsp;</span>
+            
+            <time class="c-info-time" datetime="2021-6-11">Jun 11, 2021</time>
+            </p>
+        </div>
+        <div class="col-md-4">
+            
+            <div class="c-sharebtns">
+                <div class="c-sharebtns__title"><span>Share </span></div>
+                <div class="c-sharebtns__buttons">
+                    <a id="blogShareLinkedin" href="https://www.linkedin.com/sharing/share-offsite/?&url=https%3A%2F%2Fwww.gooddata.com%2Fblog%2F10-reasons-why-estimating-time-for-data-projects-is-hard%2F" target="_blank">
+                        <svg viewbox="0 0 512 512"><path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"></path></svg>
+                    </a>
+                    <a id="blogShareTwitter" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.gooddata.com%2Fblog%2F10-reasons-why-estimating-time-for-data-projects-is-hard%2F&via=gooddata" target="_blank">
+                        <svg viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg"><path d="M16.119 13.1992 22.4486 6h-1.4994l-5.4983 6.2497L11.0626 6H6l6.6374 9.4514L6 22.9999h1.4994l5.8027-6.6012 4.6353 6.6012H23M8.04057 7.10634h2.30353L20.9481 21.948H18.644"/></svg>
+                    </a>
+                    <a id="blogShareFacebook" href="https://www.facebook.com/sharer.php?t=10%20Reasons%20Why%20Estimating%20Time%20For%20Data%20Projects%20is%20Hard&u=https%3A%2F%2Fwww.gooddata.com%2Fblog%2F10-reasons-why-estimating-time-for-data-projects-is-hard%2F&display=popup" target="_blank">
+                        <svg viewbox="0 0 512 512"><path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                                
+                                
+                                <div class="l-blog-nav">
+    <div class="l-blog-nav__back">
+        <a href="/blog/" id="blog-go-back-2">
+            
+            <img src="/img/icons/arrow-left-thin.svg" alt="Go back to Blog&#39;s hub" />
+                <span class="l-blog-nav-title">Blog</span>
+            
+        </a>
+        <span class="l-blog-nav-title">&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;tags:&nbsp;&nbsp;</span>
+    </div>
+    <div class="l-blog-nav__tags">
+    
+        <a href="/resources/tags/tech-talk/" class="c-tags-pill"><span>Tech Talk</span></a>
+    
+    </div>
+</div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    
+                    <div class="col-md-8 offset-md-2 col-xl-3 offset-xl-1" id="right-column">
+                        
+
+<div class="l-blog-rc rc-right">
+    <div class="row">
+        <div class="col-xs-12">
+            
+            <h2 class="c-h3">Related content</h2>
+            
+        </div>
+        
+                
+                    
+
+    
+        
+            
+        
+        <div class="col-lg-12">
+            <a href="https://medium.com/gooddata-developers/embedding-self-service-analytics-on-top-of-postgres-data-2f53fbce766b" id="blog-rc-box-r-1" class="rc-box rc-1" target="_blank">
+                
+                    <picture>
+                        <source srcset="/img/blog/_340x179/blog-placeholder.jpg.webp" media="(max-width: 1799px)">
+                        <source srcset="/img/blog/_540x284/blog-placeholder.jpg.webp" media="(min-width: 1800px)">
+                        <img
+                            src="/img/generic/img-150-placeholder.webp"
+                            loading="lazy"
+                            class="o-fluidimage h-auto l-blog-image"
+                            alt="Embedded, self-service analytics on top of Postgres data"
+                            width="540"
+                            height="284"
+                            onerror="this.onerror=null;this.srcset='/img/generic/img-150-placeholder.webp 150w, /img/generic/img-340-placeholder.webp 340w, /img/generic/img-540-placeholder.webp 540w';"
+                        />
+                    </picture>
+                
+                <p class="title c-h4 text-start c-text-ellipsis">Embedded, self-service analytics on top of Postgres data</p>
+            </a>
+        </div>
+    
+
+                
+            
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            
+                        
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        
+
+    
+        <div class="col-lg-12">
+            <a href="/resources/introduction-headless-bi/" id="blog-rc-box-r-2" class="rc-box rc-2" target="_blank">
+                
+                    <picture>
+                        <source srcset="/img/resources/_340x179/og-1headlessbipng.png.webp" media="(max-width: 1799px)">
+                        <source srcset="/img/resources/_540x284/og-1headlessbipng.png.webp" media="(min-width: 1800px)">
+                        <img
+                            src="/img/generic/img-150-placeholder.webp"
+                            loading="lazy"
+                            class="o-fluidimage h-auto"
+                            alt="An Introduction to Headless BI"
+                            width="540"
+                            height="284"
+                            onerror="this.onerror=null;this.srcset='/img/generic/img-150-placeholder.webp 150w, /img/generic/img-340-placeholder.webp 340w, /img/generic/img-540-placeholder.webp 540w';"
+                        />
+                    </picture>
+                
+                <p class="title c-h4 text-start c-text-ellipsis">An Introduction to Headless BI</p>
+            </a>
+        </div>
+    
+
+                    
+                
+            
+                
+                    
+
+    
+        
+            
+        
+        <div class="col-lg-12">
+            <a href="/developers/cloud-native/#connect" id="blog-rc-box-r-3" class="rc-box rc-3" target="_blank">
+                
+                    <picture>
+                        <source srcset="/img/blog/_340x179/cn-communityog.jpeg.webp" media="(max-width: 1799px)">
+                        <source srcset="/img/blog/_540x284/cn-communityog.jpeg.webp" media="(min-width: 1800px)">
+                        <img
+                            src="/img/generic/img-150-placeholder.webp"
+                            loading="lazy"
+                            class="o-fluidimage h-auto l-blog-image"
+                            alt="GoodData.CN Community Edition"
+                            width="540"
+                            height="284"
+                            onerror="this.onerror=null;this.srcset='/img/generic/img-150-placeholder.webp 150w, /img/generic/img-340-placeholder.webp 340w, /img/generic/img-540-placeholder.webp 540w';"
+                        />
+                    </picture>
+                
+                <p class="title c-h4 text-start c-text-ellipsis">GoodData.CN Community Edition</p>
+            </a>
+        </div>
+    
+
+                
+            
+    </div>
+</div>
+                        <div id="banner-wrap">
+                            
+
+    
+
+    
+
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-xs-12">
+                        
+
+<div class="l-blog-rc rc-bottom">
+    <div class="row justify-content-xl-center">
+        <div class="col-xs-12 col-xl-11">
+            <div class="row">
+                <div class="col-xs-12">
+                    
+                    <h2 class="text-center c-h3">Read more</h2>
+                    
+                </div>
+                
+                        
+                            
+
+    
+        
+            
+        
+        <div class="col-xs-12 col-sm-4">
+            <a href="https://medium.com/gooddata-developers/embedding-self-service-analytics-on-top-of-postgres-data-2f53fbce766b" id="blog-rc-box-r-1" class="rc-box rc-1" target="_blank">
+                
+                    <picture>
+                        <source srcset="/img/blog/_340x179/blog-placeholder.jpg.webp" media="(max-width: 1799px)">
+                        <source srcset="/img/blog/_540x284/blog-placeholder.jpg.webp" media="(min-width: 1800px)">
+                        <img
+                            src="/img/generic/img-150-placeholder.webp"
+                            loading="lazy"
+                            class="o-fluidimage h-auto l-blog-image"
+                            alt="Embedded, self-service analytics on top of Postgres data"
+                            width="540"
+                            height="284"
+                            onerror="this.onerror=null;this.srcset='/img/generic/img-150-placeholder.webp 150w, /img/generic/img-340-placeholder.webp 340w, /img/generic/img-540-placeholder.webp 540w';"
+                        />
+                    </picture>
+                
+                <p class="title c-h4 text-start c-text-ellipsis">Embedded, self-service analytics on top of Postgres data</p>
+            </a>
+        </div>
+    
+
+                        
+                    
+                        
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                                    
+                                
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                                
+
+    
+        <div class="col-xs-12 col-sm-4">
+            <a href="/resources/introduction-headless-bi/" id="blog-rc-box-r-2" class="rc-box rc-2" target="_blank">
+                
+                    <picture>
+                        <source srcset="/img/resources/_340x179/og-1headlessbipng.png.webp" media="(max-width: 1799px)">
+                        <source srcset="/img/resources/_540x284/og-1headlessbipng.png.webp" media="(min-width: 1800px)">
+                        <img
+                            src="/img/generic/img-150-placeholder.webp"
+                            loading="lazy"
+                            class="o-fluidimage h-auto"
+                            alt="An Introduction to Headless BI"
+                            width="540"
+                            height="284"
+                            onerror="this.onerror=null;this.srcset='/img/generic/img-150-placeholder.webp 150w, /img/generic/img-340-placeholder.webp 340w, /img/generic/img-540-placeholder.webp 540w';"
+                        />
+                    </picture>
+                
+                <p class="title c-h4 text-start c-text-ellipsis">An Introduction to Headless BI</p>
+            </a>
+        </div>
+    
+
+                            
+                        
+                    
+                        
+                            
+
+    
+        
+            
+        
+        <div class="col-xs-12 col-sm-4">
+            <a href="/developers/cloud-native/#connect" id="blog-rc-box-r-3" class="rc-box rc-3" target="_blank">
+                
+                    <picture>
+                        <source srcset="/img/blog/_340x179/cn-communityog.jpeg.webp" media="(max-width: 1799px)">
+                        <source srcset="/img/blog/_540x284/cn-communityog.jpeg.webp" media="(min-width: 1800px)">
+                        <img
+                            src="/img/generic/img-150-placeholder.webp"
+                            loading="lazy"
+                            class="o-fluidimage h-auto l-blog-image"
+                            alt="GoodData.CN Community Edition"
+                            width="540"
+                            height="284"
+                            onerror="this.onerror=null;this.srcset='/img/generic/img-150-placeholder.webp 150w, /img/generic/img-340-placeholder.webp 340w, /img/generic/img-540-placeholder.webp 540w';"
+                        />
+                    </picture>
+                
+                <p class="title c-h4 text-start c-text-ellipsis">GoodData.CN Community Edition</p>
+            </a>
+        </div>
+    
+
+                        
+                    
+            </div>
+        </div>
+    </div>
+</div>
+                    </div>
+
+                </div>
+            </div>
+
+            
+            <div class="c-section__default_condensed-mobile c-section__bg-mist-gray text-center">
+    <div class="container">
+        <h2 class="c-h2">
+            Subscribe to our newsletter
+        </h2>
+        <p class="c-p__huge">
+            Get your dose of interesting facts on analytics in your inbox every month.
+        </p>
+        <a href="#" class="btn c-btn-primary" id="subscribe-lg-cta" data-bs-toggle="modal" data-bs-target="#modalSubscribe">
+            Subscribe
+        </a>
+    </div>
+</div>
+<div class="c-divider c-divider-feather"></div>
+
+        </article>
+    </main>
+
+
+        
+        
+
+        
+        
+
+<footer class="c-sitefooter gd-footer" id="gd-footer">
+    
+        <ul class="gd-footer-banner-links gd-footer-links">
+            
+                <li class="gd-footer-banner-links-item gd-footer-links-item">
+                    <input type="checkbox" tabindex="-1" id="gd-footer-links-item-trigger-0" name="gd-footer-links-item-trigger-0" class="gd-footer-banner-links-item-trigger gd-footer-links-item-trigger"/>
+                    <label for="gd-footer-links-item-trigger-0" class="gd-footer-banner-links-item-text gd-footer-links-item-text">
+                        Start with GoodData
+                    </label>
+
+                    
+                        <ul class="gd-footer-banner-sublinks gd-footer-sublinks">
+                            
+                                <li class="gd-footer-banner-sublinks-item gd-footer-sublinks-item">
+                                    <a class="gd-footer-banner-sublinks-item-link gd-footer-sublinks-item-link" href="https://registration.cloud.gooddata.com/register" id="footer-sublink-start-trial">Start trial</a>
+                                </li>
+                            
+                                <li class="gd-footer-banner-sublinks-item gd-footer-sublinks-item">
+                                    <a class="gd-footer-banner-sublinks-item-link gd-footer-sublinks-item-link" href="/request-a-demo/" id="footer-sublink-request-a-demo">Request a demo</a>
+                                </li>
+                            
+                                <li class="gd-footer-banner-sublinks-item gd-footer-sublinks-item">
+                                    <a class="gd-footer-banner-sublinks-item-link gd-footer-sublinks-item-link" href="/pricing/" id="footer-sublink-see-pricing">See pricing</a>
+                                </li>
+                            
+                        </ul>
+                    
+                    
+                    
+    <div class="dropdown c-sitefooter__language__dropdown d-none d-lg-flex">
+        <button class="btn c-sitefooter__language__dropdown-btn c-btn-dropdown__invert btn-sm dropdown-toggle w-100 text-start" id="language-select" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="/img/icons/icon-world.svg" alt="Select language" />
+            <span>English (US)</span>
+        </button>
+        <ul class="dropdown-menu c-sitefooter__language__dropdown-menu">
+            <li>
+                <a href="/" class="dropdown-item active" id="language-select-en" type="button">English (US)</a>
+            </li>
+            <li>
+                <a href="/es/" class="dropdown-item " id="language-select-es" type="button">Español (Latinoamerica)</a>
+            </li>
+            <li>
+                <a href="/br/" class="dropdown-item " id="language-select-br" type="button">Português (Brazil)</a>
+            </li>
+            <li>
+                <span>Please note that not all the pages will be translated</span>
+            </li>
+        </ul>
+    </div>
+
+                    
+                </li>
+            
+        </ul>
+    
+
+    <ul class="gd-footer-links">
+        
+            <li class="gd-footer-links-item">
+                <input type="checkbox" tabindex="-1" id="gd-footer-links-item-trigger-1" name="gd-footer-links-item-trigger-1" class="gd-footer-links-item-trigger"/>
+                <label for="gd-footer-links-item-trigger-1" class="gd-footer-links-item-text">
+                    Product
+                </label>
+
+                
+                    <ul class="gd-footer-sublinks">
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/platform/" id="footer-sublink-product-overview">Product overview</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/embedded-analytics/" id="footer-sublink-embedded-analytics">Embedded Analytics</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/headless-bi/" id="footer-sublink-headless-bi">Headless BI</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/security/" id="footer-sublink-trust-and-security">Trust &amp; Security</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/solutions/professional-services/" id="footer-sublink-services">Services</a>
+                            </li>
+                        
+                    </ul>
+                
+            </li>
+        
+            <li class="gd-footer-links-item">
+                <input type="checkbox" tabindex="-1" id="gd-footer-links-item-trigger-2" name="gd-footer-links-item-trigger-2" class="gd-footer-links-item-trigger"/>
+                <label for="gd-footer-links-item-trigger-2" class="gd-footer-links-item-text">
+                    Industries
+                </label>
+
+                
+                    <ul class="gd-footer-sublinks">
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/solutions/ecommerce/" id="footer-sublink-e-commerce">E-commerce</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/solutions/insurance/" id="footer-sublink-insurance">Insurance</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/solutions/financial-services/" id="footer-sublink-financial-services">Financial Services</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/embedded-analytics-software-companies/" id="footer-sublink-software-companies">Software Companies</a>
+                            </li>
+                        
+                    </ul>
+                
+            </li>
+        
+            <li class="gd-footer-links-item">
+                <input type="checkbox" tabindex="-1" id="gd-footer-links-item-trigger-3" name="gd-footer-links-item-trigger-3" class="gd-footer-links-item-trigger"/>
+                <label for="gd-footer-links-item-trigger-3" class="gd-footer-links-item-text">
+                    Learn
+                </label>
+
+                
+                    <ul class="gd-footer-sublinks">
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/docs/cloud/" id="footer-sublink-documentation">Documentation</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="https://university.gooddata.com/" id="footer-sublink-university">University</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="https://community.gooddata.com/" id="footer-sublink-community">Community</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="https://support.gooddata.com/hc/en-us" id="footer-sublink-support">Support</a>
+                            </li>
+                        
+                    </ul>
+                
+            </li>
+        
+            <li class="gd-footer-links-item">
+                <input type="checkbox" tabindex="-1" id="gd-footer-links-item-trigger-4" name="gd-footer-links-item-trigger-4" class="gd-footer-links-item-trigger"/>
+                <label for="gd-footer-links-item-trigger-4" class="gd-footer-links-item-text">
+                    Developers
+                </label>
+
+                
+                    <ul class="gd-footer-sublinks">
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="https://www.gooddata.com/docs/python-sdk/latest/" id="footer-sublink-python-sdk">Python SDK</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="https://www.gooddata.com/docs/cloud/api-and-sdk/react-sdk/" id="footer-sublink-react-sdk">React SDK</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="https://gdui-examples.herokuapp.com/" id="footer-sublink-examples-gallery">Examples Gallery</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="https://www.gooddata.com/docs/cloud/api-and-sdk/api/api_reference_all/" id="footer-sublink-api-references">API References</a>
+                            </li>
+                        
+                    </ul>
+                
+            </li>
+        
+            <li class="gd-footer-links-item">
+                <input type="checkbox" tabindex="-1" id="gd-footer-links-item-trigger-5" name="gd-footer-links-item-trigger-5" class="gd-footer-links-item-trigger"/>
+                <label for="gd-footer-links-item-trigger-5" class="gd-footer-links-item-text">
+                    Resources
+                </label>
+
+                
+                    <ul class="gd-footer-sublinks">
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/resources/" id="footer-sublink-all-resources">All resources</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/resources/tags/case-studies/" id="footer-sublink-case-studies">Case studies</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/resources/tags/analyst-reports/" id="footer-sublink-analyst-reports">Analyst reports</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/resources/tags/briefs/" id="footer-sublink-briefs">Briefs</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/resources/tags/ebooks/" id="footer-sublink-e-books">E-books</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/resources/tags/podcasts/" id="footer-sublink-podcasts">Podcasts</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/resources/tags/videos/" id="footer-sublink-videos">Videos</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/resources/tags/webinars/" id="footer-sublink-webinars">Webinars</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/blog/" id="footer-sublink-blog">Blog</a>
+                            </li>
+                        
+                    </ul>
+                
+            </li>
+        
+            <li class="gd-footer-links-item">
+                <input type="checkbox" tabindex="-1" id="gd-footer-links-item-trigger-6" name="gd-footer-links-item-trigger-6" class="gd-footer-links-item-trigger"/>
+                <label for="gd-footer-links-item-trigger-6" class="gd-footer-links-item-text">
+                    About GoodData
+                </label>
+
+                
+                    <ul class="gd-footer-sublinks">
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/company/" id="footer-sublink-company">Company</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/customers/" id="footer-sublink-customers">Customers</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/partners/" id="footer-sublink-partners">Partners</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/company/careers/" id="footer-sublink-careers">Careers</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/in-the-news/" id="footer-sublink-newsroom">Newsroom</a>
+                            </li>
+                        
+                            <li class="gd-footer-sublinks-item">
+                                <a class="gd-footer-sublinks-item-link" href="/brand-guidelines/" id="footer-sublink-brand">Brand</a>
+                            </li>
+                        
+                    </ul>
+                
+            </li>
+        
+    </ul>
+
+    <div class="gd-footer-bottom">
+                    
+        
+    <div class="dropdown c-sitefooter__language__dropdown d-flex d-lg-none">
+        <button class="btn c-sitefooter__language__dropdown-btn c-btn-dropdown__invert btn-sm dropdown-toggle w-100 text-start" id="language-select" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="/img/icons/icon-world.svg" alt="Select language" />
+            <span>English (US)</span>
+        </button>
+        <ul class="dropdown-menu c-sitefooter__language__dropdown-menu">
+            <li>
+                <a href="/" class="dropdown-item active" id="language-select-en" type="button">English (US)</a>
+            </li>
+            <li>
+                <a href="/es/" class="dropdown-item " id="language-select-es" type="button">Español (Latinoamerica)</a>
+            </li>
+            <li>
+                <a href="/br/" class="dropdown-item " id="language-select-br" type="button">Português (Brazil)</a>
+            </li>
+            <li>
+                <span>Please note that not all the pages will be translated</span>
+            </li>
+        </ul>
+    </div>
+
+        
+        
+            <div class="gd-footer-buttons">
+                
+                    
+                    
+                    
+                        
+                    
+
+                    
+
+                    
+
+                    
+                    
+                        
+                        
+                    
+
+                    <div class="gd-footer-buttons-item">
+                        <a
+                            class=" gd-footer-buttons-item-icon-button"
+                            href="https://www.linkedin.com/company/gooddata" 
+                            id="footer-btn-linkedin" 
+                            rel="noreferer, noopener" 
+                            data-bs-toggle="" 
+                            data-bs-target=""
+                            
+                                aria-label="LinkedIn"
+                            
+                        >
+                            
+                                <svg viewbox="0 0 512 512"><path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"></path></svg>
+                            
+                        </a>
+                    </div>
+                
+                    
+                    
+                    
+                        
+                    
+
+                    
+
+                    
+
+                    
+                    
+                        
+                        
+                    
+
+                    <div class="gd-footer-buttons-item">
+                        <a
+                            class=" gd-footer-buttons-item-icon-button"
+                            href="https://twitter.com/gooddata" 
+                            id="footer-btn-twitter" 
+                            rel="noreferer, noopener" 
+                            data-bs-toggle="" 
+                            data-bs-target=""
+                            
+                                aria-label="Twitter"
+                            
+                        >
+                            
+                                <svg viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg"><path d="M16.119 13.1992 22.4486 6h-1.4994l-5.4983 6.2497L11.0626 6H6l6.6374 9.4514L6 22.9999h1.4994l5.8027-6.6012 4.6353 6.6012H23M8.04057 7.10634h2.30353L20.9481 21.948H18.644"/></svg>
+                            
+                        </a>
+                    </div>
+                
+                    
+                    
+                    
+                        
+                    
+
+                    
+
+                    
+
+                    
+                    
+                        
+                        
+                    
+
+                    <div class="gd-footer-buttons-item">
+                        <a
+                            class=" gd-footer-buttons-item-icon-button"
+                            href="https://www.facebook.com/gooddata" 
+                            id="footer-btn-facebook" 
+                            rel="noreferer, noopener" 
+                            data-bs-toggle="" 
+                            data-bs-target=""
+                            
+                                aria-label="Facebook"
+                            
+                        >
+                            
+                                <svg viewbox="0 0 512 512"><path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"></path></svg>
+                            
+                        </a>
+                    </div>
+                
+                    
+                    
+                    
+                        
+                    
+
+                    
+
+                    
+
+                    
+                    
+                        
+                        
+                    
+
+                    <div class="gd-footer-buttons-item">
+                        <a
+                            class=" gd-footer-buttons-item-icon-button"
+                            href="https://www.youtube.com/c/gooddata" 
+                            id="footer-btn-youtube" 
+                            rel="noreferer, noopener" 
+                            data-bs-toggle="" 
+                            data-bs-target=""
+                            
+                                aria-label="YouTube"
+                            
+                        >
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 90"><path d="M63.939 65.832H59l.023-2.869c0-1.275 1.047-2.318 2.326-2.318h.315c1.282 0 2.332 1.043 2.332 2.318l-.057 2.869zm-18.526-6.148c-1.253 0-2.278.842-2.278 1.873V75.51c0 1.029 1.025 1.869 2.278 1.869 1.258 0 2.284-.84 2.284-1.869V61.557c0-1.032-1.026-1.873-2.284-1.873zM75.5 51.879v26.544C75.5 84.79 69.979 90 63.23 90H12.771C6.02 90 .5 84.79.5 78.423V51.879c0-6.367 5.52-11.578 12.271-11.578H63.23c6.749 0 12.27 5.211 12.27 11.578zM16.137 81.305l-.004-27.961 6.255.002v-4.143l-16.674-.025v4.073l5.205.015v28.039h5.218zm18.75-23.796h-5.215V72.44c0 2.16.131 3.24-.008 3.621-.424 1.158-2.33 2.388-3.073.125-.126-.396-.015-1.591-.017-3.643l-.021-15.034h-5.186l.016 14.798c.004 2.268-.051 3.959.018 4.729.127 1.357.082 2.939 1.341 3.843 2.346 1.69 6.843-.252 7.968-2.668l-.01 3.083 4.188.005-.001-23.79zm16.6830139 17.098L51.559 62.18c-.004-4.736-3.547-7.572-8.356-3.74l.021-9.239-5.209.008-.025 31.89 4.284-.062.39-1.986c5.473 5.021 8.914 1.58 8.9060139-4.444zM67.891 72.96l-3.91.021c-.002.155-.008.334-.01.529v2.182c0 1.168-.965 2.119-2.137 2.119h-.766c-1.174 0-2.139-.951-2.139-2.119v-5.739h8.954v-3.37c0-2.463-.063-4.925-.267-6.333-.641-4.454-6.893-5.161-10.051-2.881-.991.712-1.748 1.665-2.188 2.945-.444 1.281-.665 3.031-.665 5.254v7.41c.002 12.318 14.964 10.577 13.179-.018zM47.833 32.732c.269.654.687 1.184 1.254 1.584.56.394 1.276.592 2.134.592.752 0 1.418-.203 1.998-.622.578-.417 1.065-1.04 1.463-1.871l-.099 2.046h5.813V9.74H55.82v19.24c0 1.042-.858 1.895-1.907 1.895-1.043 0-1.904-.853-1.904-1.895V9.74h-4.776v16.674c0 2.124.039 3.54.102 4.258.065.713.229 1.397.498 2.06zM30.217 18.77c0-2.373.198-4.226.591-5.562.396-1.331 1.107-2.401 2.137-3.208 1.027-.811 2.342-1.217 3.941-1.217 1.345 0 2.497.264 3.459.781.967.52 1.713 1.195 2.23 2.028.527.836.885 1.695 1.076 2.574.195.891.291 2.235.291 4.048v6.252c0 2.293-.092 3.98-.271 5.051-.177 1.074-.557 2.07-1.146 3.004-.58.924-1.329 1.615-2.237 2.056-.918.445-1.968.663-3.154.663-1.325 0-2.441-.183-3.361-.565-.923-.38-1.636-.953-2.144-1.714-.513-.762-.874-1.69-1.092-2.772-.219-1.081-.323-2.707-.323-4.874l.003-6.545zm4.553 9.82c0 1.4 1.042 2.543 2.311 2.543 1.27 0 2.308-1.143 2.308-2.543V15.43c0-1.398-1.038-2.541-2.308-2.541-1.269 0-2.311 1.143-2.311 2.541v13.16zm-16.088 6.645h5.484l.006-18.96L30.652.033h-5.998l-3.445 12.064L17.715 0h-5.936l6.894 16.284.009 18.951z" fill-rule="nonzero"/></svg>
+                            
+                        </a>
+                    </div>
+                
+                    
+                    
+                    
+                        
+                        
+                    
+
+                    
+                        
+                    
+
+                    
+
+                    
+                    
+                         
+                        
+                        
+                    
+
+                    <div class="gd-footer-buttons-item gd-footer-buttons-item-button">
+                        <a
+                            class="btn btn-xs c-btn-default__invert"
+                            href="#" 
+                            id="footer-btn-subscribe-for-updates" 
+                            rel="" 
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modalSubscribe"
+                            
+                        >
+                            
+                                Subscribe for updates
+                            
+                        </a>
+                    </div>
+                
+                    
+                    
+                    
+                        
+                        
+                    
+
+                    
+
+                    
+
+                    
+                    
+                        
+                        
+                    
+
+                    <div class="gd-footer-buttons-item gd-footer-buttons-item-button">
+                        <a
+                            class="btn btn-xs c-btn-primary"
+                            href="/contact/" 
+                            id="footer-btn-contact-us" 
+                            rel="" 
+                            data-bs-toggle="" 
+                            data-bs-target=""
+                            
+                        >
+                            
+                                Contact us
+                            
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+            <div class="gd-footer-copyright">
+                
+                    <div class="gd-footer-copyright-text">
+                        
+                            Copyright© 2007 - 2024 GoodData Corporation. All Rights Reserved.
+                        
+                    </div>
+                
+                    <div class="gd-footer-copyright-text">
+                        
+                            <a href="/legal/#privacy-policy" class="gd-footer-copyright-link" id="footer-copyright-privacy-policy">Privacy Policy</a>
+                        
+                    </div>
+                
+                    <div class="gd-footer-copyright-text">
+                        
+                            <a href="/legal/" class="gd-footer-copyright-link" id="footer-copyright-legal">Legal</a>
+                        
+                    </div>
+                
+                    <div class="gd-footer-copyright-text">
+                        
+                            <a href="/support-policies/" class="gd-footer-copyright-link" id="footer-copyright-support-policy">Support Policy</a>
+                        
+                    </div>
+                
+            </div>
+        
+    </div>
+</footer>
+
+
+<div class="modal fade" tabindex="-1" id="modalSubscribe" aria-labelledby="modalSubscribeLabel" role="dialog" aria-hidden="true" data-attr-form="modal-form">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content c-form__container-hs">
+            <button id="footer-newsletter-close" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header c-form__fill">
+                <p class="c-h5 modal-title">Subscribe to the GoodData Newsletter</p>
+                <p class="modal-subtitle">Receive regular updates from our blog, news, and more.</p>
+            </div>
+            <div class="modal-body c-form__subscribe c-form__fill">
+                
+                
+
+
+
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+<script>
+    // Definitions
+    var hsRegion = "na1";
+    var hsPortalId = "8934247";
+    var hsFormId__news = "c0df7971-3889-4cf2-bf69-98ccdd1bbf4a";
+    var hsFormName__news = "newsletter";
+    // Definitions DEV
+    // var hsPortalId = "14511621";
+    // var hsFormId__news = "f4da1c67-3585-4676-a867-8cde5289cc15";
+
+    // HS Form Create
+document.addEventListener("DOMContentLoaded", function() {
+    hbspt.forms.create({
+        region: hsRegion,
+        portalId: hsPortalId,
+        formId: hsFormId__news,
+        onFormSubmit: function($form) {
+
+            // Thanks
+            $('#modalSubscribe .c-form__fill').hide();
+            $('#modalSubscribe .c-form__submitted').show();
+
+            // GTM | Subscribe
+            var emailInputValue = $('.c-form__subscribe input[name="email"]').val();
+
+            // GTM | OptIn
+            legalCheck('subscribe');
+
+            // GTM | Event
+            dataLayer.push({
+                'event': trackingType(emailInputValue), // testEvent vs trackEvent
+                    'eventCategory': 'newsletter',
+                    'eventAction': 'submit',
+                    'eventLabel': 'subscribe'
+            });
+
+            // GTM | HS Form Submission
+            dataLayer.push({
+                'event': 'form_submission', //event name
+                'form_name': hsFormName__news, // specific form name
+                'tracking_type': trackingType(emailInputValue), // testEvent vs trackEvent
+                'form_id': hsFormId__news, //HS form ID
+                'asset_name': 'unknown', //asset name or unknown
+                'asset_format': 'unknown', //asset file type or unknown
+                'form_marketing_consent': window.optinTracker,
+                'page_url': document.location.pathname,
+                'form_email': isGmail(emailInputValue), // (business, gmail)
+                'form_company_size': 'unknown', // (enterprise, smb, unknown)
+                'form_email_submission': emailInputValue
+            });
+        },
+        onFormReady: function($form, ctx){
+            // Form name (used on error DataLayer)
+            var $formName = hsFormName__news;
+
+            // Hubspot JS ready
+            
+    window.setCookie=function(key,value,expiry){var expires=new Date;expires.setTime(expires.getTime()+expiry*24*60*60*1e3);document.cookie=key+"="+value+";path=/"+";expires="+expires.toUTCString()};window.getCookie=function(key){var keyValue=document.cookie.match("(^|;) ?"+key+"=([^;]*)(;|$)");return keyValue?keyValue[2]:null};function inputLabelFields(){$form.find(".hs-input").on("focus",function(){let thisLabel=$(this).parent().parent().find("label");thisLabel.css({opacity:1});$(this).parent().addClass("label-visible")});$form.find(".hs-input").on("focusout",function(){if($(this).val()===""){let thisLabel=$(this).parent().parent().find("label");let errorLabel=$(this).parent().parent().find("ul label");thisLabel.css({opacity:0});errorLabel.css({opacity:1});$(this).parent().removeClass("label-visible")}else{let thisLabel=$(this).parent().parent().find("label");thisLabel.css({opacity:1});$(this).parent().addClass("label-visible")}if($(this).hasClass("is-placeholder")){let thisLabel=$(this).parent().parent().find("label");thisLabel.css({opacity:0});$(this).parent().removeClass("label-visible")}})}inputLabelFields();$form.find('.hs-input[type="email"]').on("focusout",function(){inputLabelFields()});window.addEventListener("message",event=>{if(event.data.type==="hsFormCallback"&&event.data.eventName==="onFormReady"){function gaGacid(){var urlEnv=window.location.hostname;if(window.ga&&urlEnv=="www.gooddata.com"){ga(function(tracker){var clientId=ga.getAll()[0].get("clientId");$form.find('input[name="gacid"]').val(clientId).change()})}}var checkCookiePolicy=setInterval(function(){if(window.cookiesP){gaGacid();clearInterval(checkCookiePolicy)}else{if(!window.isEU){gaGacid();clearInterval(checkCookiePolicy)}}},1e3)}});window.GDDomains=["gooddata.com","cz.gooddata.com","insighti.com"];window.testKeywords=["forecom","lhv","test"];window.isGoodDataEmail=function(email){for(let i=0;i<window.GDDomains.length;i++){let domain=window.GDDomains[i];let email_domain=email.split("@").pop();if(email_domain===domain){return false}}return true};window.isGmail=function(email){if(email.indexOf("@gmail.com")>0){return"gmail"}else{return"business"}};window.isTest=function(email){for(let i=0;i<window.testKeywords.length;i++){let key=window.testKeywords[i];if(email.indexOf(key)>0){return true}}return false};window.trackingType=function(email){if(email){if(!isGoodDataEmail(email)||isTest(email)){return"testEvent"}else{return"trackEvent"}}else{return"unknown"}};window.legalCheck=function(thisForm){window.emailInputValue=$(".c-form__"+thisForm+' input[name="email"]').val();window.checkboxInputValue=$(".c-form__"+thisForm+' input[type="checkbox"]');window.hsgdprstateInputValue=$(".c-form__"+thisForm+' input[name="hsgdprstate"]');window.optinTracker;if(window.checkboxInputValue.is(":checked")){window.hsgdprstateInputValue.val("yes").change();window.optinTracker="optin"}else{window.hsgdprstateInputValue.val("no").change();window.optinTracker="none"}};var urlEnv=window.location.hostname;async function hutkCall(urlEnv){var hostUrl;if(urlEnv==="www.gooddata.com"||urlEnv==="staging--gooddata-gdc.netlify.app"||urlEnv==="dl-tracking--gooddata-gdc.netlify.app"){hostUrl="https://"+urlEnv}else if(urlEnv==="localhost"){hostUrl="http://localhost:8080"}const API_ENDPOINT=hostUrl+"/.netlify/functions/hubspotutk/hubspotutk.js?hutk="+window.hubspotutk;return fetch(API_ENDPOINT,{headers:{Accept:"application/json"}}).then(response=>response.json()).then(function(msg){window.hutkCallback=msg.msg}).catch(error=>console.log("no hubspotutk"))}async function zeroCall(email,thisField,form){var hostUrl;if(urlEnv==="localhost"){hostUrl="http://localhost:8888"}else{hostUrl="https://"+urlEnv}const API_ENDPOINT=hostUrl+"/.netlify/functions/zerobounce/zerobounce.js?email="+email;function printApproved(thisField,form){if(form.find(".error").length){thisField.attr("data-zb","reject");form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true);thisField.parent().after("<ul class='no-list hs-error-msgs inputs-list nb-custom' role='alert'><li><label class='hs-error-msg'>Please enter a valid business email.</label></li></ul>")}else{thisField.attr("data-zb","approved");form.find('.hs-button[type="submit"]').removeClass("disabled").attr("disabled",false);thisField.parent().after("<ul class='no-list hs-status-msgs inputs-list nb-custom' role='alert'><li><label class='hs-status-msg valid'>The email address is valid.</label></li></ul>")}}function printReject(thisField,form){thisField.attr("data-zb","reject");form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true);thisField.parent().after("<ul class='no-list hs-error-msgs inputs-list nb-custom' role='alert'><li><label class='hs-error-msg'>Please enter a valid email.</label></li></ul>")}return fetch(API_ENDPOINT,{headers:{Accept:"application/json"}}).then(response=>response.json()).then(function(msg){console.log("Status: "+msg.status+" and Substatus: "+msg.substatus);form.find(".hs-email .hs-error-msgs.nb-custom, .hs-email .hs-status-msgs.nb-custom").each(function(){$(this).remove()});if(msg.status=="valid"||msg.status=="catch-all"||msg.status=="unknown"){printApproved(thisField,form)}else if(msg.status=="invalid"){printReject(thisField,form)}else if(msg.status=="do_not_mail"){if(msg.substatus=="role_based"||msg.substatus=="role_based_catch_all"){printApproved(thisField,form)}else{printReject(thisField,form)}}else{printReject(thisField,form)}}).catch(error=>console.log("no zerobounce"))}if($form){$form.find(".hs-input").each(function(){$(this)[0].addEventListener("keypress",function(event){if(event.key==="Enter"){$form.find(".hs-input").each(function(index){if($(this)[0].hasAttribute("required")){if($(this).val()==""){$(this)[0].focus();$(this).trigger("blur")}if($(this).val()==""||$(this).hasClass("error")||$(this).attr("type")=="email"&&$(this).attr("data-zb")!="approved"){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true);event.preventDefault()}}})}},false);var zbTimer;var zbTimerPSF;var zbTimerPST;$(this).on("input paste keyup",function(){if($(this)[0].hasAttribute("required")){if($form.find('.hs-button[type="submit"]').hasClass("hasPactsafe")){if(window.pactsafeAgreeChecked==false){if($(this).attr("type")=="email"){zbEmailPSF=$(this);zbEmailValPSF=zbEmailPSF.val();zbEmailPSF.attr("data-zb","");clearTimeout(zbTimerPSF);zbEmailPSF.parent().after("<ul class='no-list hs-error-msgs inputs-list nb-custom' role='alert'><li><label class='hs-error-msg validating'>Validating email address...</label></li></ul>");zbTimerPSF=setTimeout(function(){if(zbEmailPSF!=""){zeroCall(zbEmailValPSF,zbEmailPSF,$form)}},600)}else{if($form.find(".error").length||$(this).val()==""){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true)}else{$form.find('.hs-button[type="submit"]').removeClass("disabled").attr("disabled",false)}}}else{if($(this).attr("type")=="email"){zbEmailPST=$(this);zbEmailValPST=zbEmailPST.val();zbEmailPST.attr("data-zb","");clearTimeout(zbTimerPST);zbEmailPST.parent().after("<ul class='no-list hs-error-msgs inputs-list nb-custom' role='alert'><li><label class='hs-error-msg validating'>Validating email address...</label></li></ul>");zbTimerPST=setTimeout(function(){if(zbEmailPST!=""){zeroCall(zbEmailValPST,zbEmailPST,$form)}},600)}else{$form.find('.hs-button[type="submit"]').removeClass("disabled").attr("disabled",false)}}}else{if($(this).attr("type")=="email"){if($(this).val().length>0){zbEmail=$(this);zbEmailVal=zbEmail.val();zbEmail.attr("data-zb","");clearTimeout(zbTimer);zbEmail.parent().after("<ul class='no-list hs-error-msgs inputs-list nb-custom' role='alert'><li><label class='hs-error-msg validating'>Validating email address...</label></li></ul>");zbTimer=setTimeout(function(){if(zbEmail!=""){zeroCall(zbEmailVal,zbEmail,$form)}},600)}}else{if($form.find(".error").length||$(this).val()==""||$form.find('[data-zb="reject"]').length){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true)}else{$form.find('.hs-button[type="submit"]').removeClass("disabled").attr("disabled",false)}}}}else{if($form.find(".error").length||$form.find('[data-zb="reject"]').length){}else{if($form.find('.hs-button[type="submit"]').hasClass("hasPactsafe")){if(window.pactsafeAgreeChecked==true){$form.find('.hs-button[type="submit"]').removeClass("disabled").attr("disabled",false)}}else{$form.find('.hs-button[type="submit"]').removeClass("disabled").attr("disabled",false)}}}})});$form.find("input[type='submit']").each(function(){$(this)[0].addEventListener("click",function(event){$form.find(".hs-input").each(function(index){if($(this)[0].hasAttribute("required")){if($(this).val()==""){$(this)[0].focus();$(this).trigger("blur")}if($(this).val()==""||$(this).hasClass("error")){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true);event.preventDefault()}}})},false)});var companyField=setInterval(function(){$form.find("input[name='company']").each(function(){$(this).on("input paste focusout",function(){if($(this)[0].hasAttribute("required")){if($form.find(".error").length||$(this).val()==""||window.pactsafeAgreeChecked==false){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true)}else{$form.find('.hs-button[type="submit"]').removeClass("disabled").attr("disabled",false)}}})})},500);$form.find(".hs_email").each(function(){if($.fn.childrenChange!==undefined){$(this).childrenChange((el,added)=>{let errorText="";if($(added[0]).hasClass("hs-error-msg")&&$(added[0]).text()!==""){errorText=$(added[0]).text()}if($(added[0]).hasClass("hs-error-msgs")&&$(added[0]).find("li").text()!==""){errorText=$(added[0]).find("li").text()}if($(el).hasClass("hs-error-msg")&&$(el).text()!==""){errorText=$(el).text()}if(errorText!==""){dataLayer.push({event:"form_email_error",form_name:$formName,error_value:errorText,form_id:$form.attr("data-form-id"),page_url:document.location.pathname})}})}});$form.find(".hs-form-field").each(function(){if($.fn.childrenChange!==undefined){$(this).childrenChange((el,added)=>{if($(added[0]).hasClass("hs-error-msg")&&$(added[0]).text()!==""){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true)}if($(added[0]).hasClass("hs-error-msgs")&&$(added[0]).find("li").text()!==""){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true)}if($(el).hasClass("hs-error-msg")&&$(el).text()!==""){$form.find('.hs-button[type="submit"]').addClass("disabled").attr("disabled",true)}})}})}
+
+
+            // GTM | HS Form Ready - Modal Opened
+            var checkModalSubscribe = setInterval(function() {
+                if ($('#modalSubscribe').hasClass('show')) {
+
+                    dataLayer.push({
+                        'event': 'form_view',
+                        'form_name': hsFormName__news,
+                        'form_id': hsFormId__news, // hubspot form ID
+                        //'tracking_type': trackingType(window.hutkCallback), // testEvent vs trackEvent
+                        'asset_name': 'unknown', //asset name or unknown
+                        'asset_format': 'unknown', //asset file type or unknown
+                        'page_url': document.location.pathname
+                    });
+                    clearInterval(checkModalSubscribe);
+                }
+            }, 1000);
+
+            // Add attrs to modal
+            $('#modalSubscribe').attr('data-attr-form-name', hsFormName__news);
+            $('#modalSubscribe').attr('data-attr-form-id', hsFormId__news);
+            
+        }
+    });
+});
+</script>
+            </div>
+            <div class="c-form__submitted text-center">
+                <p>Thank you for subscribing to the GoodData newsletter.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+        <script src="/js/vendors/jquery.min.js"></script>
+        
+        <script src="/js/vendors/bootstrap.bundle.min.js"></script>
+        
+        <script src="/js/vendors/bootstrap.init.js"></script>
+        
+        <script src="/location/location.js"></script>
+        <script src="/js/modules/cookies.js"></script>
+        
+        
+        <script>
+            
+            const elNavLinks=document.querySelectorAll(".navbar-toggler");const elBody=document.querySelector("body");const classActive="c-siteheader-active";const classSubmenuActive="c-siteheader-submenu-active";const headerInitClass="c-siteheader-init";const headerNav=$(".c-siteheader");const $dropdown=$(".nav-item");const $dropdownToggle=$(".nav-link");const $dropdownMenu=$(".c-siteheader__l1");const showClass="show";setCookie=function(key,value,expiry){var expires=new Date;expires.setTime(expires.getTime()+expiry*24*60*60*1e3);document.cookie=key+"="+value+";path=/"+";expires="+expires.toUTCString()};getCookie=function(key){var keyValue=document.cookie.match("(^|;) ?"+key+"=([^;]*)(;|$)");return keyValue?keyValue[2]:null};var gdPromoBannerCookie=getCookie("gd-banner-promo");console.log(gdPromoBannerCookie);if(gdPromoBannerCookie){$(".c-siteheader-top").addClass("top-hide")}jQuery(document).ready(function(){var isChrome=/Chrome/.test(navigator.userAgent)&&/Google Inc/.test(navigator.vendor);if(window.location.hash&&isChrome){setTimeout(function(){var hash=window.location.hash;window.location.hash="";window.location.hash=hash},800)}});function init(){$.fn.isInViewport=function(){var elementTop=$(this).offset().top;var elementBottom=elementTop+$(this).outerHeight();var viewportTop=$(window).scrollTop();var viewportBottom=viewportTop+$(window).height();return elementBottom>viewportTop&&elementTop<viewportBottom};if($(".c-siteheader-top").length){var mainMenuDistance=$(".c-siteheader").offset().top;$(window).on("resize, scroll",function(){if($(window).width()<768){if(window.gdBannerClose==1){mainMenuDistance=64}else{mainMenuDistance=144}}else{if($(window).width()>=1200){mainMenuDistance=64}else{mainMenuDistance=86}$(".c-siteheader").removeAttr("style")}});$(window).on("scroll",function(){if($(this).scrollTop()===0){$(".c-siteheader").removeClass("c-siteheader__fixed")}else{if($(this).scrollTop()>=mainMenuDistance){$(".c-siteheader").addClass("c-siteheader__fixed")}else{$(".c-siteheader").removeClass("c-siteheader__fixed")}}});$("#promo-banner-collapse").on("click",function(){if($(".c-siteheader-top").hasClass("top-hide")){$(".c-siteheader-top").removeClass("top-hide");window.gdBannerClose=0;setCookie("gd-banner-promo","false","0")}else{$(".c-siteheader-top").addClass("top-hide");window.gdBannerClose=1;setCookie("gd-banner-promo","true","1")}})}for(let i=0;i<elNavLinks.length;i++){let el=elNavLinks[i];el.addEventListener("click",event=>{event.preventDefault();elBody.classList.toggle(classActive);if($(elNavLinks).attr("aria-expanded")=="false"){headerNav.removeClass(classSubmenuActive);$dropdownToggle.attr("aria-expanded","false");$dropdownMenu.removeClass(showClass)}},false)}$(window).on("load resize",function(){$dropdownMenu.addClass(headerInitClass);if($(window).width()>=1200){$("html").on("click",function(){$dropdownToggle.attr("aria-expanded","false");$dropdownMenu.removeClass(showClass)});headerNav.on("click",function(event){event.stopPropagation()});$("body").removeClass("c-siteheader-active");const navItems=document.getElementsByClassName("c-siteheader__l1");$("body").on("click",function(e){for(const navItem of navItems){if($(this).hasClass("show")){headerNav.addClass(classSubmenuActive)}else{headerNav.removeClass(classSubmenuActive)}}});if($(elNavLinks).attr("aria-expanded")=="true"){if($("body").hasClass(classActive)){headerNav.addClass(classSubmenuActive)}}else{if($("body").hasClass(classActive)){headerNav.removeClass(classSubmenuActive)}}}else{$dropdown.off("mouseenter mouseleave");if($(elNavLinks).attr("aria-expanded")=="true"){$("body").addClass("c-siteheader-active")}else{$("#siteHeader").removeClass("show");$("body").removeClass("c-siteheader-active")}}$dropdownToggle.on("click",function(event){if($(this).attr("aria-expanded")=="true"){var navItemHide=this.nextElementSibling.querySelector(".c-siteheader__l1");navItemHide.addEventListener("shown.bs.collapse",function(){headerNav.addClass(classSubmenuActive);this.blur()})}else{var navItemHide=this.nextElementSibling.querySelector(".c-siteheader__l1");navItemHide.addEventListener("hidden.bs.collapse",function(){headerNav.removeClass(classSubmenuActive);this.blur()})}})});$(window).on("ready",function(){$("#navLink-blog.nav-link").removeAttr("data-bs-toggle")});$('.c-siteheader .c-siteheader__submenu a:not([href="#"])').on("click",function(e){$("#siteHeader").removeClass("show");$(".c-siteheader-init").removeClass("show");$("body").removeClass("c-siteheader-active")});function siteHeaderTopMenu(){if(window.innerWidth>=992){$(".c-siteheader .c-siteheader-top__menu__ul").detach().appendTo(".c-siteheader-top .c-siteheader-top__menu")}else{$(".c-siteheader-top .c-siteheader-top__menu__ul").detach().prependTo(".c-siteheader .c-login")}}if($(window).width()>=992){window.headerTopMenu="desk"}else{window.headerTopMenu="mobile";siteHeaderTopMenu()}$(window).on("resize",function(){if($(window).width()>=992&&window.headerTopMenu==="mobile"){window.headerTopMenu="desk";siteHeaderTopMenu()}else if($(window).width()<992&&window.headerTopMenu==="desk"){window.headerTopMenu="mobile";siteHeaderTopMenu()}});let header=$(".c-siteheader");$('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event){if(location.pathname.replace(/^\//,"")===this.pathname.replace(/^\//,"")&&location.hostname===this.hostname){let target=$(this.hash);target=target.length?target:$("[name="+this.hash.slice(1)+"]");if(target.length){if($(this).hasClass("submenu-multiline")&&$(window).width()<992){$('[data-target="#navbarsExampleDefault"]').click()}event.preventDefault();$("html, body").animate({scrollTop:target.offset().top-header.height()},100)}}});$("body").on("click",function(e){$("[data-bs-toggle=tooltip]").each(function(){if(!$(this).is(e.target)&&$(this).has(e.target).length===0&&$(".tooltip").has(e.target).length===0){$(this).tooltip("hide")}})});window.testInView=function($el){var wTop=$(window).scrollTop();var wBot=wTop+$(window).height();var wMid=wBot-$(window).height()/2;var eTop=$el.offset().top;var eBot=eTop+$el.height();return eTop<=wMid&&eBot>=wMid};window.quarterInView=function($el){var wTop=$(window).scrollTop();var wBot=wTop+$(window).height();var wQuat=wBot-$(window).height()/4;var eTop=$el.offset().top;var eBot=eTop+$el.height();return eTop<=wQuat&&eBot>=wQuat};window.topInView=function($el){var wTop=$(window).scrollTop();var wBot=wTop+$(window).height();var wQuat=wBot-$(window).height();var eTop=$el.offset().top;var eBot=eTop+$el.height();return eTop<=wQuat&&eBot>=wQuat};window.pixelBottomInView=function($el){var wTop=$(window).scrollTop();var wBot=wTop+$(window).height();var wQuat=wBot-$(window).height()+1;var eTop=$el.offset().top;var eBot=eTop+$el.height();return eTop<=wQuat&&eBot>=wQuat};window.pixelTopInView=function($el){var wTop=$(window).scrollTop();var wBot=wTop+$(window).height();var wQuat=wBot-1;var eTop=$el.offset().top;var eBot=eTop+$el.height();return eTop<=wQuat&&eBot>=wQuat};window.bottomVisible=(()=>document.documentElement.clientHeight+window.scrollY>=(document.documentElement.scrollHeight||document.documentElement.clientHeight));$.fn.inView=function(inViewType){var viewport={};viewport.top=$(window).scrollTop();viewport.bottom=viewport.top+$(window).height();var bounds={};bounds.top=this.offset().top;bounds.bottom=bounds.top+this.outerHeight();switch(inViewType){case"bottomOnly":return bounds.bottom<=viewport.bottom&&bounds.bottom>=viewport.top;case"topOnly":return bounds.top<=viewport.bottom&&bounds.top>=viewport.top;case"both":return bounds.top>=viewport.top&&bounds.bottom<=viewport.bottom;default:return bounds.top>=viewport.top&&bounds.bottom<=viewport.bottom}};window._wq=window._wq||[];_wq.push({id:"_all",onReady:function(video){var alltime;var wVideoId;var setVideoInView=function(wVideoId){if(testInView($("#wistia-"+wVideoId+"-1_popover"))){return"yes"}else{return"no"}};var setVideoOverlayInView=function(wVideoId){if($("#wistia-"+wVideoId+"-1_popover_overlay").length){return true}};var checkEmbeddedVideo=function(wVideoId){if($("#wistia-"+wVideoId+"-1_popover").length==0){return true}};video.bind("play",function(){wVideoId=video.hashedId();if(video.isMuted()&&checkEmbeddedVideo(wVideoId)){return false}dataLayer.push({event:"video-on-demand-start",video_id:video.hashedId(),video_name:video.name(),page_url:document.location.pathname,in_the_viewport:setVideoInView(wVideoId)});return this.unbind}).bind("end",function(){wVideoId=video.hashedId();if(video.isMuted()&&checkEmbeddedVideo(wVideoId)){return false}dataLayer.push({event:"video-on-demand-complete",video_id:video.hashedId(),video_name:video.name(),page_url:document.location.pathname,in_the_viewport:setVideoInView(wVideoId)});return this.unbind}).bind("secondchange",function(s){wVideoId=video.hashedId();if(video.isMuted()&&checkEmbeddedVideo(wVideoId)){return false}alltime=video.secondsWatched();if(alltime%15==0&&alltime!=0){dataLayer.push({event:"video-on-demand-duration",video_id:video.hashedId(),video_name:video.name(),page_url:document.location.pathname,in_the_viewport:setVideoInView(wVideoId),on_demand_seconds_watched:alltime})}})}});$(".c-video__youtube__loop").each(function(){$(this).find("iframe").attr("src",$(this).find("iframe").attr("src")+"&autoplay=1")});$("[data-bs-toggle=modal]").click(function(){if(getScrollbarWidth()>0&&$("body").hasClass("modal-open")){header.addClass("scrollbar-on")}else{header.removeClass("scrollbar-on")}});function getScrollbarWidth(){const outer=document.createElement("div");outer.style.visibility="hidden";outer.style.overflow="scroll";outer.style.msOverflowStyle="scrollbar";document.body.appendChild(outer);const inner=document.createElement("div");outer.appendChild(inner);const scrollbarWidth=outer.offsetWidth-inner.offsetWidth;outer.parentNode.removeChild(outer);return scrollbarWidth}}init();$.fn.childrenChange=function(cb){return $(this).each((_,el)=>{new MutationObserver(mutations=>{mutations.forEach(mutation=>cb&&cb(mutation.target,mutation.addedNodes))}).observe(el,{subtree:true,childList:true})})};
+        
+        </script>
+
+        
+        
+
+        
+        
+
+        <script>
+            
+            
+            
+                
+    if($("#blog-rc-box-r-1 .title").is(":empty")||$("#blog-rc-box-r-2 .title").is(":empty")||$("#blog-rc-box-r-3 .title").is(":empty")){var thisBlogpostURL=window.location.pathname;var settings={async:true,crossDomain:false,url:"../../search-blogposts.json",method:"GET"};$.ajax(settings).done(function(response){var allBlogs=response.documentStore.docs;var thisBlogInfo=allBlogs[thisBlogpostURL];var thisBlogUrl=thisBlogInfo.id;var thisBlogTags=thisBlogInfo.tags;if(thisBlogInfo.relatedContent){var thisBlogRC1=thisBlogInfo.relatedContent[0]&&thisBlogInfo.relatedContent[0].title;var thisBlogRC2=thisBlogInfo.relatedContent[1]&&thisBlogInfo.relatedContent[1].title;var thisBlogRC3=thisBlogInfo.relatedContent[2]&&thisBlogInfo.relatedContent[2].title}var anyBlogByDate=[];var relatedContent=[];var relatedTagList={};const getCount=allBlogs=>Object.values(allBlogs).length;var objAllBlogs=Object.values(allBlogs);var countBlogs=getCount(allBlogs);for(i=0;i<countBlogs;i++){for(j=0;j<objAllBlogs[i].tags.length;j++){if(thisBlogTags.includes(objAllBlogs[i].tags[j])&&objAllBlogs[i].id!=thisBlogUrl){if(tagFounded!=objAllBlogs[i].id){relatedContent.push({title:objAllBlogs[i].title,image:objAllBlogs[i].image,customUrl:objAllBlogs[i].id,date:objAllBlogs[i].date});var tagFounded=objAllBlogs[i].id;relatedTagList["blog"+j]=objAllBlogs[i].id}}}if(objAllBlogs[i].id!=thisBlogUrl&&objAllBlogs[i].title!=thisBlogRC1&&objAllBlogs[i].title!=thisBlogRC2&&objAllBlogs[i].title!=thisBlogRC3&&objAllBlogs[i].id!=relatedTagList.blog0&&objAllBlogs[i].id!=relatedTagList.blog1&&objAllBlogs[i].id!=relatedTagList.blog2){anyBlogByDate.push({title:objAllBlogs[i].title,image:objAllBlogs[i].image,customUrl:objAllBlogs[i].id,date:objAllBlogs[i].date})}}anyBlogByDate.sort((a,b)=>new Date(b.date)-new Date(a.date));relatedContent.sort((a,b)=>new Date(b.date)-new Date(a.date));var anyIndex=0;var rcIndex=0;function printRelatedContentBoxes(anyIndex,rcIndex,switchCase){for(i=1;i<=3;i++){if($("#blog-rc-box-r-"+i+" .title").is(":empty")){if(rcIndex<switchCase){$(".rc-box.rc-"+i+" .title").text(relatedContent[rcIndex].title);$(".rc-box.rc-"+i+' picture source[data-src="src1"]').attr("srcset","/img/blog/_340x179/"+relatedContent[rcIndex].image+".webp");$(".rc-box.rc-"+i+' picture source[data-src="src2"]').attr("srcset","/img/blog/_150x79/"+relatedContent[rcIndex].image+".webp");$(".rc-box.rc-"+i+' picture source[data-src="src3"]').attr("srcset","/img/blog/_340x179/"+relatedContent[rcIndex].image+".webp");$(".rc-box.rc-"+i+' picture source[data-src="src4"]').attr("srcset","/img/blog/_540x284/"+relatedContent[rcIndex].image+".webp");$(".rc-box.rc-"+i).attr("href",relatedContent[rcIndex].customUrl);rcIndex++}else{$(".rc-box.rc-"+i+" .title").text(anyBlogByDate[anyIndex].title);$(".rc-box.rc-"+i+' picture source[data-src="src1"]').attr("srcset","/img/blog/_340x179/"+anyBlogByDate[anyIndex].image+".webp");$(".rc-box.rc-"+i+' picture source[data-src="src2"]').attr("srcset","/img/blog/_150x79/"+anyBlogByDate[anyIndex].image+".webp");$(".rc-box.rc-"+i+' picture source[data-src="src3"]').attr("srcset","/img/blog/_340x179/"+anyBlogByDate[anyIndex].image+".webp");$(".rc-box.rc-"+i+' picture source[data-src="src4"]').attr("srcset","/img/blog/_540x284/"+anyBlogByDate[anyIndex].image+".webp");$(".rc-box.rc-"+i).attr("href",anyBlogByDate[anyIndex].customUrl);anyIndex++}}}}switch(getCount(relatedContent)){case 0:printRelatedContentBoxes(anyIndex,rcIndex,0);break;case 1:printRelatedContentBoxes(anyIndex,rcIndex,1);break;case 2:printRelatedContentBoxes(anyIndex,rcIndex,2);break;case 3:printRelatedContentBoxes(anyIndex,rcIndex,3);break;default:printRelatedContentBoxes(anyIndex,rcIndex,1e4);break}})}var tagsArray="Tech Talk";if(tagsArray.includes("Developers")){dataLayer.push({event:"blog_article_view_developer",tag:"developers",author:"Anna Geller",blog_article_name:"10 Reasons Why Estimating Time For Data Projects is Hard",page_url:document.location.pathname})}const eventDate=new Date("");const today=new Date;if(today.toLocaleString()>=eventDate.toLocaleString()){$(".c-banner__events__blog").hide()}let headerE=$("#gd-header");let footerE=$("#gd-footer");let columnContent=$("#right-column");let bannerWrapE=$("#banner-wrap");let bannerAndImageE=$("#banner-events");let bannerE=$("#banner-events");let formAnchorE=$("#resource-form-anchor-mobile-only");let form={top:0,bottom:0,left:0,width:0,height:0};let headerH=0;let footerOffsetTop=0;let contentOffsetBottom=0;let stickTopOffset=0;let unstickBottomOffset=0;let scrollTimeout;let resizeTimeOut;function freezeForm(){bannerWrapE.css({width:form.width+"px"});bannerWrapE.css({top:headerH+48+"px"});bannerWrapE.css({left:form.left+"px"})}function unfreezeForm(topValue,leftValue){bannerWrapE.css({top:topValue});bannerWrapE.css({left:leftValue})}function calculateSticking(){contentOffsetBottom=Math.ceil(columnContent.offset().top+columnContent.outerHeight());stickTopOffset=form.top-headerH-48;unstickBottomOffset=contentOffsetBottom-headerH-form.height-parseInt(columnContent.css("padding-bottom").replace("px",""))-parseInt(columnContent.css("margin-bottom").replace("px",""))-81}function calculateFormPosition(){bannerWrapE.removeClass("sticked");bannerWrapE.removeClass("bottom");bannerWrapE.get(0).style.removeProperty("width");bannerWrapE.get(0).style.removeProperty("top");bannerWrapE.get(0).style.removeProperty("left");form={top:Math.ceil(bannerAndImageE.offset().top),bottom:Math.ceil(form.top+bannerAndImageE.outerHeight()),left:Math.ceil(bannerAndImageE.offset().left),width:Math.ceil(bannerWrapE.width()),height:Math.ceil(bannerE.outerHeight())}}function resolveSticky(){const st=$(window).scrollTop();if(st>stickTopOffset){if(!bannerWrapE.hasClass("sticked")){bannerWrapE.addClass("sticked");freezeForm()}}else{if(bannerWrapE.hasClass("sticked")){bannerWrapE.removeClass("sticked");unfreezeForm("auto","auto")}}if(st>unstickBottomOffset){if(!bannerWrapE.hasClass("bottom")){bannerWrapE.addClass("bottom");unfreezeForm(unstickBottomOffset+parseInt(columnContent.css("padding-bottom").replace("px",""))+parseInt(columnContent.css("margin-bottom").replace("px",""))+"px",form.left+"px")}}else{if(bannerWrapE.hasClass("bottom")){bannerWrapE.removeClass("bottom");freezeForm()}}}function contentMinHeightCalc(){if(window.innerWidth>=1200){columnContent.css("min-height",Math.ceil(form.bottom-columnContent.offset().top+parseInt(columnContent.css("padding-bottom").replace("px","")))+"px")}else{columnContent.css("min-height","0px")}}function resolveFormAnchorVisibility(){const st=$(window).scrollTop();if(st>form.bottom-headerH&&st+$(window).height()<footerOffsetTop){formAnchorE.addClass("show")}else{formAnchorE.removeClass("show")}}$(window).scroll(function(){if(scrollTimeout){clearTimeout(scrollTimeout);scrollTimeout=null}if(window.innerWidth<1200){scrollTimeout=setTimeout(resolveFormAnchorVisibility,100)}else{if(form.width>0){resolveSticky()}}});function resolvePositions(){headerH=Math.ceil(headerE.outerHeight());footerOffsetTop=Math.ceil(footerE.offset().top);calculateFormPosition();contentMinHeightCalc();calculateSticking()}$(window).resize(function(){if(resizeTimeOut){clearTimeout(resizeTimeOut);resizeTimeOut=null}resizeTimeOut=setTimeout(resolvePositions,100)});$(document).ready(function(){resolvePositions();setTimeout(resolvePositions,1e3)});
+
+            
+        </script>
+
+        
+        
+
+        
+        
+
+        
+        <script src="/js/modules/lazy.js"></script>
+
+        
+        <script src="/js/vendors/wistia.lazyload.js"></script>
+    </body>
+</html>

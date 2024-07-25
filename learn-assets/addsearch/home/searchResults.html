@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GoodData - Search Results - Search UI Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+  <!-- (1) AddSearch JS client library and Search UI library -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/combine/npm/addsearch-js-client@0.5/dist/addsearch-js-client.min.js,npm/addsearch-search-ui@0.4/dist/addsearch-search-ui.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/addsearch-search-ui@0.4/dist/addsearch-search-ui.min.css" />
+  <!-- (2) Search styles for customer site -->
+  <link rel="stylesheet" href="/learn-assets/addsearch/dist/ui.min.css" />
+  <link rel="stylesheet" href="/css/main.min.css"/>
+</head>
+<body>
+<div class="main">
+
+  <header>
+    <div class="navigation">
+      <ul>
+        <li><a href="learn/index.html">Learn</a></li>
+        <li><a href="university/index.html">University</a></li>
+        <li><a href="community/index.html">Community</a></li>
+        <li><a href="documentation/index.html">Documentation</a></li>
+        <li><a href="support/index.html">Support</a></li>
+      </ul>
+    </div>
+    <h1>Search Results</h1>
+    <!-- (3) The main search bar on website -->
+
+    <div id="searchfield-container"></div>
+    <div id="autocomplete-container"></div>
+  </header>
+
+  <section class="adds-main">
+    <!-- (4) Search results page UI components -->
+    <div class="adds-filter-wrapper">
+      <div id="tabs"></div>
+    </div>
+    <div class="adds-results-wrapper">
+      <div id="searchresults-container"></div>
+      <div id="pagination-container"></div>
+    </div>
+  </section>
+
+  <!-- (5) Search UI script -->
+
+  <script src="/learn-assets/addsearch/dist/ui.min.js"></script>
+
+</div>
+</body>
+</html>

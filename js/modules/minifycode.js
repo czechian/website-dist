@@ -1,0 +1,1 @@
+const htmlmin=require("html-minifier"),{pd:prettyData}=require("pretty-data");module.exports=((t,e)=>{if(!e)return t;const r=t=>e.includes(t);return r(".json")||r(".webmanifest")?prettyData.jsonmin(t):r(".xml")?prettyData.xmlmin(t):t});

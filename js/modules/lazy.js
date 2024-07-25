@@ -1,0 +1,1 @@
+$('.c-section:first-child img[loading="lazy"]').attr("loading","eager"),$(window).one("scroll",function(){$('img[loading="lazy"]').attr("loading","eager")});

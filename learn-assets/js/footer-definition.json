@@ -1,0 +1,242 @@
+{
+  "footer": {
+    "bannerLinks": [
+      {
+        "title": "Start with GoodData",
+        "items": [
+          {
+            "title": "Start trial",
+            "link": "https://registration.cloud.gooddata.com/register"
+          },
+          {
+            "title": "Request a demo",
+            "link": "/request-a-demo/"
+          },
+          {
+            "title": "See pricing",
+            "link": "/pricing/"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "title": "Product",
+        "items": [
+          {
+            "title": "Product overview",
+            "link": "/platform/"
+          },
+          {
+            "title": "Embedded Analytics",
+            "link": "/embedded-analytics/"
+          },
+          {
+            "title": "Headless BI",
+            "link": "/headless-bi/"
+          },
+          {
+            "title": "Trust & Security",
+            "link": "/security/"
+          },
+          {
+            "title": "Services",
+            "link": "/solutions/professional-services/"
+          }
+        ]
+      },
+      {
+        "title": "Industries",
+        "items": [
+          {
+            "title": "E-commerce",
+            "link": "/solutions/ecommerce/"
+          },
+          {
+            "title": "Insurance",
+            "link": "/solutions/insurance/"
+          },
+          {
+            "title": "Financial Services",
+            "link": "/solutions/financial-services/"
+          },
+          {
+            "title": "Software Companies",
+            "link": "/embedded-analytics-software-companies/"
+          }
+        ]
+      },
+      {
+        "title": "Learn",
+        "items": [
+          {
+            "title": "Documentation",
+            "link": "/docs/cloud/"
+          },
+          {
+            "title": "University",
+            "link": "https://university.gooddata.com/"
+          },
+          {
+            "title": "Community",
+            "link": "https://community.gooddata.com/"
+          },
+          {
+            "title": "Support",
+            "link": "https://support.gooddata.com/hc/en-us"
+          }
+        ]
+      },
+      {
+        "title": "Developers",
+        "items": [
+          {
+            "title": "Python SDK",
+            "link": "https://www.gooddata.com/docs/python-sdk/latest/"
+          },
+          {
+            "title": "React SDK",
+            "link": "https://www.gooddata.com/docs/cloud/api-and-sdk/react-sdk/"
+          },
+          {
+            "title": "Examples Gallery",
+            "link": "https://gdui-examples.herokuapp.com/"
+          },
+          {
+            "title": "API References",
+            "link": "https://www.gooddata.com/docs/cloud/api-and-sdk/api/api_reference_all/"
+          }
+        ]
+      },
+      {
+        "title": "Resources",
+        "items": [
+          {
+            "title": "All resources",
+            "link": "/resources/"
+          },
+          {
+            "title": "Case studies",
+            "link": "/resources/tags/case-studies/"
+          },
+          {
+            "title": "Analyst reports",
+            "link": "/resources/tags/analyst-reports/"
+          },
+          {
+            "title": "Briefs",
+            "link": "/resources/tags/briefs/"
+          },
+          {
+            "title": "E-books",
+            "link": "/resources/tags/ebooks/"
+          },
+          {
+            "title": "Podcasts",
+            "link": "/resources/tags/podcasts/"
+          },
+          {
+            "title": "Videos",
+            "link": "/resources/tags/videos/"
+          },
+          {
+            "title": "Webinars",
+            "link": "/resources/tags/webinars/"
+          },
+          {
+            "title": "Blog",
+            "link": "/blog/"
+          }
+        ]
+      },
+      {
+        "title": "About GoodData",
+        "items": [
+          {
+            "title": "Company",
+            "link": "/company/"
+          },
+          {
+            "title": "Customers",
+            "link": "/customers/"
+          },
+          {
+            "title": "Partners",
+            "link": "/partners/"
+          },
+          {
+            "title": "Careers",
+            "link": "/company/careers/"
+          },
+          {
+            "title": "Newsroom",
+            "link": "/in-the-news/"
+          },
+          {
+            "title": "Brand",
+            "link": "/brand-guidelines/"
+          }
+        ]
+      }
+    ],
+    "copyright": [
+      {
+        "text": "Copyright© 2007 - 2024 GoodData Corporation. All Rights Reserved."
+      },
+      {
+        "text": "Privacy Policy",
+        "link": "/legal/#privacy-policy"
+      },
+      {
+        "text": "Legal",
+        "link": "/legal/"
+      },
+      {
+        "text": "Support Policy",
+        "link": "/support-policies/"
+      }
+    ],
+    "buttons": [
+      {
+        "type": "social",
+        "text": "LinkedIn",
+        "icon": "<svg viewbox=\"0 0 512 512\"><path d=\"M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z\"></path></svg>",
+        "iconType": "svg",
+        "link": "https://www.linkedin.com/company/gooddata"
+      },
+      {
+        "type": "social",
+        "text": "Twitter",
+        "icon": "<svg viewBox=\"0 0 29 29\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M16.119 13.1992 22.4486 6h-1.4994l-5.4983 6.2497L11.0626 6H6l6.6374 9.4514L6 22.9999h1.4994l5.8027-6.6012 4.6353 6.6012H23M8.04057 7.10634h2.30353L20.9481 21.948H18.644\"/></svg>",
+        "iconType": "svg",
+        "link": "https://twitter.com/gooddata"
+      },
+      {
+        "type": "social",
+        "text": "Facebook",
+        "icon": "<svg viewbox=\"0 0 512 512\"><path d=\"M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z\"></path></svg>",
+        "iconType": "svg",
+        "link": "https://www.facebook.com/gooddata"
+      },
+      {
+        "type": "social",
+        "text": "YouTube",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 76 90\"><path d=\"M63.939 65.832H59l.023-2.869c0-1.275 1.047-2.318 2.326-2.318h.315c1.282 0 2.332 1.043 2.332 2.318l-.057 2.869zm-18.526-6.148c-1.253 0-2.278.842-2.278 1.873V75.51c0 1.029 1.025 1.869 2.278 1.869 1.258 0 2.284-.84 2.284-1.869V61.557c0-1.032-1.026-1.873-2.284-1.873zM75.5 51.879v26.544C75.5 84.79 69.979 90 63.23 90H12.771C6.02 90 .5 84.79.5 78.423V51.879c0-6.367 5.52-11.578 12.271-11.578H63.23c6.749 0 12.27 5.211 12.27 11.578zM16.137 81.305l-.004-27.961 6.255.002v-4.143l-16.674-.025v4.073l5.205.015v28.039h5.218zm18.75-23.796h-5.215V72.44c0 2.16.131 3.24-.008 3.621-.424 1.158-2.33 2.388-3.073.125-.126-.396-.015-1.591-.017-3.643l-.021-15.034h-5.186l.016 14.798c.004 2.268-.051 3.959.018 4.729.127 1.357.082 2.939 1.341 3.843 2.346 1.69 6.843-.252 7.968-2.668l-.01 3.083 4.188.005-.001-23.79zm16.6830139 17.098L51.559 62.18c-.004-4.736-3.547-7.572-8.356-3.74l.021-9.239-5.209.008-.025 31.89 4.284-.062.39-1.986c5.473 5.021 8.914 1.58 8.9060139-4.444zM67.891 72.96l-3.91.021c-.002.155-.008.334-.01.529v2.182c0 1.168-.965 2.119-2.137 2.119h-.766c-1.174 0-2.139-.951-2.139-2.119v-5.739h8.954v-3.37c0-2.463-.063-4.925-.267-6.333-.641-4.454-6.893-5.161-10.051-2.881-.991.712-1.748 1.665-2.188 2.945-.444 1.281-.665 3.031-.665 5.254v7.41c.002 12.318 14.964 10.577 13.179-.018zM47.833 32.732c.269.654.687 1.184 1.254 1.584.56.394 1.276.592 2.134.592.752 0 1.418-.203 1.998-.622.578-.417 1.065-1.04 1.463-1.871l-.099 2.046h5.813V9.74H55.82v19.24c0 1.042-.858 1.895-1.907 1.895-1.043 0-1.904-.853-1.904-1.895V9.74h-4.776v16.674c0 2.124.039 3.54.102 4.258.065.713.229 1.397.498 2.06zM30.217 18.77c0-2.373.198-4.226.591-5.562.396-1.331 1.107-2.401 2.137-3.208 1.027-.811 2.342-1.217 3.941-1.217 1.345 0 2.497.264 3.459.781.967.52 1.713 1.195 2.23 2.028.527.836.885 1.695 1.076 2.574.195.891.291 2.235.291 4.048v6.252c0 2.293-.092 3.98-.271 5.051-.177 1.074-.557 2.07-1.146 3.004-.58.924-1.329 1.615-2.237 2.056-.918.445-1.968.663-3.154.663-1.325 0-2.441-.183-3.361-.565-.923-.38-1.636-.953-2.144-1.714-.513-.762-.874-1.69-1.092-2.772-.219-1.081-.323-2.707-.323-4.874l.003-6.545zm4.553 9.82c0 1.4 1.042 2.543 2.311 2.543 1.27 0 2.308-1.143 2.308-2.543V15.43c0-1.398-1.038-2.541-2.308-2.541-1.269 0-2.311 1.143-2.311 2.541v13.16zm-16.088 6.645h5.484l.006-18.96L30.652.033h-5.998l-3.445 12.064L17.715 0h-5.936l6.894 16.284.009 18.951z\" fill-rule=\"nonzero\"/></svg>",
+        "iconType": "svg",
+        "link": "https://www.youtube.com/c/gooddata"
+      },
+      {
+        "type": "default",
+        "color": "invert",
+        "text": "Subscribe for updates",
+        "action": "subscribe",
+        "hideOnLearn": true
+      },
+      {
+        "type": "primary",
+        "text": "Contact us",
+        "link": "/contact/"
+      }
+    ]
+  }
+}

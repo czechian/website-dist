@@ -1,0 +1,8 @@
+/learn-assets/*
+  Access-Control-Allow-Origin: *
+
+/fonts/*
+  Access-Control-Allow-Origin: *
+
+/*
+  X-Frame-Options: DENY
